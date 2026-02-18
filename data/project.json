@@ -389,11 +389,12 @@
       { "type": "denouement", "unitId": null, "description": "", "reached": false }
     ]
   },
+  "personas": ["narratologue", "critique-social", "lecteur-naif", "showrunner"],
   "settings": {
     "neglectThreshold": 3,
     "maxActiveLinesWarning": 5,
     "resolutionPressureThreshold": 10
   },
   "createdAt": "2026-02-18T18:00:00.000Z",
-  "updatedAt": "2026-02-18T20:00:00.000Z"
+  "updatedAt": "2026-02-18T20:30:00.000Z"
 }

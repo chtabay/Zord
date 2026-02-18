@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Zord — Test Runner</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Consolas', 'Fira Code', monospace; background: #0f1117; color: #e4e6f0; padding: 20px; font-size: 13px; }
+    h1 { font-size: 1.4rem; color: #6366f1; margin-bottom: 10px; }
+    h2 { font-size: 1.1rem; color: #818cf8; margin: 20px 0 8px; border-bottom: 1px solid #2d3148; padding-bottom: 4px; }
+    h3 { font-size: 0.95rem; color: #a5b4fc; margin: 12px 0 6px; }
+    button { padding: 8px 16px; background: #6366f1; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 13px; margin: 4px 2px; }
+    button:hover { background: #818cf8; }
+    button:disabled { background: #3d3f5c; cursor: not-allowed; }
+    button.danger { background: #ef4444; }
+    pre { background: #1a1d27; padding: 12px; border-radius: 6px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; max-height: 500px; overflow-y: auto; font-size: 12px; line-height: 1.5; }
+    .output { margin: 8px 0; }
+    .status-bar { background: #1a1d27; padding: 10px 16px; border-radius: 6px; margin-bottom: 16px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .status-item { display: flex; flex-direction: column; align-items: center; }
+    .status-value { font-size: 1.2rem; font-weight: bold; color: #6366f1; }
+    .status-label { font-size: 0.7rem; color: #8b8fa8; }
+    textarea { width: 100%; padding: 10px; background: #1a1d27; border: 1px solid #2d3148; border-radius: 6px; color: #e4e6f0; font-family: 'Georgia', serif; font-size: 14px; line-height: 1.7; resize: vertical; }
+    .section { background: #161822; border: 1px solid #2d3148; border-radius: 8px; padding: 16px; margin: 10px 0; }
+    .alert { padding: 6px 10px; margin: 3px 0; border-radius: 4px; font-size: 12px; }
+    .alert-constraint { background: rgba(239,68,68,0.1); border-left: 3px solid #ef4444; }
+    .alert-warning { background: rgba(245,158,11,0.1); border-left: 3px solid #f59e0b; }
+    .alert-guideline { background: rgba(59,130,246,0.1); border-left: 3px solid #3b82f6; }
+    .persona-score { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; }
+    .score-high { background: rgba(34,197,94,0.2); color: #4ade80; }
+    .score-mid { background: rgba(245,158,11,0.2); color: #fbbf24; }
+    .score-low { background: rgba(239,68,68,0.2); color: #f87171; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #2d3148; color: #8b8fa8; }
+    td { padding: 6px 8px; border-bottom: 1px solid #1e2235; }
+    .hidden { display: none; }
+    #log { max-height: 200px; overflow-y: auto; font-size: 11px; color: #8b8fa8; }
+  </style>
+</head>
+<body>
+  <h1>ZORD — Test Runner</h1>
+  <div class="status-bar" id="status-bar"></div>
+
+  <div>
+    <button id="btn-pre-eval">1. Pré-évaluation</button>
+    <button id="btn-post-eval" disabled>3. Post-évaluation</button>
+    <button id="btn-next" disabled>4. Chapitre suivant</button>
+    <button id="btn-export">Exporter project.json</button>
+  </div>
+
+  <div id="pre-eval-output" class="section hidden">
+    <h2>Pré-évaluation — <span id="pre-eval-title"></span></h2>
+    <h3>Briefing (priorités par importance)</h3>
+    <div id="pre-eval-lines"></div>
+    <h3>Contexte structurel</h3>
+    <pre id="pre-eval-context"></pre>
+    <h3>Tensomètre</h3>
+    <pre id="pre-eval-tension"></pre>
+    <h3>Alertes &amp; règles</h3>
+    <div id="pre-eval-alerts"></div>
+    <h3>Évaluations personas</h3>
+    <div id="pre-eval-personas"></div>
+  </div>
+
+  <div id="writing-section" class="section hidden">
+    <h2>2. Écriture — Chapitre <span id="writing-chapter-num"></span></h2>
+    <div style="margin-bottom:8px">
+      <label>Titre : <input type="text" id="chapter-title" style="background:#1a1d27;border:1px solid #2d3148;color:#e4e6f0;padding:4px 8px;border-radius:4px;width:300px"></label>
+    </div>
+    <textarea id="chapter-content" rows="15" placeholder="Texte du chapitre..."></textarea>
+    <div style="margin-top:8px">
+      <label>Résumé : <input type="text" id="chapter-summary" style="background:#1a1d27;border:1px solid #2d3148;color:#e4e6f0;padding:4px 8px;border-radius:4px;width:100%"></label>
+    </div>
+    <h3>Mises à jour des lignes</h3>
+    <div id="line-updates-form"></div>
+    <h3>Nouvelle ligne (optionnel)</h3>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:end">
+      <label>Nom: <input type="text" id="new-line-name" style="background:#1a1d27;border:1px solid #2d3148;color:#e4e6f0;padding:4px;border-radius:4px;width:200px"></label>
+      <label>Niveau: <select id="new-line-level" style="background:#1a1d27;border:1px solid #2d3148;color:#e4e6f0;padding:4px;border-radius:4px"><option value="major">Major</option><option value="secondary">Secondary</option><option value="micro" selected>Micro</option></select></label>
+      <label>Fonction: <select id="new-line-function" style="background:#1a1d27;border:1px solid #2d3148;color:#e4e6f0;padding:4px;border-radius:4px"><option value="tension">Tension</option><option value="relief">Relief</option><option value="foreshadowing">Foreshadowing</option><option value="red_herring">Red herring</option><option value="connector" selected>Connector</option><option value="catalyst">Catalyst</option><option value="theme_carrier">Theme carrier</option></select></label>
+    </div>
+  </div>
+
+  <div id="post-eval-output" class="section hidden">
+    <h2>Post-évaluation</h2>
+    <pre id="post-eval-result"></pre>
+    <h3>Alertes post-évaluation</h3>
+    <div id="post-eval-alerts"></div>
+    <h3>Personas post-évaluation</h3>
+    <div id="post-eval-personas"></div>
+  </div>
+
+  <h3>Log</h3>
+  <pre id="log"></pre>
+
+  <script type="module">
+    import evaluator from './js/services/evaluator.js';
+    import personaEvaluator from './js/services/persona-evaluator.js';
+    import { createNarrativeLine } from './js/models/narrative-line.js';
+    import { createStoryUnit, UNIT_STATUS } from './js/models/story-unit.js';
+
+    let project = null;
+    let currentChapterIndex = 2; // start at chapter 3
+    let preEvalSnapshot = null;
+
+    const log = (msg) => {
+      const el = document.getElementById('log');
+      el.textContent += `[${new Date().toLocaleTimeString()}] ${msg}\n`;
+      el.scrollTop = el.scrollHeight;
+    };
+
+    async function loadProject() {
+      const res = await fetch('data/project.json');
+      project = await res.json();
+      evaluator.setProject(project);
+      log(`Projet chargé: ${project.name} — ${project.narrativeLines.length} lignes, ${project.storyUnits.length} unités`);
+      updateStatusBar();
+    }
+
+    function updateStatusBar() {
+      const lines = project.narrativeLines;
+      const units = project.storyUnits;
+      const tension = evaluator.calculateGlobalTension(lines);
+      const ds = project.dramaticStructure;
+      const completedUnits = units.filter(u => u.status === 'completed').length;
+      const actLabel = ds?.currentAct === 'setup' ? 'Acte I' : ds?.currentAct === 'confrontation' ? 'Acte II' : ds?.currentAct === 'resolution' ? 'Acte III' : '—';
+
+      document.getElementById('status-bar').innerHTML = `
+        <div class="status-item"><div class="status-value">${completedUnits}/${units.length}</div><div class="status-label">Unités</div></div>
+        <div class="status-item"><div class="status-value">${lines.filter(l=>l.status!=='resolved').length}</div><div class="status-label">Lignes actives</div></div>
+        <div class="status-item"><div class="status-value">${Math.round(tension.value*100)}%</div><div class="status-label">Tension: ${tension.label}</div></div>
+        <div class="status-item"><div class="status-value">${actLabel}</div><div class="status-label">Structure</div></div>
+        <div class="status-item"><div class="status-value">Ch.${currentChapterIndex + 1}</div><div class="status-label">Prochain</div></div>
+      `;
+    }
+
+    function runPreEval() {
+      const lines = project.narrativeLines;
+      const units = project.storyUnits;
+      evaluator.setProject(project);
+      evaluator.recalculateAllUrgencies(lines, currentChapterIndex);
+
+      const preEval = evaluator.generatePreEvaluation(lines, currentChapterIndex);
+      const tension = evaluator.calculateGlobalTension(lines);
+      const alerts = evaluator.evaluateRules(lines, units, currentChapterIndex);
+
+      preEvalSnapshot = JSON.parse(JSON.stringify(lines));
+
+      document.getElementById('pre-eval-title').textContent = `Chapitre ${currentChapterIndex + 1}`;
+
+      // Lines table
+      let tableHtml = '<table><thead><tr><th>Ligne</th><th>Statut</th><th>Poids</th><th>Urgence</th><th>Importance</th><th>Agency</th><th>Niveau</th><th>Fonction</th></tr></thead><tbody>';
+      for (const snap of preEval.lineSnapshots) {
+        const line = lines.find(l => l.id === snap.lineId);
+        tableHtml += `<tr>
+          <td>${snap.name}</td>
+          <td>${snap.status}</td>
+          <td>${snap.weight.toFixed(2)}</td>
+          <td>${snap.urgency.toFixed(2)}</td>
+          <td>${snap.importance.toFixed(3)}</td>
+          <td>${snap.agency}</td>
+          <td>${line?.level || 'major'}</td>
+          <td>${line?.narrativeFunction || 'tension'}</td>
+        </tr>`;
+      }
+      tableHtml += '</tbody></table>';
+      document.getElementById('pre-eval-lines').innerHTML = tableHtml;
+
+      document.getElementById('pre-eval-context').textContent = JSON.stringify(preEval.structuralContext, null, 2);
+      document.getElementById('pre-eval-tension').textContent = JSON.stringify(tension, null, 2);
+
+      // Alerts
+      let alertsHtml = '';
+      for (const alert of alerts) {
+        const cls = alert.type === 'constraint' ? 'alert-constraint' : alert.type === 'warning' ? 'alert-warning' : 'alert-guideline';
+        alertsHtml += `<div class="alert ${cls}"><strong>${alert.ruleName || alert.ruleId}</strong>: ${alert.message}</div>`;
+      }
+      document.getElementById('pre-eval-alerts').innerHTML = alertsHtml || '<em>Aucune alerte</em>';
+
+      // Personas
+      let personasHtml = '';
+      for (const pid of ['narratologue', 'critique-social', 'lecteur-naif', 'showrunner']) {
+        const result = personaEvaluator.evaluate(pid, project);
+        if (!result) continue;
+        const scoreClass = result.overallScore > 0.65 ? 'score-high' : result.overallScore > 0.4 ? 'score-mid' : 'score-low';
+        personasHtml += `<div class="section">
+          <h3>${result.personaName} <span class="persona-score ${scoreClass}">${Math.round(result.overallScore * 100)}% — ${result.summary.label}</span></h3>
+          <table><thead><tr><th>Critère</th><th>Score</th><th>Observations</th><th>Suggestions</th></tr></thead><tbody>`;
+        for (const c of result.criteria) {
+          personasHtml += `<tr><td>${c.name}</td><td>${Math.round(c.score*100)}%</td><td>${c.observations.join(' ')}</td><td>${c.suggestions.join(' ') || '—'}</td></tr>`;
+        }
+        personasHtml += `</tbody></table></div>`;
+      }
+      document.getElementById('pre-eval-personas').innerHTML = personasHtml;
+
+      // Show writing section
+      document.getElementById('pre-eval-output').classList.remove('hidden');
+      document.getElementById('writing-section').classList.remove('hidden');
+      document.getElementById('writing-chapter-num').textContent = currentChapterIndex + 1;
+
+      // Line update form
+      let formHtml = '<table><thead><tr><th>Ligne</th><th>Avancée</th><th>Statut</th><th>Poids</th><th>Agency</th></tr></thead><tbody>';
+      for (const line of lines.filter(l => l.status !== 'resolved')) {
+        formHtml += `<tr>
+          <td>${line.name}</td>
+          <td><input type="checkbox" data-line-id="${line.id}" class="line-advanced"></td>
+          <td><select data-line-id="${line.id}" class="line-status" style="background:#1a1d27;border:1px solid #2d3148;color:#e4e6f0;padding:2px;border-radius:4px;font-size:11px">
+            <option value="dormant" ${line.status==='dormant'?'selected':''}>dormant</option>
+            <option value="emerging" ${line.status==='emerging'?'selected':''}>emerging</option>
+            <option value="active" ${line.status==='active'?'selected':''}>active</option>
+            <option value="climax" ${line.status==='climax'?'selected':''}>climax</option>
+            <option value="resolving" ${line.status==='resolving'?'selected':''}>resolving</option>
+            <option value="resolved" ${line.status==='resolved'?'selected':''}>resolved</option>
+          </select></td>
+          <td><input type="range" min="0" max="1" step="0.05" value="${line.weight}" data-line-id="${line.id}" class="line-weight" style="width:80px"></td>
+          <td><select data-line-id="${line.id}" class="line-agency" style="background:#1a1d27;border:1px solid #2d3148;color:#e4e6f0;padding:2px;border-radius:4px;font-size:11px">
+            <option value="passive" ${line.agency==='passive'?'selected':''}>passive</option>
+            <option value="reactive" ${line.agency==='reactive'?'selected':''}>reactive</option>
+            <option value="proactive" ${line.agency==='proactive'?'selected':''}>proactive</option>
+          </select></td>
+        </tr>`;
+      }
+      formHtml += '</tbody></table>';
+      document.getElementById('line-updates-form').innerHTML = formHtml;
+
+      document.getElementById('btn-pre-eval').disabled = true;
+      document.getElementById('btn-post-eval').disabled = false;
+
+      log(`Pré-évaluation chapitre ${currentChapterIndex+1} terminée. ${alerts.length} alertes. Tension: ${Math.round(tension.value*100)}%`);
+    }
+
+    function runPostEval() {
+      const content = document.getElementById('chapter-content').value;
+      const title = document.getElementById('chapter-title').value;
+      const summary = document.getElementById('chapter-summary').value;
+
+      if (!content.trim()) { alert('Entrez le texte du chapitre'); return; }
+
+      const lines = project.narrativeLines;
+      const advancedIds = [];
+
+      // Apply line updates
+      document.querySelectorAll('.line-advanced:checked').forEach(cb => {
+        advancedIds.push(cb.dataset.lineId);
+      });
+
+      for (const line of lines) {
+        const statusEl = document.querySelector(`.line-status[data-line-id="${line.id}"]`);
+        const weightEl = document.querySelector(`.line-weight[data-line-id="${line.id}"]`);
+        const agencyEl = document.querySelector(`.line-agency[data-line-id="${line.id}"]`);
+        if (statusEl) line.status = statusEl.value;
+        if (weightEl) line.weight = parseFloat(weightEl.value);
+        if (agencyEl) line.agency = agencyEl.value;
+
+        if (advancedIds.includes(line.id)) {
+          line.lastAdvancedInUnit = currentChapterIndex;
+          line.history = line.history || [];
+          line.history.push({
+            unitId: `unit-ch${currentChapterIndex+1}`,
+            unitNumber: currentChapterIndex + 1,
+            note: '',
+            weightBefore: line.weight,
+            weightAfter: line.weight,
+            statusBefore: line.status,
+            statusAfter: line.status
+          });
+        }
+      }
+
+      // Add new line if specified
+      const newLineName = document.getElementById('new-line-name').value.trim();
+      if (newLineName) {
+        const newLine = createNarrativeLine({
+          name: newLineName,
+          level: document.getElementById('new-line-level').value,
+          narrativeFunction: document.getElementById('new-line-function').value,
+          status: 'emerging',
+          weight: 0.3,
+          createdInUnit: currentChapterIndex,
+          lastAdvancedInUnit: currentChapterIndex
+        });
+        lines.push(newLine);
+        log(`Nouvelle ligne créée: "${newLineName}"`);
+      }
+
+      // Create story unit
+      const unit = createStoryUnit({
+        id: `unit-ch${currentChapterIndex+1}`,
+        type: 'chapter',
+        number: currentChapterIndex + 1,
+        title: title,
+        status: UNIT_STATUS.COMPLETED,
+        content: content,
+        summary: summary,
+        advancedLines: advancedIds
+      });
+
+      // Generate post-evaluation
+      evaluator.setProject(project);
+      const postEval = evaluator.generatePostEvaluation(preEvalSnapshot, lines, advancedIds, currentChapterIndex);
+      unit.postEvaluation = postEval;
+
+      // Pre-eval was already done
+      unit.preEvaluation = { timestamp: new Date().toISOString(), lineSnapshots: [], priorities: [], globalNotes: 'Generated by test runner' };
+
+      project.storyUnits.push(unit);
+      project.updatedAt = new Date().toISOString();
+
+      // Update thematic contributions
+      if (project.thematicQuestions) {
+        for (const tq of project.thematicQuestions) {
+          const relatedAdvanced = advancedIds.filter(id => (tq.relatedLines || []).includes(id));
+          if (relatedAdvanced.length > 0) {
+            tq.contributions = tq.contributions || [];
+            tq.contributions.push({ unitNumber: currentChapterIndex + 1, note: `Ch.${currentChapterIndex+1}: lignes avancées` });
+          }
+        }
+      }
+
+      // Post-eval alerts
+      const postAlerts = evaluator.evaluateRules(lines, project.storyUnits, currentChapterIndex);
+      const tension = evaluator.calculateGlobalTension(lines);
+
+      // Display
+      document.getElementById('post-eval-result').textContent = JSON.stringify({
+        advancedLines: advancedIds.map(id => lines.find(l=>l.id===id)?.name),
+        tension: { value: Math.round(tension.value*100), label: tension.label },
+        rulesTriggered: postEval.rulesTriggered,
+        nextPriorities: postEval.nextPriorities.slice(0, 5).map(id => lines.find(l=>l.id===id)?.name)
+      }, null, 2);
+
+      let alertsHtml = '';
+      for (const alert of postAlerts) {
+        const cls = alert.type === 'constraint' ? 'alert-constraint' : alert.type === 'warning' ? 'alert-warning' : 'alert-guideline';
+        alertsHtml += `<div class="alert ${cls}"><strong>${alert.ruleName || alert.ruleId}</strong>: ${alert.message}</div>`;
+      }
+      document.getElementById('post-eval-alerts').innerHTML = alertsHtml || '<em>Aucune alerte</em>';
+
+      let personasHtml = '';
+      for (const pid of ['narratologue', 'critique-social', 'lecteur-naif', 'showrunner']) {
+        const result = personaEvaluator.evaluate(pid, project);
+        if (!result) continue;
+        const scoreClass = result.overallScore > 0.65 ? 'score-high' : result.overallScore > 0.4 ? 'score-mid' : 'score-low';
+        personasHtml += `<div class="section"><h3>${result.personaName} <span class="persona-score ${scoreClass}">${Math.round(result.overallScore*100)}%</span></h3>`;
+        personasHtml += `<p>Forces: ${result.summary.strengths.join(', ')||'—'} | Faiblesses: ${result.summary.weaknesses.join(', ')||'—'}</p>`;
+        if (result.summary.allSuggestions.length) personasHtml += `<ul>${result.summary.allSuggestions.map(s=>`<li>${s}</li>`).join('')}</ul>`;
+        personasHtml += `</div>`;
+      }
+      document.getElementById('post-eval-personas').innerHTML = personasHtml;
+      document.getElementById('post-eval-output').classList.remove('hidden');
+
+      document.getElementById('btn-post-eval').disabled = true;
+      document.getElementById('btn-next').disabled = false;
+
+      updateStatusBar();
+      log(`Post-évaluation chapitre ${currentChapterIndex+1} terminée. Tension: ${Math.round(tension.value*100)}%. ${postAlerts.length} alertes.`);
+    }
+
+    function nextChapter() {
+      currentChapterIndex++;
+      document.getElementById('pre-eval-output').classList.add('hidden');
+      document.getElementById('writing-section').classList.add('hidden');
+      document.getElementById('post-eval-output').classList.add('hidden');
+      document.getElementById('chapter-content').value = '';
+      document.getElementById('chapter-title').value = '';
+      document.getElementById('chapter-summary').value = '';
+      document.getElementById('new-line-name').value = '';
+      document.getElementById('btn-pre-eval').disabled = false;
+      document.getElementById('btn-next').disabled = true;
+      updateStatusBar();
+      log(`Prêt pour le chapitre ${currentChapterIndex + 1}`);
+    }
+
+    function exportProject() {
+      const json = JSON.stringify(project, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'project.json';
+      a.click();
+      log('Project.json exporté');
+    }
+
+    document.getElementById('btn-pre-eval').addEventListener('click', runPreEval);
+    document.getElementById('btn-post-eval').addEventListener('click', runPostEval);
+    document.getElementById('btn-next').addEventListener('click', nextChapter);
+    document.getElementById('btn-export').addEventListener('click', exportProject);
+
+    loadProject();
+  </script>
+</body>
+</html>
