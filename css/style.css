@@ -740,6 +740,42 @@ body.modal-open { overflow: hidden; }
 
 /* ── Responsive ── */
 
+/* -- Novel Navigation -- */
+.novel-toc {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.novel-toc h3 { margin: 0 0 1rem; font-size: 1rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.novel-toc-list { list-style: none; padding: 0; margin: 0; }
+.novel-toc-list li { margin-bottom: 0.25rem; }
+.novel-toc-link {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.5rem 0.75rem; border-radius: 4px;
+  text-decoration: none; color: var(--text);
+  transition: background 0.15s;
+}
+.novel-toc-link:hover { background: var(--bg-tertiary, rgba(255,255,255,0.05)); }
+.novel-toc-number { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--text-muted); min-width: 3rem; }
+.novel-toc-title { flex: 1; }
+.novel-toc-words { font-size: 0.8rem; color: var(--text-muted); }
+.novel-toc-words::after { content: ' mots'; }
+
+.novel-chapter-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 2rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.novel-nav-link {
+  text-decoration: none; color: var(--primary);
+  font-size: 0.9rem; padding: 0.4rem 0.8rem;
+  border-radius: 4px; transition: background 0.15s;
+}
+.novel-nav-link:hover { background: rgba(52,152,219,0.1); }
+.novel-nav-toc { color: var(--text-muted); }
+
 @media (max-width: 768px) {
   .app-layout {
     grid-template-columns: 1fr;

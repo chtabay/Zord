@@ -10,24 +10,31 @@
       "narrativeFunction": "tension",
       "agency": "proactive",
       "projection": [
-        "Pression accrue sur l'enquête — risque de surdité aux signaux de Malak",
-        "Le souvenir de la cellule pourrait revenir plus fort sous pression",
-        "La traque du traître peut devenir obsession"
+        "Flagor sait le nom — le choix : révéler ou protéger détermine la suite",
+        "La femme du passé peut changer l'équilibre du pouvoir",
+        "Les transmissions sont le prochain champ de bataille"
       ],
-      "weight": 0.90,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 5,
+      "weight": 0.9,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-passe-flagor", "line-feodalite"],
-      "tags": ["flagor", "pouvoir", "antagoniste"],
+      "dependencies": [
+        "line-passe-flagor",
+        "line-feodalite"
+      ],
+      "tags": [
+        "flagor",
+        "pouvoir",
+        "antagoniste"
+      ],
       "color": "#e74c3c",
       "history": [
         {
           "unitId": "unit-ch1",
           "unitNumber": 1,
           "note": "Introduction de Flagor : regard égaré, solitude du pouvoir, cicatrices, déclaration de guerre",
-          "weightBefore": 0.80,
-          "weightAfter": 0.80,
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
           "statusBefore": "active",
           "statusAfter": "active"
         },
@@ -35,8 +42,8 @@
           "unitId": "unit-ch3",
           "unitNumber": 3,
           "note": "Acte de pouvoir concret : pression sur le technicien, remplacement immédiat. Stratégie 'On les attire'. Souvenir de cellule. Tension Flagor/Malak approfondie.",
-          "weightBefore": 0.80,
-          "weightAfter": 0.90,
+          "weightBefore": 0.8,
+          "weightAfter": 0.9,
           "statusBefore": "active",
           "statusAfter": "active"
         },
@@ -44,8 +51,8 @@
           "unitId": "unit-ch4",
           "unitNumber": 4,
           "note": "Piège compromis par une fuite. Flagor adapte : « Ça change rien. On adapte. » Stratégie mise à l'épreuve.",
-          "weightBefore": 0.90,
-          "weightAfter": 0.90,
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
           "statusBefore": "active",
           "statusAfter": "active"
         },
@@ -53,8 +60,8 @@
           "unitId": "unit-ch5",
           "unitNumber": 5,
           "note": "Piège exécuté : 2/3 vaisseaux détruits. Ordonne enquête sur la fuite. Note le doute de Malak.",
-          "weightBefore": 0.90,
-          "weightAfter": 0.90,
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
           "statusBefore": "active",
           "statusAfter": "active"
         },
@@ -62,14 +69,50 @@
           "unitId": "unit-ch6",
           "unitNumber": 6,
           "note": "Ordonne poursuite enquête. Victoire partielle vécue comme défaite. Passé resurgi (cellule, méfiance).",
-          "weightBefore": 0.90,
-          "weightAfter": 0.90,
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch7",
+          "unitNumber": 7,
+          "note": "Enquête obsessionnelle. Cellule récurrente. Méfiance envers Malak. Un nom du passé souligné — quelqu'un cru mort ou changé.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Parcourt les logs. Sait que Malak cache quelque chose. Nom du passé maintenu en suspens. Cellule récurrente.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "Intercepte Malak. Confrontation directe. Le nom du passé est révélé par Malak : une femme crue morte. 'Pas elle. Pas après tout ce temps.' Se dirige vers les transmissions.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "Choisit de ne pas transmettre — protège la femme du passé. 'On attend encore.' Le pouvoir comme non-action.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
           "statusBefore": "active",
           "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:30:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     },
     {
       "id": "line-guerre",
@@ -80,16 +123,23 @@
       "narrativeFunction": "tension",
       "agency": "reactive",
       "projection": [
-        "Vigilant comme base/pivot — la guerre a un visage",
-        "Riposte Biomen probable",
-        "La guerre interne (Biomen entre eux) brouille la guerre externe"
+        "Helena attend une transmission — la riposte est suspendue à un fil",
+        "La localisation de la source est le pivot — qui agira en premier ?",
+        "Guerre externe et politique interne convergent"
       ],
-      "weight": 0.80,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 5,
+      "weight": 0.8,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-flagor-ascension", "line-biomen"],
-      "tags": ["conflit", "guerre", "structure"],
+      "dependencies": [
+        "line-flagor-ascension",
+        "line-biomen"
+      ],
+      "tags": [
+        "conflit",
+        "guerre",
+        "structure"
+      ],
       "color": "#3498db",
       "history": [
         {
@@ -106,7 +156,7 @@
           "unitNumber": 2,
           "note": "CX-440 détecté côté Biomen. Guerre visible des deux côtés.",
           "weightBefore": 0.75,
-          "weightAfter": 0.80,
+          "weightAfter": 0.8,
           "statusBefore": "emerging",
           "statusAfter": "active"
         },
@@ -114,8 +164,8 @@
           "unitId": "unit-ch3",
           "unitNumber": 3,
           "note": "Phase opérationnelle : Biomen ont intercepté les communications. Troupes en position, pièges posés. Flagor retourne l'interception en avantage.",
-          "weightBefore": 0.80,
-          "weightAfter": 0.80,
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
           "statusBefore": "active",
           "statusAfter": "active"
         },
@@ -123,8 +173,8 @@
           "unitId": "unit-ch4",
           "unitNumber": 4,
           "note": "Contact imminent : 3 vaisseaux Biomen dans la zone de tir. Fuite détectée. Attaque en suspens.",
-          "weightBefore": 0.80,
-          "weightAfter": 0.80,
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
           "statusBefore": "active",
           "statusAfter": "active"
         },
@@ -132,8 +182,8 @@
           "unitId": "unit-ch5",
           "unitNumber": 5,
           "note": "Premier combat spatial. 2 vaisseaux Biomen détruits, 1 échappe en saut d'urgence. Flagor a frappé le premier.",
-          "weightBefore": 0.80,
-          "weightAfter": 0.80,
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
           "statusBefore": "active",
           "statusAfter": "active"
         },
@@ -141,76 +191,161 @@
           "unitId": "unit-ch6",
           "unitNumber": 6,
           "note": "Conséquences visibles : survivants, Vigilant comme refuge. Guerre interne se superpose à la guerre externe.",
-          "weightBefore": 0.80,
-          "weightAfter": 0.80,
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch7",
+          "unitNumber": 7,
+          "note": "Guerre instrumentalisée : commission comme tribunal, Dorian utilise le deuil. Le conflit se déplace vers l'arène politique.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Signature du convoi identifiée. Transmission interceptée. La source est en cours de localisation.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "Localisation de la source clignote. Riposte en attente. Helena retient le Conseil — 'On attend encore.'",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "Riposte toujours en suspens. Helena ne peut plus tenir 48h. Le Conseil va voter. Tous les fils convergent.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
           "statusBefore": "active",
           "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:30:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     },
     {
       "id": "line-passe-flagor",
       "name": "Le passé de Flagor",
       "description": "Histoire violente et tourmentée. Pour les Zordons, c'est un mythe. Les cicatrices de son rostre sont celles 'portées par les grands destins'. Graine plantée pour des flashbacks.",
-      "status": "active",
+      "status": "climax",
       "level": "secondary",
       "narrativeFunction": "foreshadowing",
       "agency": "passive",
       "projection": [
-        "D'autres fragments du passé peuvent surgir sous pression",
-        "Le passé est la clé de sa méfiance et de son isolement",
-        "Un personnage du passé pourrait réapparaître"
+        "Le passé a rattrapé Flagor — 'elle n'est pas morte'",
+        "Passé et présent ont convergé — conséquences imminentes",
+        "La femme du passé est la clé — son identité va tout changer"
       ],
-      "weight": 0.65,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 5,
+      "weight": 0.7,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-flagor-ascension"],
-      "tags": ["flagor", "backstory", "mythologie"],
+      "dependencies": [
+        "line-flagor-ascension"
+      ],
+      "tags": [
+        "flagor",
+        "backstory",
+        "mythologie"
+      ],
       "color": "#9b59b6",
       "history": [
         {
           "unitId": "unit-ch6",
           "unitNumber": 6,
           "note": "Fragment révélé : cellule, murs gris, poings qui frappent la porte, sang. 'On ne l'avait pas cru.' Écho fort avec le présent.",
-          "weightBefore": 0.60,
+          "weightBefore": 0.6,
           "weightAfter": 0.65,
           "statusBefore": "dormant",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch7",
+          "unitNumber": 7,
+          "note": "Cellule récurrente sous pression. Nouveau fragment : un nom du passé, quelqu'un cru mort ou changé. Lien passé/présent renforcé.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Cellule récurrente. Nom du passé toujours en suspens. 'On ne l'avait jamais cru.'",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "TURNING POINT : Malak révèle 'Elle n'est pas morte. Elle n'a jamais été morte.' Le sol se dérobe sous Flagor. Passé et présent convergent.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "Le passé dicte le choix : Flagor ne transmet pas pour protéger la femme crue morte. Le passé contrôle le présent.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:30:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     },
     {
       "id": "line-feodalite",
       "name": "La féodalité Flagor / Malak",
       "description": "Malak appelle Flagor 'Maître'. Rapport féodal, pas militaire. Soumission totale ou calcul ? Potentiel de trahison, de loyauté aveugle, ou de révélation sur la nature du pouvoir Zordon.",
-      "status": "active",
+      "status": "resolving",
       "level": "secondary",
       "narrativeFunction": "catalyst",
       "agency": "reactive",
       "projection": [
-        "Malak pourrait se positionner plus clairement — loyauté ou calcul",
-        "La loyauté sera testée par l'issue du piège compromis",
-        "La tension entre soumission et autonomie pourrait éclater"
+        "Fracture consommée — Malak a choisi la vérité sur la loyauté",
+        "La relation Flagor/Malak est irréversiblement changée",
+        "Malak est désormais allié ou ennemi — pas les deux"
       ],
-      "weight": 0.55,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 5,
+      "weight": 0.65,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-flagor-ascension", "line-oligarchie"],
-      "tags": ["malak", "pouvoir", "relation"],
+      "dependencies": [
+        "line-flagor-ascension",
+        "line-oligarchie"
+      ],
+      "tags": [
+        "malak",
+        "pouvoir",
+        "relation"
+      ],
       "color": "#f39c12",
       "history": [
         {
           "unitId": "unit-ch1",
           "unitNumber": 1,
           "note": "Premier échange Flagor/Malak : 'Maître' — rapport de soumission établi",
-          "weightBefore": 0.50,
-          "weightAfter": 0.50,
+          "weightBefore": 0.5,
+          "weightAfter": 0.5,
           "statusBefore": "emerging",
           "statusAfter": "emerging"
         },
@@ -218,14 +353,41 @@
           "unitId": "unit-ch4",
           "unitNumber": 4,
           "note": "Malak hésite, retient quelque chose. Flagor perçoit un changement. Regard croisé final : respect ou crainte renouvelée.",
-          "weightBefore": 0.50,
+          "weightBefore": 0.5,
           "weightAfter": 0.55,
           "statusBefore": "emerging",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Malak fuit du regard, Flagor sait qu'il cache quelque chose.",
+          "weightBefore": 0.55,
+          "weightAfter": 0.55,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "Confrontation directe Flagor/Malak. Malak choisit de parler. Fracture consommée — loyauté brisée pour la vérité.",
+          "weightBefore": 0.55,
+          "weightAfter": 0.6,
+          "statusBefore": "active",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "Plus de Maître, plus de second. Parité ou défi. Malak comprend sans mot. La féodalité se transforme.",
+          "weightBefore": 0.6,
+          "weightAfter": 0.65,
+          "statusBefore": "climax",
+          "statusAfter": "resolving"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:30:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     },
     {
       "id": "line-astre-eteint",
@@ -241,11 +403,17 @@
         "Découverte d'un élément inattendu sur l'astre (vestige, ressource, signal)"
       ],
       "weight": 0.65,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 4,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-guerre"],
-      "tags": ["lieu", "guerre", "atmosphere"],
+      "dependencies": [
+        "line-guerre"
+      ],
+      "tags": [
+        "lieu",
+        "guerre",
+        "atmosphere"
+      ],
       "color": "#34495e",
       "history": [
         {
@@ -265,10 +433,19 @@
           "weightAfter": 0.65,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Brièvement mentionné : cratères, poussière, vent fantôme.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:00:00.000Z"
+      "updatedAt": "2026-02-18T23:30:00.000Z"
     },
     {
       "id": "line-biomen",
@@ -279,23 +456,30 @@
       "narrativeFunction": "tension",
       "agency": "proactive",
       "projection": [
-        "Commission d'enquête Helena Vex en cours",
-        "Kira bouc émissaire potentielle",
-        "Dorian — deuil personnel (frère mort) + menace politique"
+        "Le verdict tombe dans 48h — Kira libre ou condamnée",
+        "Dorian pourrait agir hors commission — justice personnelle",
+        "L'exposition de Soren change la dynamique interne"
       ],
       "weight": 0.85,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 5,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-guerre", "line-bamboule"],
-      "tags": ["biomen", "satire", "héros"],
+      "dependencies": [
+        "line-guerre",
+        "line-bamboule"
+      ],
+      "tags": [
+        "biomen",
+        "satire",
+        "héros"
+      ],
       "color": "#2ecc71",
       "history": [
         {
           "unitId": "unit-ch2",
           "unitNumber": 2,
           "note": "Pleinement introduits. Dorian Vex, Kael, Mara. Façade héroïque / réalité toxique.",
-          "weightBefore": 0.70,
+          "weightBefore": 0.7,
           "weightAfter": 0.75,
           "statusBefore": "dormant",
           "statusAfter": "active"
@@ -335,10 +519,46 @@
           "weightAfter": 0.85,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch7",
+          "unitNumber": 7,
+          "note": "Commission s'ouvre. Kira convoquée en premier. Dorian a perdu son frère — deuil + menace. Fracture interne assumée.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Commission : Kira nie le complot, confirme un échange. Dorian accuse. Helena ajourne. Kira entre deux — ni libre ni détenue.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "Verdict ne tiendra plus 48h. L'aveu de Kira a ouvert une brèche. Bamboule à découvert. Dorian exige une décision.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "Dorian confronte Kira en cellule — exige Soren. Kira refuse. 'Il a sauvé un vaisseau. Le tien, peut-être.' Le verdict approche.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:30:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     },
     {
       "id": "line-bamboule",
@@ -349,16 +569,23 @@
       "narrativeFunction": "theme_carrier",
       "agency": "proactive",
       "projection": [
-        "Prochaine transmission = point de bascule",
-        "Malak ou le technicien Zordon peuvent faire le lien",
-        "Exposition imminente — par les Zordons ou les Biomen"
+        "Soren est à découvert — le réseau peut-il encore le protéger ?",
+        "L'aveu de Kira et la localisation convergent vers lui",
+        "Prochaine étape : fuite, confrontation ou sacrifice"
       ],
       "weight": 0.75,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 5,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-biomen"],
-      "tags": ["bamboule", "biomen", "pivot moral", "satire"],
+      "dependencies": [
+        "line-biomen"
+      ],
+      "tags": [
+        "bamboule",
+        "biomen",
+        "pivot moral",
+        "satire"
+      ],
       "color": "#1abc9c",
       "history": [
         {
@@ -405,10 +632,46 @@
           "weightAfter": 0.75,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch7",
+          "unitNumber": 7,
+          "note": "Point de bascule franchi : transmission des coordonnées du convoi envoyée. Dilemme moral assumé. Malak a trouvé l'anomalie — terminal maintenance.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Kira confirme un échange avec Soren devant la commission. La source de la fuite est en cours de localisation côté Zordon.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "À découvert. L'aveu de Kira + la localisation convergent vers Soren. Le réseau anonyme est-il au courant ?",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "Kira refuse de livrer Soren. Le réseau anonyme persiste. Soren — pivot invisible, métis méprisé — reste au centre.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:30:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     },
     {
       "id": "line-oligarchie",
@@ -419,16 +682,23 @@
       "narrativeFunction": "theme_carrier",
       "agency": "proactive",
       "projection": [
-        "Commission d'enquête Helena Vex — contre-pouvoir politique",
-        "Lien Helena/Dorian Vex à explorer",
-        "Le Conseil divisé : ceux qui profitent de la guerre vs ceux qui la subissent"
+        "Helena suspend le pouvoir — 'on attend encore'",
+        "Le Conseil sait que la réponse vient d'ailleurs",
+        "Pouvoir suspendu — qui brisera l'attente ?"
       ],
-      "weight": 0.70,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 5,
+      "weight": 0.7,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 0,
-      "dependencies": ["line-flagor-ascension", "line-feodalite"],
-      "tags": ["politique", "sous-texte", "oligarchie"],
+      "dependencies": [
+        "line-flagor-ascension",
+        "line-feodalite"
+      ],
+      "tags": [
+        "politique",
+        "sous-texte",
+        "oligarchie"
+      ],
       "color": "#e67e22",
       "history": [
         {
@@ -445,13 +715,40 @@
           "unitNumber": 5,
           "note": "Helena Vex nommée au Haut-Conseil. Demande commission d'enquête sur la fuite et les liens Conseil/Flagor.",
           "weightBefore": 0.65,
-          "weightAfter": 0.70,
+          "weightAfter": 0.7,
           "statusBefore": "emerging",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch8",
+          "unitNumber": 8,
+          "note": "Helena ajourne les débats. Conseil divisé. Dorian impuissant face à la procédure.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "Helena contrôle le rythme — 'une transmission, un signe'. Le Conseil sait que la réponse vient d'ailleurs. Pouvoir suspendu.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "Helena ne peut plus tenir. Le Conseil va voter. Les pivots : une femme crue morte et un métis méprisé. Le pouvoir suspendu.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
           "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T22:30:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     },
     {
       "id": "line-message-ils-savent",
@@ -467,19 +764,26 @@
         "Le Haut-Conseil utilise la fuite comme prétexte politique"
       ],
       "weight": 0.35,
-      "urgency": 0.0,
-      "lastAdvancedInUnit": 4,
+      "urgency": 0,
+      "lastAdvancedInUnit": 9,
       "createdInUnit": 2,
-      "dependencies": ["line-guerre", "line-oligarchie"],
-      "tags": ["haut-conseil", "espionnage", "micro-hook"],
+      "dependencies": [
+        "line-guerre",
+        "line-oligarchie"
+      ],
+      "tags": [
+        "haut-conseil",
+        "espionnage",
+        "micro-hook"
+      ],
       "color": "#7f8c8d",
       "history": [
         {
           "unitId": "unit-ch3",
           "unitNumber": 3,
           "note": "Message chiffré « Ils savent » affiché au Haut-Conseil. Origine canal Biomen non identifié. Transmis.",
-          "weightBefore": 0.0,
-          "weightAfter": 0.30,
+          "weightBefore": 0,
+          "weightAfter": 0.3,
           "statusBefore": "dormant",
           "statusAfter": "emerging"
         },
@@ -487,14 +791,32 @@
           "unitId": "unit-ch4",
           "unitNumber": 4,
           "note": "[Vérificateur] Soren est la source : il compose un numéro et transmet les coordonnées du piège. La fuite est confirmée côté Zordon.",
-          "weightBefore": 0.30,
+          "weightBefore": 0.3,
           "weightAfter": 0.35,
           "statusBefore": "emerging",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch9",
+          "unitNumber": 9,
+          "note": "Helena attend 'une transmission, un signe' — le message circule encore, la réponse vient d'ailleurs.",
+          "weightBefore": 0.35,
+          "weightAfter": 0.35,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch10",
+          "unitNumber": 10,
+          "note": "La transmission n'est pas partie. Flagor retient l'information. Le réseau reste intact — pour l'instant.",
+          "weightBefore": 0.35,
+          "weightAfter": 0.35,
+          "statusBefore": "active",
           "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T21:00:00.000Z",
-      "updatedAt": "2026-02-18T22:00:00.000Z"
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     }
   ],
   "storyUnits": [
@@ -506,21 +828,53 @@
       "status": "completed",
       "content": "Les derniers rayons des soleils rasaient l'astre éteint. A perte de vue, s'étendait un paysage vide, sans vie, constellé de cratères anciens. Le vent se levait. Une brise légère commençait à soulever les poussières stellaires qui recouvraient ce sol défiguré.\n\nLe visage de Flagor se refletait sur le hublot du poste de commande. Seul, il se tenait à l'ecart de l'agitation habituelle des Zordons preparant l'atterrissage. Son regard égaré contrastait avec les gestes précis et ordonnés de ses fidèles soldats. Il songeait.\n\nUne nouvelle brise balaya le voile de poussiere qui venait inlassablement couvrir le hublot... Comment se peut il que cela soit si leger, si fluide, quand franchir cette barriere de verre signifierait pour n'importe quel etre de chair et de sang se répendre en lambeaux sur la surface du desert.\n\nSoudain, un bruit sortit Flagor de sa torpeur. C'etait le Commandant Malak.\n\n— \"Maitre, devons nous préparer un droïde pour explorer la surface?\"\n\n— \"Inutile.\" Répondit Flagor.\n\n— \"C'est ici que nous allons écraser les biomen et remporter notre victoire finale.\"\n\nSes yeux brillaient. Il n'y avait plus eu cette lueur depuis qu'il s'était hissé, seul, tout en haut du pouvoir. Fragor avait une histoire, violente, tourmentée. Pour les Zordons, c'etait un mythe.\n\nSon rostre écarlate se parait d'innombrables cicatrices, celles portées par les grands destins.",
       "summary": "Atterrissage des Zordons sur un astre éteint. Flagor, seul face au hublot, contemple le paysage mort. Malak le sort de sa rêverie. Flagor déclare que c'est ici qu'ils écraseront les Biomen.",
-      "advancedLines": ["line-flagor-ascension", "line-guerre", "line-feodalite", "line-astre-eteint"],
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-feodalite",
+        "line-astre-eteint"
+      ],
       "preEvaluation": {
         "timestamp": "2026-02-18T18:00:00.000Z",
         "lineSnapshots": [
-          { "lineId": "line-flagor-ascension", "name": "L'ascension solitaire de Flagor", "weight": 0.80, "urgency": 0.0, "status": "active", "importance": 0.42, "notes": "Ligne motrice du chapitre d'ouverture" }
+          {
+            "lineId": "line-flagor-ascension",
+            "name": "L'ascension solitaire de Flagor",
+            "weight": 0.8,
+            "urgency": 0,
+            "status": "active",
+            "importance": 0.42,
+            "notes": "Ligne motrice du chapitre d'ouverture"
+          }
         ],
-        "priorities": ["line-flagor-ascension", "line-astre-eteint", "line-guerre"],
+        "priorities": [
+          "line-flagor-ascension",
+          "line-astre-eteint",
+          "line-guerre"
+        ],
         "globalNotes": "Chapitre d'ouverture : installer Flagor, le monde, et la promesse du conflit."
       },
       "postEvaluation": {
         "timestamp": "2026-02-18T18:30:00.000Z",
         "lineUpdates": [
-          { "lineId": "line-flagor-ascension", "name": "L'ascension solitaire de Flagor", "weightBefore": 0.80, "weightAfter": 0.80, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "active", "statusAfter": "active", "advanced": true, "notes": "Flagor solidement établi" }
+          {
+            "lineId": "line-flagor-ascension",
+            "name": "L'ascension solitaire de Flagor",
+            "weightBefore": 0.8,
+            "weightAfter": 0.8,
+            "urgencyBefore": 0,
+            "urgencyAfter": 0,
+            "statusBefore": "active",
+            "statusAfter": "active",
+            "advanced": true,
+            "notes": "Flagor solidement établi"
+          }
         ],
-        "nextPriorities": ["line-biomen", "line-bamboule", "line-guerre"],
+        "nextPriorities": [
+          "line-biomen",
+          "line-bamboule",
+          "line-guerre"
+        ],
         "narrativeNotes": "Chapitre 1 efficace. Urgence ch.2 : introduire le camp adverse.",
         "rulesTriggered": []
       },
@@ -535,27 +889,122 @@
       "status": "completed",
       "content": "La place du Commandement brillait sous les projecteurs. Des milliers de visages levés vers l'estrade, des drapeaux aux couleurs des Cinq, des enfants juchés sur les épaules de leurs pères. Néo-Terra célébrait ses protecteurs.\n\nSur l'estrade, Dorian Vex ajustait le col de sa combinaison de combat. Elle n'avait jamais vu le combat — pas une égratignure, pas une tache. Mais elle luisait parfaitement sous les lumières.\n\n— \"Peuple de Néo-Terra !\" Sa voix résonnait dans les amplificateurs disposés sur la place. \"Les Zordons croient pouvoir nous atteindre. Ils se trompent.\"\n\nLa foule rugit. Derrière lui, les quatre autres Biomen se tenaient en ligne, bras croisés, mâchoires serrées. L'image parfaite. Kael, le plus massif, avait ce sourire en coin qu'il réservait aux caméras — celui qui disparaissait dès que les projecteurs s'éteignaient.\n\n— \"Tant que nous serons là, vous n'avez rien à craindre.\"\n\nTonnerre d'applaudissements. Dorian Vex savourait. Ce n'était pas la victoire qu'il aimait — c'était ça. L'adoration. Le pouvoir d'un mot sur dix mille bouches.\n\nEn retrait, à l'angle de l'estrade, là où les lumières ne portaient plus, Soren rangeait les câbles d'alimentation des projecteurs. Personne ne lui avait demandé de le faire. Mais personne ne lui demandait jamais rien — c'était pire. On l'ignorait, sauf quand on avait besoin d'un nom à cracher.\n\n— \"Hé, Bamboule ! Le câble 3 grésille.\"\n\nC'était Kael, sans même tourner la tête. Sans même baisser les bras croisés. Soren ne répondit pas. Il s'accroupit, trouva le câble, le répara en silence. Il n'avait pas toujours été comme ça. Il y avait eu une époque où il répondait. Ça s'était mal terminé.\n\nLe discours se poursuivit. Dorian Vex parlait de sacrifice, de devoir, de lignée. Des mots qui sonnaient comme les discours que Soren avait lus dans les manuels d'histoire — ceux des régimes qu'on n'était pas supposé admirer.\n\nÀ la fin, les Cinq descendirent de l'estrade par l'arrière, là où les caméras ne suivaient pas. La transformation fut immédiate. Les épaules se relâchèrent. Les sourires tombèrent.\n\n— \"Putain, j'en peux plus de ces bains de foule,\" grogna Mara, la seule femme du groupe, en arrachant ses gants. \"C'est quand qu'on nous fout la paix ?\"\n\n— \"Quand les Zordons débarqueront pour de vrai et qu'on sera tous morts,\" répondit Kael en riant.\n\n— \"Si ça pouvait arriver vite...\" murmura Soren.\n\nSilence. Quatre paires d'yeux se tournèrent vers lui. Kael s'approcha, lentement, et posa une main sur son épaule. Le geste aurait pu être fraternel. Il ne l'était pas.\n\n— \"Dis donc, Bamboule. Toi, t'es le premier qu'ils boufferont. Tu le sais, ça ?\"\n\nSoren soutint son regard. Ne dit rien. Il avait appris que le silence était la seule armure que les autres ne pouvaient pas lui arracher.\n\nPlus tard, seul dans les couloirs du Complexe — ce palais de verre et d'acier que le Haut-Conseil avait fait construire pour les Biomen, pas pour les protéger mais pour les montrer —, Soren s'arrêta devant l'écran d'information. Un bandeau défilait : \"ACTIVITÉ ZORDON DÉTECTÉE — SECTEUR GAMMA-7 — ASTRE CX-440.\"\n\nL'astre éteint.\n\nSoren connaissait ce nom. Tout le monde le connaissait. C'était là que, selon les analystes, la prochaine offensive aurait lieu. Ce que personne ne disait — ce que le Haut-Conseil ne dirait jamais —, c'est qu'ils avaient laissé les Zordons approcher. Délibérément. Parce qu'une bonne guerre, au bon moment, c'était exactement ce dont le Conseil avait besoin pour prolonger les mandats exceptionnels.\n\nSoren éteignit l'écran et reprit sa marche dans le couloir vide.\n\nQuelque part dans l'espace, Flagor regardait le même astre par son hublot.",
       "summary": "Introduction du camp Biomen sur Néo-Terra. Discours de Dorian Vex devant la foule. Les 5 Biomen révèlent leur vraie nature en coulisses. Soren (La Bamboule) est présenté comme le souffre-douleur métis, silencieux et lucide. Le Haut-Conseil est évoqué en sous-texte.",
-      "advancedLines": ["line-guerre", "line-biomen", "line-bamboule", "line-oligarchie"],
+      "advancedLines": [
+        "line-guerre",
+        "line-biomen",
+        "line-bamboule",
+        "line-oligarchie"
+      ],
       "preEvaluation": {
         "timestamp": "2026-02-18T19:00:00.000Z",
         "lineSnapshots": [
-          { "lineId": "line-biomen", "name": "Les Biomen — héros corrompus", "weight": 0.70, "urgency": 0.0, "status": "dormant", "importance": 0.35, "notes": "Priorité absolue : introduire le contrepoint" },
-          { "lineId": "line-bamboule", "name": "\"La Bamboule\" — le souffre-douleur", "weight": 0.75, "urgency": 0.0, "status": "dormant", "importance": 0.38, "notes": "Pivot moral à poser tôt" },
-          { "lineId": "line-guerre", "name": "La guerre Zordons vs Biomen", "weight": 0.75, "urgency": 0.14, "status": "emerging", "importance": 0.36, "notes": "Faire résonner côté Biomen" },
-          { "lineId": "line-oligarchie", "name": "L'oligarchie sous-jacente", "weight": 0.55, "urgency": 0.0, "status": "dormant", "importance": 0.28, "notes": "Amorcer en sous-texte subtil" }
+          {
+            "lineId": "line-biomen",
+            "name": "Les Biomen — héros corrompus",
+            "weight": 0.7,
+            "urgency": 0,
+            "status": "dormant",
+            "importance": 0.35,
+            "notes": "Priorité absolue : introduire le contrepoint"
+          },
+          {
+            "lineId": "line-bamboule",
+            "name": "\"La Bamboule\" — le souffre-douleur",
+            "weight": 0.75,
+            "urgency": 0,
+            "status": "dormant",
+            "importance": 0.38,
+            "notes": "Pivot moral à poser tôt"
+          },
+          {
+            "lineId": "line-guerre",
+            "name": "La guerre Zordons vs Biomen",
+            "weight": 0.75,
+            "urgency": 0.14,
+            "status": "emerging",
+            "importance": 0.36,
+            "notes": "Faire résonner côté Biomen"
+          },
+          {
+            "lineId": "line-oligarchie",
+            "name": "L'oligarchie sous-jacente",
+            "weight": 0.55,
+            "urgency": 0,
+            "status": "dormant",
+            "importance": 0.28,
+            "notes": "Amorcer en sous-texte subtil"
+          }
         ],
-        "priorities": ["line-biomen", "line-bamboule", "line-guerre", "line-oligarchie"],
+        "priorities": [
+          "line-biomen",
+          "line-bamboule",
+          "line-guerre",
+          "line-oligarchie"
+        ],
         "globalNotes": "BRIEFING AGENT ANALYSTE — Introduire le camp Biomen, renverser les attentes du lecteur. Présenter La Bamboule comme pivot moral. Amorcer l'oligarchie en sous-texte. Ne pas montrer Flagor."
       },
       "postEvaluation": {
         "timestamp": "2026-02-18T19:30:00.000Z",
         "lineUpdates": [
-          { "lineId": "line-guerre", "name": "La guerre Zordons vs Biomen", "weightBefore": 0.75, "weightAfter": 0.80, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "emerging", "statusAfter": "active", "advanced": true, "notes": "CX-440 détecté côté Biomen. Guerre visible des deux côtés." },
-          { "lineId": "line-biomen", "name": "Les Biomen — héros corrompus", "weightBefore": 0.70, "weightAfter": 0.75, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "dormant", "statusAfter": "active", "advanced": true, "notes": "Pleinement introduits. Dorian Vex, Kael, Mara. Façade héroïque / réalité toxique." },
-          { "lineId": "line-bamboule", "name": "\"La Bamboule\" — le souffre-douleur", "weightBefore": 0.75, "weightAfter": 0.85, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "dormant", "statusAfter": "active", "advanced": true, "notes": "Personnage le plus fort du chapitre. Dignité silencieuse, lucidité, isolement. Pivot moral confirmé." },
-          { "lineId": "line-oligarchie", "name": "L'oligarchie sous-jacente", "weightBefore": 0.55, "weightAfter": 0.65, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "dormant", "statusAfter": "emerging", "advanced": true, "notes": "Haut-Conseil introduit. Mandats exceptionnels + guerre instrumentalisée." }
+          {
+            "lineId": "line-guerre",
+            "name": "La guerre Zordons vs Biomen",
+            "weightBefore": 0.75,
+            "weightAfter": 0.8,
+            "urgencyBefore": 0,
+            "urgencyAfter": 0,
+            "statusBefore": "emerging",
+            "statusAfter": "active",
+            "advanced": true,
+            "notes": "CX-440 détecté côté Biomen. Guerre visible des deux côtés."
+          },
+          {
+            "lineId": "line-biomen",
+            "name": "Les Biomen — héros corrompus",
+            "weightBefore": 0.7,
+            "weightAfter": 0.75,
+            "urgencyBefore": 0,
+            "urgencyAfter": 0,
+            "statusBefore": "dormant",
+            "statusAfter": "active",
+            "advanced": true,
+            "notes": "Pleinement introduits. Dorian Vex, Kael, Mara. Façade héroïque / réalité toxique."
+          },
+          {
+            "lineId": "line-bamboule",
+            "name": "\"La Bamboule\" — le souffre-douleur",
+            "weightBefore": 0.75,
+            "weightAfter": 0.85,
+            "urgencyBefore": 0,
+            "urgencyAfter": 0,
+            "statusBefore": "dormant",
+            "statusAfter": "active",
+            "advanced": true,
+            "notes": "Personnage le plus fort du chapitre. Dignité silencieuse, lucidité, isolement. Pivot moral confirmé."
+          },
+          {
+            "lineId": "line-oligarchie",
+            "name": "L'oligarchie sous-jacente",
+            "weightBefore": 0.55,
+            "weightAfter": 0.65,
+            "urgencyBefore": 0,
+            "urgencyAfter": 0,
+            "statusBefore": "dormant",
+            "statusAfter": "emerging",
+            "advanced": true,
+            "notes": "Haut-Conseil introduit. Mandats exceptionnels + guerre instrumentalisée."
+          }
         ],
-        "nextPriorities": ["line-flagor-ascension", "line-feodalite", "line-passe-flagor", "line-astre-eteint", "line-guerre", "line-bamboule", "line-biomen", "line-oligarchie"],
+        "nextPriorities": [
+          "line-flagor-ascension",
+          "line-feodalite",
+          "line-passe-flagor",
+          "line-astre-eteint",
+          "line-guerre",
+          "line-bamboule",
+          "line-biomen",
+          "line-oligarchie"
+        ],
         "narrativeNotes": "BILAN AGENT CRITIQUE — Objectifs atteints. Alternance ch.1 Zordons / ch.2 Biomen efficace. Soren est le personnage le plus réussi. Pour le ch.3 : revenir côté Zordon, approfondir Flagor/Malak, amorcer le passé de Flagor.",
         "rulesTriggered": []
       },
@@ -570,7 +1019,13 @@
       "status": "completed",
       "content": "Le hangar vibrait encore des atterrissages. Flagor avançait entre les modules de déploiement, le rostre écarlate en avant. Les soldats s'écartaient, saluaient. Il ne les regardait pas. Malak marchait à sa droite, à un pas de distance.\n\n— Le secteur sept est opérationnel, dit Malak. Les scanners n'ont rien détecté. Rien.\n\n— Rien, répéta Flagor.\n\nIl s'arrêta devant une console. Un technicien, les mains tremblantes, affichait les relevés. Flagor posa une main sur l'épaule du soldat. Pas une caresse. Une pression.\n\n— Tu as raté le calibrage des sondes. Trois degrés de dérive.\n\nLe technicien blêmit. Malak se raidit.\n\n— Mon commandant, les conditions de l'astre…\n\n— Les conditions n'existent pas. La précision existe.\n\nFlagor retira sa main. Le soldat s'effondra, le souffle coupé. Personne ne bougea.\n\n— Remplacé. À l'instant.\n\nMalak hocha la tête. Flagor reprit sa marche. Dans son dos, le bruit des pas qui emmenaient le technicien. Il n'avait pas besoin de se retourner. L'ordre suffisait.\n\nSur Néo-Terra, la foule hurlait encore. Les Biomen venaient de stopper l'effondrement du viaduc Est — trois cents civils évacués, zéro mort. Les écrans géants montraient Soren en dernier sur la rampe, couvert de poussière, pendant que Vex et les autres saluaient. Les applaudissements couvraient tout.\n\nEn coulisses, dans le vestiaire aux murs blancs, l'odeur de sueur et de désinfectant. Vex ôta son gant et le jeta au visage de Soren.\n\n— Tu as failli tout foirer. Encore.\n\nSoren ne répondit pas. Il regarda le gant à ses pieds. Les autres ricanaient. Torvald croisa les bras.\n\n— La Bamboule qui se prend pour un héros. C'est mignon.\n\nSoren se baissa. Il ramassa le gant. Le tendit à Vex, sans un mot. Vex le fixa. Le silence dura. Puis il prit le gant et le lança dans le bac à linge.\n\n— Débarrasse le passage.\n\nSoren passa. Les épaules droites. Il sortit du vestiaire pendant que les rires reprenaient derrière lui. Dans le couloir, il s'arrêta une seconde. Les écrans diffusaient encore les images du sauvetage. Son visage n'apparaissait nulle part.\n\nSur l'astre éteint, Malak rejoignit Flagor au poste d'observation. Le paysage s'étendait sous eux : cratères, poussière grise, lumière froide des projecteurs. Aucune vie. Aucun bruit.\n\n— Les Biomen ont intercepté un fragment de nos communications, dit Malak. Le canal secondaire. Ils savent que nous sommes ici.\n\nFlagor ne répondit pas tout de suite. Il contemplait l'horizon mort.\n\n— Bien.\n\n— Bien ?\n\n— Ils viendront. Ils croiront nous surprendre.\n\nMalak comprit. Un sourire bref.\n\n— Les troupes sont en position. Les pièges sont posés.\n\nFlagor hocha la tête. Son rostre captait la lueur des projecteurs, rouge et net. Il pensait à autre chose. Un souvenir ancien : lui, seul, dans une cellule, les murs froids, la faim. Personne ne venait. Personne ne viendrait jamais. Il avait appris là. La solitude forge. Ou elle brise.\n\n— On ne les attend pas, dit-il. On les attire.\n\nIl tourna le dos au paysage et regagna le centre de commandement. Malak le suivit. Entre eux, le silence était devenu une langue.\n\nDans un bureau du Haut-Conseil, un message chiffré s'affichait sur un écran. Une seule phrase, répétée : Ils savent. L'analyste qui le lisait nota l'origine — canal Biomen, non identifié — et transmit. Le détail circulerait. Il circulerait partout.\n\nSoren, dans sa chambre minuscule, regardait par le hublot. Néo-Terra tournait sous les étoiles. Il pensait à l'astre éteint. Aux Zordons. À ce qui allait venir. Il ne savait pas comment il le savait. Mais il savait. Et cette certitude, dans le bruit du monde, le laissait seul.\n\nComme un autre, quelque part, dans l'obscurité du vide.",
       "summary": "Sur l'astre éteint, Flagor impose son pouvoir en sanctionnant un technicien et en préparant un piège pour les Biomen qui ont intercepté leurs communications. Sur Néo-Terra, les Biomen sauvent le viaduc Est sous les applaudissements, puis Vex et Torvald humilient Soren en coulisses. Le Haut-Conseil reçoit un message anonyme : « Ils savent ». Le chapitre se clôt sur Soren et Flagor, chacun seul face à ce qui vient.",
-      "advancedLines": ["line-flagor-ascension", "line-guerre", "line-astre-eteint", "line-biomen", "line-bamboule"],
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-astre-eteint",
+        "line-biomen",
+        "line-bamboule"
+      ],
       "preEvaluation": null,
       "postEvaluation": null,
       "createdAt": "2026-02-18T21:00:00.000Z",
@@ -584,7 +1039,15 @@
       "status": "completed",
       "content": "Le piège se referma au crépuscule.\n\nFlagor avait fait installer les émetteurs de leurre sur la face nord de l'astre éteint, là où les falaises de basalte plongeaient dans l'ombre. Les Biomen avaient intercepté leurs communications — ils le savaient. Ils viendraient. Il fallait seulement que le leurre soit assez crédible pour les attirer dans la zone de tir.\n\n— Maître.\n\nMalak se tenait à l'entrée du poste de commandement, silhouette massive contre la lumière rouge des écrans. Il ne s'approchait jamais sans y être invité.\n\n— Entre.\n\nFlagor ne se retourna pas. Sur le moniteur central, trois signatures thermiques venaient d'apparaître à la limite du périmètre. Des vaisseaux légers. Rapides. Biomen.\n\n— Ils sont là, dit Malak.\n\n— Je vois.\n\nLe silence dura. Flagor sentit le poids du regard de Malak sur sa nuque. Une question non posée. Une attente.\n\n— Tu doutes ?\n\n— Non, Maître.\n\nLe ton était plat. Trop plat. Flagor pivota enfin. Malak gardait les yeux baissés, mais une crispation parcourait ses mandibules.\n\n— Tu as quelque chose à dire. Dis-le.\n\n— Le piège est parfait. Ils n'ont aucune chance.\n\n— Et alors ?\n\nMalak leva les yeux. Un instant, Flagor crut voir autre chose que de la soumission. Une lueur. Une réserve. Puis Malak inclina la tête.\n\n— Rien, Maître. Je me tenais à votre disposition.\n\nIl sortit sans un mot de plus. Flagor regarda la porte se refermer. Quelque chose venait de bouger entre eux. Il ne savait pas encore quoi.\n\nSur Néo-Terra, les Biomen célébraient une nouvelle victoire.\n\nIls avaient sécurisé le dépôt de carburant du secteur 7 — une opération de routine, mais la foule ne le savait pas. Les images tournaient en boucle sur les écrans géants : Torvald soulevant une poutre, Vex distribuant des bouteilles d'eau aux sinistrés, les cinq héros alignés devant les caméras, sourires et poings levés.\n\nSoren se tenait à l'écart, comme d'habitude. Son costume était encore taché de suie. Personne ne lui avait tendu de bouteille.\n\n— La Bamboule a encore failli tout faire tomber, ricana Torvald dans le vestiaire. Tu crois qu'il comprend au moins ce qu'on fait ici ?\n\n— Il comprend, répondit Vex. Il fait juste semblant de ne pas être à la hauteur.\n\nLes rires fusèrent. Soren rangeait ses gants. Ses mains ne tremblaient pas. Pas cette fois.\n\n— Soren.\n\nLa voix de Kira, la seule qui ne portait pas de mépris. Elle s'approcha, un verre d'eau à la main.\n\n— Tu veux ?\n\nIl prit le verre. Le regarda. Puis le posa sur le banc.\n\n— Non. Merci.\n\n— Tu vas où ?\n\n— Dehors. J'ai besoin d'air.\n\nIl sortit sans attendre de réponse. Dans le couloir, les écrans diffusaient encore les images de l'astre éteint — des fragments de transmission interceptée, des coordonnées, des hypothèses. Le Haut-Conseil avait diffusé une alerte. Quelque chose se préparait là-bas.\n\nSoren s'arrêta. Personne ne l'avait vu. Personne ne faisait attention à lui. Jamais.\n\nIl regarda l'écran. Les coordonnées. Le piège possible. Le message anonyme : « Ils savent ».\n\nIl sortit son terminal. Hésita. Une seconde. Deux.\n\nPuis il composa un numéro qu'il n'aurait pas dû connaître. Un contact. Une fuite.\n\n— Allô ? Oui. C'est Soren. J'ai des informations. Sur l'astre éteint. Il faut que quelqu'un écoute.\n\nLes trois vaisseaux Biomen pénétraient dans la zone de tir.\n\nFlagor observait l'écran. Les signatures convergeaient vers le point prévu. Parfaits. Trop parfaits.\n\n— Maître, une transmission.\n\nMalak, de retour, tendait un rapport. Sa voix était neutre.\n\n— Une fuite. Depuis Néo-Terra. Quelqu'un a prévenu. Les coordonnées du piège ont été compromises.\n\nFlagor ne bougea pas. Les vaisseaux continuaient d'avancer. Ou alors c'était un leurre. Des drones. Des cibles factices.\n\n— Qui a parlé ?\n\n— On ne sait pas encore. La source est anonyme. Mais le message est parti il y a moins d'une heure.\n\nFlagor serra les poings. Quelqu'un, chez les Biomen, avait osé. Quelqu'un de lucide. Quelqu'un qui ne jouait pas le jeu.\n\n— Ça change rien, dit-il. On adapte. On les attend quand même.\n\nMalak acquiesça. Mais son regard, cette fois, croisa celui de Flagor. Et Flagor y lut quelque chose qu'il n'avait jamais vu auparavant : une forme de respect. Ou peut-être de crainte renouvelée.\n\nLes vaisseaux atteignirent le point critique. L'écran se mit à clignoter. L'attaque commençait.\n\nOu pas.",
       "summary": "Flagor tend un piège sur l'astre éteint ; Malak laisse transparaître des doutes. Sur Néo-Terra, Soren, méprisé par les Biomen, transmet anonymement les coordonnées du piège. La fuite est connue des Zordons ; Flagor maintient le plan. L'attaque est sur le point de se déclencher.",
-      "advancedLines": ["line-flagor-ascension", "line-guerre", "line-biomen", "line-bamboule", "line-feodalite", "line-astre-eteint", "line-message-ils-savent"],
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-biomen",
+        "line-bamboule",
+        "line-feodalite",
+        "line-astre-eteint",
+        "line-message-ils-savent"
+      ],
       "preEvaluation": null,
       "postEvaluation": null,
       "createdAt": "2026-02-18T21:30:00.000Z",
@@ -598,7 +1061,16 @@
       "status": "completed",
       "content": "Le piège se referma au crépuscule.\n\nFlagor avait fait installer les émetteurs de leurre sur la face nord de l'astre éteint, là où les falaises de basalte plongeaient dans l'ombre. Les Biomen avaient intercepté leurs communications — ils le savaient. Ils viendraient. Il fallait seulement que le leurre soit assez crédible pour les attirer dans la zone de tir.\n\n— Ils n'ont pas modifié leur trajectoire, dit Malak derrière lui.\n\nFlagor ne répondit pas. Soit le message n'avait pas atteint les Biomen. Soit ils n'y avaient pas cru. Soit quelqu'un avait voulu les envoyer au casse-pipe. Il leva la main. L'officier de tir attendait.\n\n— Feu.\n\nL'espace se déchira. Les projectiles à énergie cinétique traversèrent le vide en silence. Le premier vaisseau explosa avant que quiconque puisse réagir — une gerbe de débris et de corps. Le second tenta une manœuvre désespérée ; il prit un impact latéral et commença à se désintégrer. Le troisième, le plus éloigné, réussit à virer. Une partie de sa coque fut arrachée, mais il resta en vol et disparut dans un saut d'urgence.\n\nFlagor compta les secondes. Deux sur trois. Pas la victoire totale qu'il avait imaginée. Mais une victoire quand même.\n\n— Rapportez les pertes ennemies au Haut-Conseil, ordonna-t-il. Et ouvrez une enquête sur la fuite. Je veux un nom.\n\nMalak hocha la tête. Son regard, furtif, croisa celui de Flagor. Il y avait quelque chose de neuf dans ce regard. Du doute. Flagor le nota. Plus tard.\n\nSur le Vigilant, l'unique vaisseau rescapé, Kira tenait le pilote mourant contre elle. Le sang coulait entre ses doigts. Autour d'eux, les alarmes hurlaient, les couloirs étaient pleins de fumée.\n\n— Tenez bon, souffla-t-elle. On va vous sortir de là.\n\nLe pilote secoua la tête. Ses lèvres bougèrent sans son.\n\n— Ils savaient, dit-il enfin. On nous a prévenus. Dorian n'a pas voulu écouter.\n\nKira sentit son cœur se serrer. Elle leva les yeux vers Dorian Vex, qui donnait des ordres à l'autre bout du pont. Il avait reçu un message. Il l'avait ignoré. Ou jugé peu fiable. Ou utilisé pour autre chose.\n\n— Pourquoi ? demanda-t-elle à voix basse.\n\nLe pilote ne répondit plus. Il était mort.\n\nKira le déposa doucement et se releva. Les autres Biomen discutaient à voix basse. L'un d'eux pointa du doigt vers elle.\n\n— Elle était proche de lui. Du métis.\n\n— De qui tu parles ?\n\n— De La Bamboule. Elle lui a parlé. Elle l'a défendu.\n\nKira ne répondit pas. Elle tourna le dos et regagna son poste. Mais elle savait. Le filet se resserrait. Et Soren — où qu'il soit — avait peut-être sauvé ce vaisseau. Le seul. Au prix de deux autres.\n\nSoren attendait dans l'ombre d'un conduit de maintenance, sur une station orbitale secondaire. Son contact — une silhouette sans visage, voix modulée — avait confirmé la réception des coordonnées. Rien de plus.\n\nIl avait agi. Les conséquences arrivaient. Deux vaisseaux détruits. Un sauvé. Pas une victoire. Pas une défaite. Un compromis sanglant.\n\nUne main se posa sur son épaule. Il sursauta.\n\n— Tu as l'air perdu, Bamboule.\n\nC'était un technicien Zordon. Un de ceux qui l'avaient vu traîner dans les couloirs. Soren baissa les yeux.\n\n— Je cherche mon chemin.\n\n— Tu cherches quelque chose, en tout cas.\n\nLe technicien le dévisagea un instant, puis haussa les épaules et s'éloigna. Soren resta immobile. Un message anonyme venait d'arriver sur son terminal personnel : « Tu as bien fait. Reste discret. On te recontactera. »\n\nIl effaça le message. Son cœur battait trop fort. Il était passé de spectateur à acteur. Et le prix — ou le gain — n'était pas encore fixé.\n\nSur Néo-Terra, dans la salle du Haut-Conseil, une femme aux cheveux gris et au regard aigu leva la main pour demander la parole. Les autres conseillers se turent.\n\n— Le message « Ils savent » n'était pas une rumeur, dit-elle. C'était une alerte. Et nous l'avons traitée comme une information secondaire. Deux vaisseaux Biomen ont été détruits. Des centaines de morts. Flagor a frappé le premier. Et nous, nous avons laissé faire.\n\n— Councillor Vex, l'interrompit un homme plus jeune, nous ne pouvions pas —\n\n— Nous pouvions. Nous aurions dû. La guerre ne se gagne pas en fermant les yeux.\n\nElle se leva. Son nom — Helena Vex — apparaissait sur l'écran derrière elle. Membre du Haut-Conseil depuis douze ans. Mandat exceptionnel renouvelé trois fois.\n\n— Je demande l'ouverture d'une commission d'enquête. Sur la fuite. Sur les décisions prises. Et sur les liens entre certains membres de ce Conseil et les opérations de Flagor.\n\nLe silence qui suivit fut plus lourd que n'importe quel bruit. Helena Vex ne sourit pas. Elle attendit. Et le jeu — politique, sanglant, impitoyable — venait de changer de niveau.",
       "summary": "Le piège de Flagor se déclenche : 2 vaisseaux Biomen détruits, 1 sauvé grâce à la fuite de Soren. Dorian Vex avait ignoré l'alerte. Kira accusée de proximité avec Soren. Soren reçoit un message anonyme. Au Haut-Conseil, Helena Vex exige une commission d'enquête.",
-      "advancedLines": ["line-flagor-ascension", "line-guerre", "line-biomen", "line-bamboule", "line-oligarchie", "line-feodalite", "line-astre-eteint", "line-message-ils-savent"],
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-biomen",
+        "line-bamboule",
+        "line-oligarchie",
+        "line-feodalite",
+        "line-astre-eteint",
+        "line-message-ils-savent"
+      ],
       "preEvaluation": null,
       "postEvaluation": null,
       "createdAt": "2026-02-18T22:00:00.000Z",
@@ -612,11 +1084,112 @@
       "status": "completed",
       "content": "Le couloir sentait le métal brûlé et la peur. Flagor s'arrêta devant la cellule, les jointures blanches sur la rampe. Deux vaisseaux. Pas trois. La victoire avait un goût de défaite.\n\n— Malak.\n\nSon second sortit de l'ombre, le regard fuyant. Depuis le piège, quelque chose s'était fissuré entre eux. Flagor le savait.\n\n— L'enquête avance, dit Malak. Les techniciens du secteur Gamma ont été interrogés. Aucun n'a reconnu de contact extérieur.\n\n— Et les logs ?\n\n— Purges partielles. Quelqu'un savait où chercher.\n\nFlagor se tourna vers la vitre. Au-delà, les étoiles. Il se revit, des années plus tôt, dans une cellule pareille à celle-ci — les murs gris, la lumière crue, les poings qui frappaient la porte jusqu'à ce que le sang coule. On ne l'avait pas cru. On ne l'avait jamais cru. Il avait appris à ne compter que sur lui-même.\n\n— Continuez, ordonna-t-il. Fouillez chaque terminal. Chaque transmission. Je veux un nom.\n\nMalak acquiesça sans un mot. Son silence en disait long.\n\nSur le Vigilant, l'air était lourd. Les survivants des deux vaisseaux détruits remplissaient les couloirs — blessés, familles, pilotes hagards. Kira passa devant un groupe qui se tut à son approche. Les regards la suivaient. Soren. Toujours Soren.\n\n— Tu aurais dû le dénoncer avant, lança une voix derrière elle.\n\nElle se retourna. Dorian Vex — le frère du pilote mort — se tenait au milieu du couloir, le visage fermé. Autour de lui, d'autres Biomen. L'ambiance était tendue.\n\n— Je n'ai rien à dénoncer, répondit Kira. Soren est un technicien. Un parmi des centaines.\n\n— Ton Soren a transmis les coordonnées. Tout le monde le sait.\n\n— Personne ne le sait. C'est une rumeur.\n\nDorian s'avança. Ses poings étaient serrés.\n\n— Mon frère est mort parce qu'il a ignoré l'alerte. C'est vrai. Mais quelqu'un a vendu notre position. Et toi, tu le défends.\n\nLe cercle se resserrait. Kira sentit les regards se poser sur elle. Elle ne recula pas.\n\n— Je défends la vérité. Pas les suppositions.\n\n— La vérité, c'est que nous avons perdu deux vaisseaux. Des centaines de morts. Et toi, tu parles encore de « suppositions ».\n\nHelena Vex apparut au bout du couloir, imposante, le regard noir. La foule s'écarta.\n\n— Assez, dit-elle. Le Conseil a voté la commission d'enquête. Nous aurons des réponses. Pas des lynchages.\n\nDorian recula, mais son regard resta fixé sur Kira. Le message était clair : la guerre ne se jouait plus seulement contre les Zordons.\n\nSoren reçut le message à l'aube, sur un terminal de maintenance. Une ligne, anonyme : « La prochaine transmission sera plus risquée. Tu es prêt ? »\n\nIl effaça l'historique. Ses mains tremblaient. Un technicien Zordon l'avait vu, la semaine dernière, près des serveurs de communication. Il n'avait rien dit. Pas encore. Mais le doute était là, comme une ombre.\n\nSoren regarda par le hublot. Le Vigilant, au loin, silhouette blessée mais vivante. Il avait fait ce qu'il fallait. Le message « Tu as bien fait » le hantait encore. Bien fait pour qui ? Pour quoi ?\n\nIl ouvrit une nouvelle fenêtre. Tapa : « Oui. »\n\nIl n'envoya pas tout de suite. Il resta là, le doigt sur la touche, à écouter le battement de son cœur. Quelque part, le réseau anonyme attendait. Et Flagor cherchait un nom.\n\nAu Centre de commandement, Malak consulta les rapports une dernière fois. Les purges. Les techniciens. Le secteur Gamma. Un détail lui échappait — une coïncidence, peut-être. Celui qu'on appelait la Bamboule. Assigné aux communications. Transféré juste avant le piège.\n\nIl ferma le fichier. Ne dit rien. Pas encore. Flagor avait les yeux partout. Et Malak commençait à se demander ce qu'il cherchait vraiment.",
       "summary": "Enquête en cours sur la fuite. Le passé de Flagor ressurgit (fragment cellule). Conflit interne chez les Biomen : Dorian accuse Kira, Helena impose la commission. Soren accepte une transmission plus risquée. Malak relie 'la Bamboule' aux communications — mais ne dit rien.",
-      "advancedLines": ["line-flagor-ascension", "line-guerre", "line-passe-flagor", "line-biomen", "line-bamboule", "line-feodalite", "line-oligarchie"],
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-passe-flagor",
+        "line-biomen",
+        "line-bamboule",
+        "line-feodalite",
+        "line-oligarchie"
+      ],
       "preEvaluation": null,
       "postEvaluation": null,
       "createdAt": "2026-02-18T22:30:00.000Z",
       "updatedAt": "2026-02-18T22:30:00.000Z"
+    },
+    {
+      "id": "unit-ch7",
+      "type": "chapter",
+      "number": 7,
+      "title": "Les fils",
+      "status": "completed",
+      "content": "Le centre de contrôle sentait le métal chaud et la sueur retenue. Flagor fixait les écrans, les doigts crispés sur le dossier de l'enquête. Deux noms revenaient. Trois. Il les avait barrés, raturés, recopiés. La cellule, ce souvenir qu'il avait cru enfoui, revenait à chaque fois qu'il fermait les yeux : les poings contre la porte, les voix qui ne répondaient pas. On ne l'avait pas cru. Il secoua la tête. Pas maintenant.\n\n— Les purges du secteur Gamma sont terminées, dit Malak en entrant. Aucune trace. Soit le traître est ailleurs, soit il est très bon.\n\n— Ou les deux.\n\nFlagor leva les yeux. Malak avait ce regard qu'il connaissait : quelque chose de trouvé, de non dit.\n\n— Et ?\n\n— Rien de concluant. Je continue.\n\nIl sortit sans attendre. Flagor le regarda partir. Malak mentait mal. Ou peut-être que c'était lui qui voyait des mensonges partout. La cellule, encore. Méfie-toi de tout le monde. Il avait appris ça à ses dépens.\n\nSur le Vigilant, l'atmosphère était à la rancœur. Les survivants du piège de Flagor ne parlaient plus qu'à voix basse. Dorian Vex avait convoqué Kira dans son bureau. Elle entra, le dos droit.\n\n— La commission d'Helena siège dans trois jours, dit-il. Tu seras entendue en premier.\n\n— Je n'ai rien à cacher.\n\n— Non. Mais tu as quelque chose à perdre.\n\nIl se leva, les mains sur le bureau. Son frère était mort dans l'explosion. On le savait. Personne n'en parlait.\n\n— Helena veut ta tête. Moi aussi, certains jours. Montre-moi que tu n'es pas ce qu'ils disent.\n\nKira ne répondit pas. Elle savait que les mots ne suffiraient pas. La guerre avait un visage, maintenant : des noms, des vaisseaux, des morts. Et au milieu, elle, bouc émissaire commode.\n\nSoren attendait le créneau. Le réseau lui avait donné une fenêtre : vingt minutes, canal brouillé, risque maximal. Il avait hésité. Puis il avait accepté. Les coordonnées du prochain convoi Biomen étaient prêtes. S'il les envoyait, Flagor frapperait encore. S'il ne les envoyait pas, le réseau le considérerait comme mort.\n\nIl appuya sur la touche.\n\nLa transmission partit. Quelque chose bascula en lui — ou autour de lui. Il ne savait plus.\n\nDans la salle des serveurs, Malak regardait les logs. Une anomalie. Un paquet sorti à l'heure exacte de la dernière fuite. Il fit défiler. Le chemin menait à un terminal isolé, secteur maintenance. Personne n'y allait. Sauf quelqu'un qui voulait rester invisible.\n\nIl n'appela pas Flagor. Pas encore. Il voulait comprendre.\n\nLa commission s'ouvrit dans le grand amphithéâtre du Conseil. Helena Vex présidait, Dorian à sa droite. Kira face à eux, seule. Les regards des Biomen étaient partagés : méfiance, curiosité, haine.\n\n— Capitaine Kira, commença Helena. Récapitulons les faits.\n\nKira inspira. Elle allait devoir se battre. Pas contre les Zordons. Contre les siens.\n\nFlagor, lui, ne regardait pas la retransmission. Il était dans son bureau, le dossier ouvert, un nom souligné. Un nom du passé. Quelqu'un qu'il avait cru mort. Ou changé.\n\nLes fils se resserraient. Il ne savait pas encore lesquels tiendraient.",
+      "summary": "Flagor poursuit l'enquête, hanté par la cellule. Malak trouve une anomalie dans les logs mais ne prévient pas Flagor. Kira convoquée avant la commission ; Dorian a perdu son frère. Soren envoie la transmission du convoi — point de bascule. La commission s'ouvre. Flagor a souligné un nom du passé.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-passe-flagor",
+        "line-biomen",
+        "line-bamboule",
+        "line-feodalite",
+        "line-oligarchie",
+        "line-message-ils-savent"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-18T23:00:00.000Z",
+      "updatedAt": "2026-02-18T23:00:00.000Z"
+    },
+    {
+      "id": "unit-ch8",
+      "type": "chapter",
+      "number": 8,
+      "title": "Le verdict",
+      "status": "completed",
+      "content": "Le verdict tomba comme une pierre.\n\nKira se tenait au centre de la salle, les mains jointes derrière le dos — posture de parade, pas de suppliante. Les membres de la commission occupaient la longue table en arc de cercle. Helena Vex à l'extrémité gauche, le regard fixe. Dorian, à droite, les doigts crispés sur le dossier. Entre eux, les trois autres conseillers — visages fermés, indéchiffrables.\n\n— Vous niez tout contact avec Soren après l'incident du viaduc ?\n\nLa voix de Dorian était sèche, presque cassée.\n\n— Je nie qu'il y ait eu complot, répondit Kira. Un échange. Rien de plus.\n\n— Un échange qui a coûté la vie à mon frère.\n\nLe silence s'étira. Helena leva une main.\n\n— La commission n'est pas un tribunal de vengeance, Dorian. Nous cherchons la vérité.\n\n— La vérité ? La vérité, c'est qu'un traître a transmis nos coordonnées aux Zordons. Et que votre protégée —\n\n— Assez.\n\nHelena se leva. Les projecteurs creusaient les ombres sous ses pommettes. Pour la première fois depuis l'ouverture des débats, le Conseil parut divisé — des regards qui se croisaient, des hésitations. Kira ne bougea pas. Elle avait appris, au fil des années, à ne rien montrer.\n\nSur l'astre éteint, Flagor parcourait les logs une dernière fois. Les purges du secteur Gamma n'avaient rien laissé — sauf une anomalie. Un terminal de maintenance. Des accès à des horaires inhabituels. Malak avait trouvé la trace ; Malak ne lui avait rien dit. Flagor relut le rapport, les doigts sur le nom souligné. Un nom qu'il croyait mort. Ou changé. Les murs de la cellule lui revinrent — les poings contre la porte, les voix qui ne répondaient pas. On ne l'avait jamais cru. Il rangea le dossier. Pas maintenant. Pas encore.\n\n— Maître.\n\nMalak se tenait sur le seuil. Son regard fuyait.\n\n— Les techniciens du Vigilant ont identifié une signature. Celle du dernier convoi. La transmission a bien été interceptée.\n\nFlagor ne répondit pas tout de suite. Il contempla le hublot — au-dehors, les cratères, la poussière grise soulevée par un vent fantôme. Le paysage mort qui les avait accueillis. Qui les attendait encore.\n\n— Et la source ?\n\n— En cours de localisation.\n\n— Accélère.\n\nMalak s'inclina et sortit. Flagor resta seul face aux étoiles. Quelque part, de l'autre côté du vide, un Bioman avait choisi. Un choix qui allait tout changer. Il le savait. Il l'avait toujours su.\n\nDans la salle de commission, Helena annonça l'ajournement. Les débats reprendraient dans quarante-huit heures. Dorian se leva sans un mot, le visage fermé. Kira fut escortée vers la sortie — pas en détention, pas en liberté. Entre deux. Les portes se refermèrent. Les projecteurs s'éteignirent. Les fils, quelque part dans l'ombre, continuaient de se resserrer.",
+      "summary": "La commission entend Kira — elle nie le complot mais confirme un échange avec Soren. Dorian accuse, Helena ajourne. Sur l'astre éteint, Flagor sait que Malak cache quelque chose. La signature du convoi transmis par Soren a été identifiée — la source est en cours de localisation.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-passe-flagor",
+        "line-biomen",
+        "line-bamboule",
+        "line-oligarchie",
+        "line-feodalite",
+        "line-astre-eteint"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-18T23:30:00.000Z",
+      "updatedAt": "2026-02-18T23:30:00.000Z"
+    },
+    {
+      "id": "unit-ch9",
+      "type": "chapter",
+      "number": 9,
+      "title": "Le nom",
+      "status": "completed",
+      "content": "Le nom lui brûlait la langue depuis quarante-huit heures. Flagor le gardait au fond de sa gorge, comme une balle qu'il n'osait pas recracher. Malak le savait — il le voyait dans le regard fuyant du technicien, dans la façon dont il évitait les couloirs du Secteur 7. Quelqu'un qu'on croyait mort. Quelqu'un qui avait signé le convoi.\n\nLa commission avait ajourné. Helena tenait les rênes, mais le Conseil murmurait déjà. Dorian avait posé ses dossiers sur la table comme des armes — Kira avait parlé, l'échange avec Soren était confirmé. Le verdict pendait. Flagor sentait le temps se resserrer.\n\nIl intercepta Malak au sortir des archives. Le couloir était vide, les lumières basses. Malak tenta de passer — Flagor bloqua le passage.\n\n— Tu sais qui c'est. La signature. La localisation.\n\nMalak secoua la tête. Ses mains tremblaient.\n\n— Tu ne comprends pas. Si je parle...\n\n— Si tu ne parles pas, on crève tous. La riposte est en attente. Ils ont la source. Ils savent.\n\nLe mot resta entre eux. Malak pâlit. Flagor vit la fracture — la peur, la loyauté brisée, quelque chose d'ancien qui résistait encore.\n\n— Elle n'est pas morte, dit Malak. Elle n'a jamais été morte.\n\nLe nom sortit enfin. Un souffle. Un fantôme.\n\nFlagor sentit le sol se dérober. Pas elle. Pas après tout ce temps.\n\nPendant ce temps, dans la salle du Conseil, Helena regardait les écrans. La localisation clignotait — un avant-poste, une zone neutre. Dorian exigeait une décision. Les Biomen attendaient. Le verdict ne tiendrait plus quarante-huit heures. Quelqu'un avait parlé — l'aveu de Kira avait ouvert une brèche. Bamboule était à découvert.\n\nHelena leva la main. Le Conseil se tut.\n\n— On attend encore, dit-elle. Une transmission. Un signe.\n\nPersonne ne demanda de qui. Ils savaient déjà que la réponse venait d'ailleurs — de quelqu'un qu'on avait cru perdu, de quelqu'un qui détenait encore les fils.\n\nFlagor quitta Malak dans le couloir. Le nom résonnait dans sa tête. Il devait agir. Il devait choisir : révéler ou protéger. Le passé ou la guerre.\n\nIl se dirigea vers les transmissions. Quelque part, quelqu'un attendait. Quelqu'un qui savait qu'ils savaient.",
+      "summary": "Flagor confronte Malak — le nom du passé est révélé : une femme crue morte. Malak choisit de parler. Bamboule à découvert. Le verdict ne tiendra plus. Helena attend une transmission. Flagor face au choix : révéler ou protéger.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-passe-flagor",
+        "line-biomen",
+        "line-bamboule",
+        "line-oligarchie",
+        "line-feodalite",
+        "line-message-ils-savent"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T00:00:00.000Z",
+      "updatedAt": "2026-02-19T00:00:00.000Z"
+    },
+    {
+      "id": "unit-ch10",
+      "type": "chapter",
+      "number": 10,
+      "title": "Le choix",
+      "status": "completed",
+      "content": "La salle des transmissions était vide. Flagor s'arrêta devant le terminal, les doigts posés sur le clavier. Le nom tournait dans sa tête — celui qu'il avait cru mort, celui que Malak avait lâché dans le couloir. Pas elle. Pas après tout ce temps.\n\nLes écrans affichaient la localisation. Un avant-poste. Une zone neutre. La source des fuites. La Bamboule. Et derrière, le fantôme.\n\nIl n'appuya pas. Pas encore.\n\n— Maître.\n\nMalak se tenait sur le seuil. Il n'avait plus ce regard fuyant — quelque chose s'était figé entre eux. La vérité dite. La loyauté brisée. Flagor ne se retourna pas.\n\n— Tu viens m'arrêter ?\n\n— Non.\n\n— Alors ?\n\n— Je viens vous demander ce que vous allez faire.\n\nLe silence s'étira. Au-dehors, les cratères de l'astre éteint luisaient sous les projecteurs. Le paysage mort. Le théâtre de tout ce qui avait commencé.\n\n— Si je transmets, dit Flagor, ils la trouveront. Le Conseil. Dorian. Ils l'utiliseront.\n\n— Et si vous ne transmettez pas ?\n\n— Elle reste cachée. Le réseau reste intact. La guerre continue comme avant.\n\nMalak s'approcha d'un pas. Pas de soumission, cette fois. Une forme de parité — ou de défi.\n\n— Vous ne pouvez pas protéger les deux. La guerre et elle.\n\n— Je sais.\n\nFlagor retira sa main du clavier. Quelque part, de l'autre côté du vide, Helena attendait. Dorian exigeait. Kira était entre deux. Soren — la Bamboule — était à découvert. Tous les fils convergeaient ici. Dans cette salle. Dans ce choix.\n\n— On attend encore, dit-il.\n\nMalak ne répondit pas. Il comprit. Flagor ne choisirait pas. Pas maintenant. Il suspendrait. Comme Helena. Comme le Conseil. Comme la riposte. Le pouvoir, parfois, c'était de ne pas agir.\n\nMais en bas, dans les couloirs du Vigilant, les choses ne s'arrêtaient pas.\n\nDorian avait franchi la porte de la cellule de détention. Kira leva les yeux. Elle n'était pas enchaînée — pas encore. Entre deux. Comme le verdict. Comme tout.\n\n— Quarante-huit heures, c'est fini, dit Dorian. Helena ne pourra plus tenir. Le Conseil va voter.\n\n— Et alors ?\n\n— Alors tu vas me dire où il est. Soren. La Bamboule. Tu vas me donner un nom, une trace, quelque chose.\n\n— Je n'ai rien à te donner.\n\nDorian s'assit en face d'elle. Son visage était creusé — le deuil, la colère, l'impuissance. Son frère était mort. Il avait besoin d'un coupable. Et Kira, par son aveu, s'était offerte.\n\n— Tu l'as défendu. Tu lui as parlé. Tu sais où il se cache.\n\n— Je sais qu'il a sauvé un vaisseau. Le tien, peut-être.\n\n— Un vaisseau. Pas deux. Deux sont morts.\n\n— Parce que tu as ignoré l'alerte.\n\nLe silence tomba. Dorian serra les poings. Kira ne baissa pas les yeux. Quelque chose avait changé — elle ne jouait plus le jeu. La dignité. Le mot lui revint. Ce que Soren avait fait. Ce qu'elle refusait de trahir.\n\n— Tu vas regretter, dit Dorian en se levant.\n\n— Probablement.\n\nIl sortit. La porte se referma. Kira resta seule. Elle pensa à Soren — où qu'il soit. Au réseau anonyme. Au message : « Tu as bien fait ». Elle ne savait pas si c'était vrai. Mais elle savait une chose : les alliances se déplaçaient. Dorian contre Helena. Helena contre le temps. Flagor contre lui-même. Et au centre, une femme qu'on croyait morte, et un métis qu'on méprisait. Les pivots. Les fantômes.\n\nSur l'astre éteint, Flagor quitta la salle des transmissions sans avoir envoyé. Malak le suivit. Entre eux, le vide. Plus de Maître. Plus de second. Juste deux hommes qui avaient choisi — l'un de parler, l'autre de ne pas agir. Pour l'instant.\n\nLe vent soulevait la poussière sur les cratères. Le paysage ne changeait pas. Mais quelque part, dans l'ombre, les fils continuaient de se tendre.",
+      "summary": "Flagor choisit de ne pas transmettre — protège la femme du passé. Dorian confronte Kira qui refuse de livrer Soren. La féodalité se transforme : plus de Maître, plus de second. Le Conseil va voter.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-passe-flagor",
+        "line-feodalite",
+        "line-astre-eteint",
+        "line-biomen",
+        "line-bamboule",
+        "line-oligarchie",
+        "line-message-ils-savent"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T00:30:00.000Z",
+      "updatedAt": "2026-02-19T00:30:00.000Z"
     }
   ],
   "thematicQuestions": [
@@ -624,41 +1197,140 @@
       "id": "tq-pouvoir-performance",
       "question": "Le pouvoir est-il une performance ou une substance ?",
       "description": "Flagor règne par la mythologie personnelle. Dorian Vex règne par le spectacle. Le Haut-Conseil règne par la manipulation. Trois formes de pouvoir — aucune n'est légitime. Le récit interroge : le pouvoir existe-t-il en dehors de sa mise en scène ?",
-      "relatedLines": ["line-flagor-ascension", "line-biomen", "line-oligarchie", "line-feodalite"],
+      "relatedLines": [
+        "line-flagor-ascension",
+        "line-biomen",
+        "line-oligarchie",
+        "line-feodalite"
+      ],
       "contributions": [
-        { "unitNumber": 1, "note": "Flagor comme mythe vivant — ses cicatrices sont sa légitimité" },
-        { "unitNumber": 2, "note": "Dorian Vex : le pouvoir comme spectacle. La combinaison immaculée, le discours calibré." },
-        { "unitNumber": 3, "note": "Flagor : le pouvoir comme précision et terreur (technicien sanctionné). Les conditions n'existent pas — la précision existe." },
-        { "unitNumber": 4, "note": "Le pouvoir de Flagor testé : piège compromis, il adapte. Le pouvoir comme capacité d'absorption de l'imprévu. Malak perçoit un changement — le pouvoir n'est plus unilatéral." },
-        { "unitNumber": 5, "note": "Helena Vex au Conseil : le pouvoir comme responsabilité vs complaisance. Flagor : le pouvoir comme exécution (ordre de feu). Dorian : le pouvoir comme omission (alerte ignorée)." },
-        { "unitNumber": 6, "note": "Flagor : le pouvoir comme méfiance totale ('ne compter que sur lui-même'). Helena : le pouvoir institutionnel vs le lynchage. Malak : le pouvoir de garder un secret." }
+        {
+          "unitNumber": 1,
+          "note": "Flagor comme mythe vivant — ses cicatrices sont sa légitimité"
+        },
+        {
+          "unitNumber": 2,
+          "note": "Dorian Vex : le pouvoir comme spectacle. La combinaison immaculée, le discours calibré."
+        },
+        {
+          "unitNumber": 3,
+          "note": "Flagor : le pouvoir comme précision et terreur (technicien sanctionné). Les conditions n'existent pas — la précision existe."
+        },
+        {
+          "unitNumber": 4,
+          "note": "Le pouvoir de Flagor testé : piège compromis, il adapte. Le pouvoir comme capacité d'absorption de l'imprévu. Malak perçoit un changement — le pouvoir n'est plus unilatéral."
+        },
+        {
+          "unitNumber": 5,
+          "note": "Helena Vex au Conseil : le pouvoir comme responsabilité vs complaisance. Flagor : le pouvoir comme exécution (ordre de feu). Dorian : le pouvoir comme omission (alerte ignorée)."
+        },
+        {
+          "unitNumber": 6,
+          "note": "Flagor : le pouvoir comme méfiance totale ('ne compter que sur lui-même'). Helena : le pouvoir institutionnel vs le lynchage. Malak : le pouvoir de garder un secret."
+        },
+        {
+          "unitNumber": 7,
+          "note": "Flagor : le pouvoir comme paranoïa ('méfie-toi de tout le monde'). Helena : le pouvoir institutionnel (commission). Dorian : le pouvoir comme chantage ('montre-moi')."
+        },
+        {
+          "unitNumber": 8,
+          "note": "Helena : le pouvoir comme procédure (ajournement vs lynchage). Dorian : le pouvoir comme vengeance. Flagor : le pouvoir comme surveillance totale ('accélère')."
+        },
+        {
+          "unitNumber": 9,
+          "note": "Flagor : le pouvoir confronté au passé — 'pas elle'. Le pouvoir vacille quand le passé revient. Helena : le pouvoir comme attente ('on attend encore')."
+        }
       ]
     },
     {
       "id": "tq-dignite-systeme",
       "question": "La dignité peut-elle survivre à l'intérieur d'un système qui la nie ?",
       "description": "Soren est à l'intérieur du système Biomen. Il voit sa toxicité. Il la subit. Mais il reste. La question est : rester en silence est-ce de la résistance ou de la complicité ?",
-      "relatedLines": ["line-bamboule", "line-biomen"],
+      "relatedLines": [
+        "line-bamboule",
+        "line-biomen"
+      ],
       "contributions": [
-        { "unitNumber": 2, "note": "Soren répare les câbles, encaisse les insultes, ne dit rien. Le silence comme armure — mais aussi comme piège." },
-        { "unitNumber": 3, "note": "Soren ramasse le gant jeté par Vex, le tend sans un mot. Visage absent des écrans malgré son rôle. Dignité par l'effacement." },
-        { "unitNumber": 4, "note": "Soren AGIT : il compose un numéro interdit et transmet les coordonnées du piège. La dignité passe de l'endurance à l'action clandestine. Kira montre de l'empathie — première fissure dans le mur de mépris." },
-        { "unitNumber": 5, "note": "Soren : compromis sanglant — 2 vaisseaux détruits, 1 sauvé. Message 'Tu as bien fait'. La dignité a un coût. Kira accusée par association." },
-        { "unitNumber": 6, "note": "Kira défend la vérité face au cercle ('Je défends la vérité. Pas les suppositions'). Soren hésite mais accepte le risque — dignité comme engagement." }
+        {
+          "unitNumber": 2,
+          "note": "Soren répare les câbles, encaisse les insultes, ne dit rien. Le silence comme armure — mais aussi comme piège."
+        },
+        {
+          "unitNumber": 3,
+          "note": "Soren ramasse le gant jeté par Vex, le tend sans un mot. Visage absent des écrans malgré son rôle. Dignité par l'effacement."
+        },
+        {
+          "unitNumber": 4,
+          "note": "Soren AGIT : il compose un numéro interdit et transmet les coordonnées du piège. La dignité passe de l'endurance à l'action clandestine. Kira montre de l'empathie — première fissure dans le mur de mépris."
+        },
+        {
+          "unitNumber": 5,
+          "note": "Soren : compromis sanglant — 2 vaisseaux détruits, 1 sauvé. Message 'Tu as bien fait'. La dignité a un coût. Kira accusée par association."
+        },
+        {
+          "unitNumber": 6,
+          "note": "Kira défend la vérité face au cercle ('Je défends la vérité. Pas les suppositions'). Soren hésite mais accepte le risque — dignité comme engagement."
+        },
+        {
+          "unitNumber": 7,
+          "note": "Kira : dignité face au tribunal ('je n'ai rien à cacher'). Soren : dignité comme engagement irréversible (transmission envoyée malgré le dilemme)."
+        },
+        {
+          "unitNumber": 8,
+          "note": "Kira : dignité dans l'entre-deux — ni libre ni détenue. 'Elle avait appris à ne rien montrer.' Soren absent mais présent par ses conséquences."
+        },
+        {
+          "unitNumber": 9,
+          "note": "Malak : dignité = parler malgré la peur ('si je parle...'). Choix de la vérité contre la loyauté. Kira : brèche ouverte par son aveu — conséquences sur Soren."
+        }
       ]
     },
     {
       "id": "tq-guerre-instrumentalisee",
       "question": "À qui profite la guerre ?",
       "description": "La guerre Zordons/Biomen semble être le conflit central. Mais le récit suggère qu'elle est instrumentalisée par les deux camps : Flagor en a besoin pour son mythe, le Haut-Conseil pour ses mandats.",
-      "relatedLines": ["line-guerre", "line-oligarchie", "line-flagor-ascension"],
+      "relatedLines": [
+        "line-guerre",
+        "line-oligarchie",
+        "line-flagor-ascension"
+      ],
       "contributions": [
-        { "unitNumber": 1, "note": "Flagor déclare la guerre avec jubilation — c'est sa raison d'être retrouvée" },
-        { "unitNumber": 2, "note": "Le Haut-Conseil a laissé les Zordons approcher délibérément" },
-        { "unitNumber": 3, "note": "Flagor transforme l'interception en piège : « On les attire ». La guerre comme instrument de stratégie personnelle." },
-        { "unitNumber": 4, "note": "La fuite de Soren compromet le piège — la guerre échappe à ceux qui croient la contrôler. Ni Flagor ni le Haut-Conseil n'avait prévu un acte individuel." },
-        { "unitNumber": 5, "note": "Helena Vex : 'nous avons laissé faire'. Le Conseil a traité l'alerte comme secondaire. La guerre profite à ceux qui la laissent arriver." },
-        { "unitNumber": 6, "note": "La guerre interne (Biomen entre eux) se superpose à la guerre externe. Dorian instrumentalise le deuil comme arme politique." }
+        {
+          "unitNumber": 1,
+          "note": "Flagor déclare la guerre avec jubilation — c'est sa raison d'être retrouvée"
+        },
+        {
+          "unitNumber": 2,
+          "note": "Le Haut-Conseil a laissé les Zordons approcher délibérément"
+        },
+        {
+          "unitNumber": 3,
+          "note": "Flagor transforme l'interception en piège : « On les attire ». La guerre comme instrument de stratégie personnelle."
+        },
+        {
+          "unitNumber": 4,
+          "note": "La fuite de Soren compromet le piège — la guerre échappe à ceux qui croient la contrôler. Ni Flagor ni le Haut-Conseil n'avait prévu un acte individuel."
+        },
+        {
+          "unitNumber": 5,
+          "note": "Helena Vex : 'nous avons laissé faire'. Le Conseil a traité l'alerte comme secondaire. La guerre profite à ceux qui la laissent arriver."
+        },
+        {
+          "unitNumber": 6,
+          "note": "La guerre interne (Biomen entre eux) se superpose à la guerre externe. Dorian instrumentalise le deuil comme arme politique."
+        },
+        {
+          "unitNumber": 7,
+          "note": "La commission est un front de guerre intérieur. Dorian instrumentalise le deuil de son frère comme arme politique."
+        },
+        {
+          "unitNumber": 8,
+          "note": "La commission est devenue le front principal. La guerre externe (Zordons) passe au second plan face à la guerre interne (qui a trahi ?)."
+        },
+        {
+          "unitNumber": 9,
+          "note": "Helena attend une transmission avant de juger — la guerre et la politique sont suspendues à un même fil. La localisation de la source est le pivot."
+        }
       ]
     }
   ],
@@ -713,20 +1385,55 @@
     "totalPlannedUnits": 12,
     "currentAct": "confrontation",
     "turningPoints": [
-      { "type": "inciting_incident", "unitId": "unit-ch5", "description": "Premier contact entre Zordons et Biomen sur l'astre éteint", "reached": true },
-      { "type": "first_plot_point", "unitId": null, "description": "Soren découvre la vérité sur la guerre instrumentalisée et doit choisir", "reached": false },
-      { "type": "midpoint", "unitId": null, "description": "Renversement : le lecteur comprend qui sont les vrais antagonistes", "reached": false },
-      { "type": "crisis", "unitId": null, "description": "Soren est contraint d'agir — fin de la passivité", "reached": false },
-      { "type": "climax_point", "unitId": null, "description": "Confrontation finale entre les systèmes de pouvoir", "reached": false },
-      { "type": "denouement", "unitId": null, "description": "", "reached": false }
+      {
+        "type": "inciting_incident",
+        "unitId": "unit-ch5",
+        "description": "Premier contact entre Zordons et Biomen sur l'astre éteint",
+        "reached": true
+      },
+      {
+        "type": "first_plot_point",
+        "unitId": null,
+        "description": "Soren découvre la vérité sur la guerre instrumentalisée et doit choisir",
+        "reached": false
+      },
+      {
+        "type": "midpoint",
+        "unitId": null,
+        "description": "Renversement : le lecteur comprend qui sont les vrais antagonistes",
+        "reached": false
+      },
+      {
+        "type": "crisis",
+        "unitId": null,
+        "description": "Soren est contraint d'agir — fin de la passivité",
+        "reached": false
+      },
+      {
+        "type": "climax_point",
+        "unitId": null,
+        "description": "Confrontation finale entre les systèmes de pouvoir",
+        "reached": false
+      },
+      {
+        "type": "denouement",
+        "unitId": null,
+        "description": "",
+        "reached": false
+      }
     ]
   },
-  "personas": ["narratologue", "critique-social", "lecteur-naif", "showrunner"],
+  "personas": [
+    "narratologue",
+    "critique-social",
+    "lecteur-naif",
+    "showrunner"
+  ],
   "settings": {
     "neglectThreshold": 3,
     "maxActiveLinesWarning": 5,
     "resolutionPressureThreshold": 10
   },
   "createdAt": "2026-02-18T18:00:00.000Z",
-  "updatedAt": "2026-02-18T22:30:00.000Z"
+  "updatedAt": "2026-02-19T00:30:00.000Z"
 }

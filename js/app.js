@@ -514,8 +514,18 @@ class App {
           .map(l => `<span class="novel-line-dot" style="background:${l.color}" title="${l.name}"></span>`)
           .join('');
 
+        const idx = completedUnits.indexOf(u);
+        const prevUnit = idx > 0 ? completedUnits[idx - 1] : null;
+        const nextUnit = idx < completedUnits.length - 1 ? completedUnits[idx + 1] : null;
+        const navHtml = `
+          <div class="novel-chapter-nav">
+            ${prevUnit ? `<a href="#novel-ch-${prevUnit.number}" class="novel-nav-link novel-nav-prev" data-action="goto-chapter" data-chapter="${prevUnit.number}">← Ch.${prevUnit.number}</a>` : '<span></span>'}
+            <a href="#novel-toc" class="novel-nav-link novel-nav-toc" data-action="goto-toc">↑ Sommaire</a>
+            ${nextUnit ? `<a href="#novel-ch-${nextUnit.number}" class="novel-nav-link novel-nav-next" data-action="goto-chapter" data-chapter="${nextUnit.number}">Ch.${nextUnit.number} →</a>` : '<span></span>'}
+          </div>`;
+
         return `
-          <div class="novel-chapter" data-id="${u.id}">
+          <div class="novel-chapter" data-id="${u.id}" id="novel-ch-${u.number}">
             <div class="novel-chapter-header">
               <div class="novel-chapter-title-area">
                 <h3>${u.type === 'chapter' ? 'Chapitre' : u.type} ${u.number}${u.title ? ` — ${u.title}` : ''}</h3>
@@ -529,12 +539,29 @@ class App {
               </div>
             </div>
             ${hasContent
-              ? `<div class="novel-text">${this._formatNovelText(u.content)}</div>`
+              ? `<div class="novel-text">${this._formatNovelText(u.content)}</div>${navHtml}`
               : `<p class="empty-state">Aucun texte — <a href="#" data-action="edit-content" data-id="${u.id}">ajouter le contenu du chapitre</a></p>`
             }
           </div>`;
       }).join('')
       : '<p class="empty-state">Aucun chapitre terminé. Complétez des unités pour construire le roman.</p>';
+
+    const tocHtml = completedUnits.length > 1
+      ? `<nav class="novel-toc">
+          <h3>Table des matières</h3>
+          <ol class="novel-toc-list">
+            ${completedUnits.map(u => `
+              <li>
+                <a href="#novel-ch-${u.number}" class="novel-toc-link" data-action="goto-chapter" data-chapter="${u.number}">
+                  <span class="novel-toc-number">Ch.${u.number}</span>
+                  <span class="novel-toc-title">${u.title || ''}</span>
+                  <span class="novel-toc-words">${u.content ? u.content.split(/\\s+/).filter(Boolean).length : 0}</span>
+                </a>
+              </li>
+            `).join('')}
+          </ol>
+        </nav>`
+      : '';
 
     container.innerHTML = `
       <div class="view-header">
@@ -545,18 +572,27 @@ class App {
           <button class="btn btn-sm" data-action="export-novel">Exporter le texte</button>
         </div>
       </div>
+      ${tocHtml}
       <div class="novel-content">${chaptersHtml}</div>
     `;
 
     container.addEventListener('click', (e) => {
       const btn = e.target.closest('[data-action]');
       if (!btn) return;
+      e.preventDefault();
       if (btn.dataset.action === 'edit-content') {
-        e.preventDefault();
         this._showChapterContent(btn.dataset.id);
       }
       if (btn.dataset.action === 'export-novel') {
         this._exportNovel();
+      }
+      if (btn.dataset.action === 'goto-chapter') {
+        const el = document.getElementById(`novel-ch-${btn.dataset.chapter}`);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      if (btn.dataset.action === 'goto-toc') {
+        const toc = container.querySelector('.novel-toc');
+        if (toc) toc.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   }
