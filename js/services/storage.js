@@ -59,12 +59,20 @@ class StorageService {
     if (remote && remote.narrativeLines && remote.storyUnits) {
       const remoteTime = new Date(remote.updatedAt || 0).getTime();
       const localTime = new Date(local?.updatedAt || 0).getTime();
+      const localVersion = local?._projectVersion || '';
+      const remoteVersion = remote.updatedAt || '';
 
-      if (!local || !local.narrativeLines?.length || remoteTime > localTime) {
-        this._cache = remote;
-        this._saveLocal(remote);
-      } else {
+      // Le fichier distant (data/project.json) est la source de vérité.
+      // On ne garde le localStorage que s'il est strictement plus récent
+      // ET qu'il provient du même fichier source (même version de base).
+      const localIsFromSameVersion = localVersion === remoteVersion;
+      const localIsNewer = localTime > remoteTime;
+
+      if (localIsFromSameVersion && localIsNewer && local.narrativeLines?.length) {
         this._cache = local;
+      } else {
+        this._cache = { ...remote, _projectVersion: remoteVersion };
+        this._saveLocal(this._cache);
       }
     } else {
       this._cache = local || this._getDefaultProject();
