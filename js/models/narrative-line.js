@@ -103,6 +103,7 @@ function createNarrativeLine(data = {}) {
     lastAdvancedInUnit: data.lastAdvancedInUnit ?? -1,
     createdInUnit: data.createdInUnit ?? 0,
     agency: data.agency || 'reactive',
+    projection: data.projection || [],
     dependencies: data.dependencies || [],
     tags: data.tags || [],
     color: data.color || LINE_COLORS[Math.floor(Math.random() * LINE_COLORS.length)],
