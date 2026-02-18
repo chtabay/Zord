@@ -1,4 +1,3 @@
-const STORAGE_KEY = 'zord_project';
 const DATA_FILE = 'data/project.json';
 
 class StorageService {
@@ -38,44 +37,22 @@ class StorageService {
   }
 
   /**
-   * Initialise le storage :
-   * 1. Tente de charger data/project.json (source de vérité du repo)
-   * 2. Si le fichier est plus récent que le localStorage, il le remplace
-   * 3. Sinon, utilise le localStorage existant
+   * Charge data/project.json — source de vérité unique.
+   * Pas de localStorage : le fichier du dépôt fait foi.
+   * Les modifications locales passent par export/import.
    */
   async init() {
-    const local = this._loadLocal();
-    let remote = null;
-
     try {
       const res = await fetch(DATA_FILE);
       if (res.ok) {
-        remote = await res.json();
+        this._cache = await res.json();
       }
     } catch {
-      // Pas de fichier distant (dev sans serveur, ou fichier absent)
+      // Pas de fichier (dev sans serveur)
     }
 
-    if (remote && remote.narrativeLines && remote.storyUnits) {
-      const remoteTime = new Date(remote.updatedAt || 0).getTime();
-      const localTime = new Date(local?.updatedAt || 0).getTime();
-      const localVersion = local?._projectVersion || '';
-      const remoteVersion = remote.updatedAt || '';
-
-      // Le fichier distant (data/project.json) est la source de vérité.
-      // On ne garde le localStorage que s'il est strictement plus récent
-      // ET qu'il provient du même fichier source (même version de base).
-      const localIsFromSameVersion = localVersion === remoteVersion;
-      const localIsNewer = localTime > remoteTime;
-
-      if (localIsFromSameVersion && localIsNewer && local.narrativeLines?.length) {
-        this._cache = local;
-      } else {
-        this._cache = { ...remote, _projectVersion: remoteVersion };
-        this._saveLocal(this._cache);
-      }
-    } else {
-      this._cache = local || this._getDefaultProject();
+    if (!this._cache || !this._cache.narrativeLines) {
+      this._cache = this._getDefaultProject();
     }
 
     this._ready = true;
@@ -88,30 +65,15 @@ class StorageService {
     else this._onReady.push(fn);
   }
 
-  _loadLocal() {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : null;
-    } catch {
-      return null;
-    }
-  }
-
-  _saveLocal(project) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(project));
-  }
-
   load() {
     if (this._cache) return this._cache;
-    const local = this._loadLocal();
-    this._cache = local || this._getDefaultProject();
+    this._cache = this._getDefaultProject();
     return this._cache;
   }
 
   save(project) {
     project.updatedAt = new Date().toISOString();
     this._cache = project;
-    this._saveLocal(project);
   }
 
   getLines() {
@@ -199,7 +161,6 @@ class StorageService {
 
   reset() {
     this._cache = null;
-    localStorage.removeItem(STORAGE_KEY);
   }
 }
 
