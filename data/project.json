@@ -1,0 +1,285 @@
+{
+  "name": "Zord — Saison 1",
+  "narrativeLines": [
+    {
+      "id": "line-flagor-ascension",
+      "name": "L'ascension solitaire de Flagor",
+      "description": "Le parcours de Flagor, tyran solitaire des Zordons, hissé au sommet par la violence. Mythifié par ses soldats, marqué par les cicatrices. Son rostre écarlate est le symbole de son règne.",
+      "status": "active",
+      "weight": 0.80,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": 0,
+      "createdInUnit": 0,
+      "dependencies": ["line-passe-flagor", "line-feodalite"],
+      "tags": ["flagor", "pouvoir", "antagoniste"],
+      "color": "#e74c3c",
+      "history": [
+        {
+          "unitId": "unit-ch1",
+          "unitNumber": 1,
+          "note": "Introduction de Flagor : regard égaré, solitude du pouvoir, cicatrices, déclaration de guerre",
+          "weightBefore": 0.80,
+          "weightAfter": 0.80,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        }
+      ],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T18:00:00.000Z"
+    },
+    {
+      "id": "line-guerre",
+      "name": "La guerre Zordons vs Biomen",
+      "description": "Le conflit central du récit. Flagor a déclaré la victoire finale contre les Biomen. La guerre n'a pas encore commencé sur le terrain — elle est une promesse, un horizon.",
+      "status": "active",
+      "weight": 0.80,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": 1,
+      "createdInUnit": 0,
+      "dependencies": ["line-flagor-ascension", "line-biomen"],
+      "tags": ["conflit", "guerre", "structure"],
+      "color": "#3498db",
+      "history": [
+        {
+          "unitId": "unit-ch1",
+          "unitNumber": 1,
+          "note": "Flagor annonce la victoire finale — la guerre est déclarée mais pas encore engagée",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "emerging",
+          "statusAfter": "emerging"
+        },
+        {
+          "unitId": "unit-ch2",
+          "unitNumber": 2,
+          "note": "CX-440 détecté côté Biomen. Guerre visible des deux côtés.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.80,
+          "statusBefore": "emerging",
+          "statusAfter": "active"
+        }
+      ],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T19:00:00.000Z"
+    },
+    {
+      "id": "line-passe-flagor",
+      "name": "Le passé de Flagor",
+      "description": "Histoire violente et tourmentée. Pour les Zordons, c'est un mythe. Les cicatrices de son rostre sont celles 'portées par les grands destins'. Graine plantée pour des flashbacks.",
+      "status": "dormant",
+      "weight": 0.60,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": -1,
+      "createdInUnit": 0,
+      "dependencies": ["line-flagor-ascension"],
+      "tags": ["flagor", "backstory", "mythologie"],
+      "color": "#9b59b6",
+      "history": [],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T18:00:00.000Z"
+    },
+    {
+      "id": "line-feodalite",
+      "name": "La féodalité Flagor / Malak",
+      "description": "Malak appelle Flagor 'Maître'. Rapport féodal, pas militaire. Soumission totale ou calcul ? Potentiel de trahison, de loyauté aveugle, ou de révélation sur la nature du pouvoir Zordon.",
+      "status": "emerging",
+      "weight": 0.50,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": 0,
+      "createdInUnit": 0,
+      "dependencies": ["line-flagor-ascension", "line-oligarchie"],
+      "tags": ["malak", "pouvoir", "relation"],
+      "color": "#f39c12",
+      "history": [
+        {
+          "unitId": "unit-ch1",
+          "unitNumber": 1,
+          "note": "Premier échange Flagor/Malak : 'Maître' — rapport de soumission établi",
+          "weightBefore": 0.50,
+          "weightAfter": 0.50,
+          "statusBefore": "emerging",
+          "statusAfter": "emerging"
+        }
+      ],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T18:00:00.000Z"
+    },
+    {
+      "id": "line-astre-eteint",
+      "name": "La conquête de l'astre éteint",
+      "description": "L'opération militaire immédiate. Un monde mort, sans vie, constellé de cratères. Théâtre de la bataille à venir. Le contraste entre la beauté légère du vent et la mort derrière le verre.",
+      "status": "active",
+      "weight": 0.65,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": 0,
+      "createdInUnit": 0,
+      "dependencies": ["line-guerre"],
+      "tags": ["lieu", "guerre", "atmosphere"],
+      "color": "#34495e",
+      "history": [
+        {
+          "unitId": "unit-ch1",
+          "unitNumber": 1,
+          "note": "Description de l'astre éteint : paysage vide, cratères, poussières stellaires, atterrissage en cours",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        }
+      ],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T18:00:00.000Z"
+    },
+    {
+      "id": "line-biomen",
+      "name": "Les Biomen — héros corrompus",
+      "description": "Le camp adverse, des 'héros' à la The Boys : racistes, masculinistes, peu fréquentables. La façade héroïque cache une réalité toxique. Lecture inversée du sentai classique.",
+      "status": "active",
+      "weight": 0.75,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": 1,
+      "createdInUnit": 0,
+      "dependencies": ["line-guerre", "line-bamboule"],
+      "tags": ["biomen", "satire", "héros"],
+      "color": "#2ecc71",
+      "history": [
+        {
+          "unitId": "unit-ch2",
+          "unitNumber": 2,
+          "note": "Pleinement introduits. Dorian Vex, Kael, Mara. Façade héroïque / réalité toxique.",
+          "weightBefore": 0.70,
+          "weightAfter": 0.75,
+          "statusBefore": "dormant",
+          "statusAfter": "active"
+        }
+      ],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T19:00:00.000Z"
+    },
+    {
+      "id": "line-bamboule",
+      "name": "\"La Bamboule\" — le souffre-douleur",
+      "description": "Le Bioman métis, seul non-masculiniste du groupe. Surnommé 'la Bamboule' par les autres. Souffre-douleur mais pivot moral du récit — le seul lucide. Son arc est celui de la dignité face au mépris.",
+      "status": "active",
+      "weight": 0.85,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": 1,
+      "createdInUnit": 0,
+      "dependencies": ["line-biomen"],
+      "tags": ["bamboule", "biomen", "pivot moral", "satire"],
+      "color": "#1abc9c",
+      "history": [
+        {
+          "unitId": "unit-ch2",
+          "unitNumber": 2,
+          "note": "Personnage le plus fort du chapitre. Dignité silencieuse, lucidité, isolement. Pivot moral confirmé.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.85,
+          "statusBefore": "dormant",
+          "statusAfter": "active"
+        }
+      ],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T19:00:00.000Z"
+    },
+    {
+      "id": "line-oligarchie",
+      "name": "L'oligarchie sous-jacente",
+      "description": "Lecture politique en filigrane : l'organisation des Zordons comme métaphore de l'oligarchie post-communiste. Le pouvoir personnel de Flagor, la cour de Malak, la mythification du chef. Doit rester subtil.",
+      "status": "emerging",
+      "weight": 0.65,
+      "urgency": 0.0,
+      "lastAdvancedInUnit": 1,
+      "createdInUnit": 0,
+      "dependencies": ["line-flagor-ascension", "line-feodalite"],
+      "tags": ["politique", "sous-texte", "oligarchie"],
+      "color": "#e67e22",
+      "history": [
+        {
+          "unitId": "unit-ch2",
+          "unitNumber": 2,
+          "note": "Haut-Conseil introduit. Mandats exceptionnels + guerre instrumentalisée. Sous-texte efficace.",
+          "weightBefore": 0.55,
+          "weightAfter": 0.65,
+          "statusBefore": "dormant",
+          "statusAfter": "emerging"
+        }
+      ],
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T19:00:00.000Z"
+    }
+  ],
+  "storyUnits": [
+    {
+      "id": "unit-ch1",
+      "type": "chapter",
+      "number": 1,
+      "title": "L'astre éteint",
+      "status": "completed",
+      "content": "Les derniers rayons des soleils rasaient l'astre éteint. A perte de vue, s'étendait un paysage vide, sans vie, constellé de cratères anciens. Le vent se levait. Une brise légère commençait à soulever les poussières stellaires qui recouvraient ce sol défiguré.\n\nLe visage de Flagor se refletait sur le hublot du poste de commande. Seul, il se tenait à l'ecart de l'agitation habituelle des Zordons preparant l'atterrissage. Son regard égaré contrastait avec les gestes précis et ordonnés de ses fidèles soldats. Il songeait.\n\nUne nouvelle brise balaya le voile de poussiere qui venait inlassablement couvrir le hublot... Comment se peut il que cela soit si leger, si fluide, quand franchir cette barriere de verre signifierait pour n'importe quel etre de chair et de sang se répendre en lambeaux sur la surface du desert.\n\nSoudain, un bruit sortit Flagor de sa torpeur. C'etait le Commandant Malak.\n\n— \"Maitre, devons nous préparer un droïde pour explorer la surface?\"\n\n— \"Inutile.\" Répondit Flagor.\n\n— \"C'est ici que nous allons écraser les biomen et remporter notre victoire finale.\"\n\nSes yeux brillaient. Il n'y avait plus eu cette lueur depuis qu'il s'était hissé, seul, tout en haut du pouvoir. Fragor avait une histoire, violente, tourmentée. Pour les Zordons, c'etait un mythe.\n\nSon rostre écarlate se parait d'innombrables cicatrices, celles portées par les grands destins.",
+      "summary": "Atterrissage des Zordons sur un astre éteint. Flagor, seul face au hublot, contemple le paysage mort. Malak le sort de sa rêverie. Flagor déclare que c'est ici qu'ils écraseront les Biomen.",
+      "advancedLines": ["line-flagor-ascension", "line-guerre", "line-feodalite", "line-astre-eteint"],
+      "preEvaluation": {
+        "timestamp": "2026-02-18T18:00:00.000Z",
+        "lineSnapshots": [
+          { "lineId": "line-flagor-ascension", "name": "L'ascension solitaire de Flagor", "weight": 0.80, "urgency": 0.0, "status": "active", "importance": 0.42, "notes": "Ligne motrice du chapitre d'ouverture" }
+        ],
+        "priorities": ["line-flagor-ascension", "line-astre-eteint", "line-guerre"],
+        "globalNotes": "Chapitre d'ouverture : installer Flagor, le monde, et la promesse du conflit."
+      },
+      "postEvaluation": {
+        "timestamp": "2026-02-18T18:30:00.000Z",
+        "lineUpdates": [
+          { "lineId": "line-flagor-ascension", "name": "L'ascension solitaire de Flagor", "weightBefore": 0.80, "weightAfter": 0.80, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "active", "statusAfter": "active", "advanced": true, "notes": "Flagor solidement établi" }
+        ],
+        "nextPriorities": ["line-biomen", "line-bamboule", "line-guerre"],
+        "narrativeNotes": "Chapitre 1 efficace. Urgence ch.2 : introduire le camp adverse.",
+        "rulesTriggered": []
+      },
+      "createdAt": "2026-02-18T18:00:00.000Z",
+      "updatedAt": "2026-02-18T18:30:00.000Z"
+    },
+    {
+      "id": "unit-ch2",
+      "type": "chapter",
+      "number": 2,
+      "title": "Les héros de Néo-Terra",
+      "status": "completed",
+      "content": "La place du Commandement brillait sous les projecteurs. Des milliers de visages levés vers l'estrade, des drapeaux aux couleurs des Cinq, des enfants juchés sur les épaules de leurs pères. Néo-Terra célébrait ses protecteurs.\n\nSur l'estrade, Dorian Vex ajustait le col de sa combinaison de combat. Elle n'avait jamais vu le combat — pas une égratignure, pas une tache. Mais elle luisait parfaitement sous les lumières.\n\n— \"Peuple de Néo-Terra !\" Sa voix résonnait dans les amplificateurs disposés sur la place. \"Les Zordons croient pouvoir nous atteindre. Ils se trompent.\"\n\nLa foule rugit. Derrière lui, les quatre autres Biomen se tenaient en ligne, bras croisés, mâchoires serrées. L'image parfaite. Kael, le plus massif, avait ce sourire en coin qu'il réservait aux caméras — celui qui disparaissait dès que les projecteurs s'éteignaient.\n\n— \"Tant que nous serons là, vous n'avez rien à craindre.\"\n\nTonnerre d'applaudissements. Dorian Vex savourait. Ce n'était pas la victoire qu'il aimait — c'était ça. L'adoration. Le pouvoir d'un mot sur dix mille bouches.\n\nEn retrait, à l'angle de l'estrade, là où les lumières ne portaient plus, Soren rangeait les câbles d'alimentation des projecteurs. Personne ne lui avait demandé de le faire. Mais personne ne lui demandait jamais rien — c'était pire. On l'ignorait, sauf quand on avait besoin d'un nom à cracher.\n\n— \"Hé, Bamboule ! Le câble 3 grésille.\"\n\nC'était Kael, sans même tourner la tête. Sans même baisser les bras croisés. Soren ne répondit pas. Il s'accroupit, trouva le câble, le répara en silence. Il n'avait pas toujours été comme ça. Il y avait eu une époque où il répondait. Ça s'était mal terminé.\n\nLe discours se poursuivit. Dorian Vex parlait de sacrifice, de devoir, de lignée. Des mots qui sonnaient comme les discours que Soren avait lus dans les manuels d'histoire — ceux des régimes qu'on n'était pas supposé admirer.\n\nÀ la fin, les Cinq descendirent de l'estrade par l'arrière, là où les caméras ne suivaient pas. La transformation fut immédiate. Les épaules se relâchèrent. Les sourires tombèrent.\n\n— \"Putain, j'en peux plus de ces bains de foule,\" grogna Mara, la seule femme du groupe, en arrachant ses gants. \"C'est quand qu'on nous fout la paix ?\"\n\n— \"Quand les Zordons débarqueront pour de vrai et qu'on sera tous morts,\" répondit Kael en riant.\n\n— \"Si ça pouvait arriver vite...\" murmura Soren.\n\nSilence. Quatre paires d'yeux se tournèrent vers lui. Kael s'approcha, lentement, et posa une main sur son épaule. Le geste aurait pu être fraternel. Il ne l'était pas.\n\n— \"Dis donc, Bamboule. Toi, t'es le premier qu'ils boufferont. Tu le sais, ça ?\"\n\nSoren soutint son regard. Ne dit rien. Il avait appris que le silence était la seule armure que les autres ne pouvaient pas lui arracher.\n\nPlus tard, seul dans les couloirs du Complexe — ce palais de verre et d'acier que le Haut-Conseil avait fait construire pour les Biomen, pas pour les protéger mais pour les montrer —, Soren s'arrêta devant l'écran d'information. Un bandeau défilait : \"ACTIVITÉ ZORDON DÉTECTÉE — SECTEUR GAMMA-7 — ASTRE CX-440.\"\n\nL'astre éteint.\n\nSoren connaissait ce nom. Tout le monde le connaissait. C'était là que, selon les analystes, la prochaine offensive aurait lieu. Ce que personne ne disait — ce que le Haut-Conseil ne dirait jamais —, c'est qu'ils avaient laissé les Zordons approcher. Délibérément. Parce qu'une bonne guerre, au bon moment, c'était exactement ce dont le Conseil avait besoin pour prolonger les mandats exceptionnels.\n\nSoren éteignit l'écran et reprit sa marche dans le couloir vide.\n\nQuelque part dans l'espace, Flagor regardait le même astre par son hublot.",
+      "summary": "Introduction du camp Biomen sur Néo-Terra. Discours de Dorian Vex devant la foule. Les 5 Biomen révèlent leur vraie nature en coulisses. Soren (La Bamboule) est présenté comme le souffre-douleur métis, silencieux et lucide. Le Haut-Conseil est évoqué en sous-texte.",
+      "advancedLines": ["line-guerre", "line-biomen", "line-bamboule", "line-oligarchie"],
+      "preEvaluation": {
+        "timestamp": "2026-02-18T19:00:00.000Z",
+        "lineSnapshots": [
+          { "lineId": "line-biomen", "name": "Les Biomen — héros corrompus", "weight": 0.70, "urgency": 0.0, "status": "dormant", "importance": 0.35, "notes": "Priorité absolue : introduire le contrepoint" },
+          { "lineId": "line-bamboule", "name": "\"La Bamboule\" — le souffre-douleur", "weight": 0.75, "urgency": 0.0, "status": "dormant", "importance": 0.38, "notes": "Pivot moral à poser tôt" },
+          { "lineId": "line-guerre", "name": "La guerre Zordons vs Biomen", "weight": 0.75, "urgency": 0.14, "status": "emerging", "importance": 0.36, "notes": "Faire résonner côté Biomen" },
+          { "lineId": "line-oligarchie", "name": "L'oligarchie sous-jacente", "weight": 0.55, "urgency": 0.0, "status": "dormant", "importance": 0.28, "notes": "Amorcer en sous-texte subtil" }
+        ],
+        "priorities": ["line-biomen", "line-bamboule", "line-guerre", "line-oligarchie"],
+        "globalNotes": "BRIEFING AGENT ANALYSTE — Introduire le camp Biomen, renverser les attentes du lecteur. Présenter La Bamboule comme pivot moral. Amorcer l'oligarchie en sous-texte. Ne pas montrer Flagor."
+      },
+      "postEvaluation": {
+        "timestamp": "2026-02-18T19:30:00.000Z",
+        "lineUpdates": [
+          { "lineId": "line-guerre", "name": "La guerre Zordons vs Biomen", "weightBefore": 0.75, "weightAfter": 0.80, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "emerging", "statusAfter": "active", "advanced": true, "notes": "CX-440 détecté côté Biomen. Guerre visible des deux côtés." },
+          { "lineId": "line-biomen", "name": "Les Biomen — héros corrompus", "weightBefore": 0.70, "weightAfter": 0.75, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "dormant", "statusAfter": "active", "advanced": true, "notes": "Pleinement introduits. Dorian Vex, Kael, Mara. Façade héroïque / réalité toxique." },
+          { "lineId": "line-bamboule", "name": "\"La Bamboule\" — le souffre-douleur", "weightBefore": 0.75, "weightAfter": 0.85, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "dormant", "statusAfter": "active", "advanced": true, "notes": "Personnage le plus fort du chapitre. Dignité silencieuse, lucidité, isolement. Pivot moral confirmé." },
+          { "lineId": "line-oligarchie", "name": "L'oligarchie sous-jacente", "weightBefore": 0.55, "weightAfter": 0.65, "urgencyBefore": 0.0, "urgencyAfter": 0.0, "statusBefore": "dormant", "statusAfter": "emerging", "advanced": true, "notes": "Haut-Conseil introduit. Mandats exceptionnels + guerre instrumentalisée." }
+        ],
+        "nextPriorities": ["line-flagor-ascension", "line-feodalite", "line-passe-flagor", "line-astre-eteint", "line-guerre", "line-bamboule", "line-biomen", "line-oligarchie"],
+        "narrativeNotes": "BILAN AGENT CRITIQUE — Objectifs atteints. Alternance ch.1 Zordons / ch.2 Biomen efficace. Soren est le personnage le plus réussi. Pour le ch.3 : revenir côté Zordon, approfondir Flagor/Malak, amorcer le passé de Flagor.",
+        "rulesTriggered": []
+      },
+      "createdAt": "2026-02-18T19:00:00.000Z",
+      "updatedAt": "2026-02-18T19:30:00.000Z"
+    }
+  ],
+  "settings": {
+    "neglectThreshold": 3,
+    "maxActiveLinesWarning": 5,
+    "resolutionPressureThreshold": 10
+  },
+  "createdAt": "2026-02-18T18:00:00.000Z",
+  "updatedAt": "2026-02-18T19:30:00.000Z"
+}
