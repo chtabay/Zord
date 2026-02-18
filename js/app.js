@@ -17,9 +17,14 @@ class App {
 
   async init() {
     await storage.init();
+    evaluator.setProject(storage.load());
     this._bindNavigation();
     this._bindGlobalActions();
     this.navigate('dashboard');
+  }
+
+  _syncEvaluator() {
+    evaluator.setProject(storage.load());
   }
 
   // ── Navigation ──
@@ -42,6 +47,7 @@ class App {
   }
 
   _render() {
+    this._syncEvaluator();
     const main = document.getElementById('main-content');
     switch (this.currentView) {
       case 'dashboard': return this._renderDashboard(main);

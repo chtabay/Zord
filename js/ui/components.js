@@ -252,6 +252,13 @@ export function renderRuleAlerts(alerts) {
 }
 
 export function renderDashboard(stats) {
+  const tensionPercent = Math.round((stats.globalTension || 0) * 100);
+  const tensionHue = 120 - (stats.globalTension || 0) * 120;
+  const tensionLabel = stats.globalTensionLabel || '—';
+  const actLabel = stats.currentAct === 'setup' ? 'Acte I'
+    : stats.currentAct === 'confrontation' ? 'Acte II'
+    : stats.currentAct === 'resolution' ? 'Acte III' : '—';
+
   return `
     <div class="dashboard">
       <div class="stat-cards">
@@ -264,16 +271,20 @@ export function renderDashboard(stats) {
           <div class="stat-label">Actives</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">${stats.resolvedCount}</div>
-          <div class="stat-label">Résolues</div>
-        </div>
-        <div class="stat-card">
           <div class="stat-value">${stats.completedUnits}/${stats.totalUnits}</div>
           <div class="stat-label">Unités</div>
         </div>
         <div class="stat-card">
           <div class="stat-value">${(stats.avgUrgency * 100).toFixed(0)}%</div>
           <div class="stat-label">Urgence moy.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:hsl(${tensionHue},70%,55%)">${tensionPercent}%</div>
+          <div class="stat-label">Tension — ${tensionLabel}</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">${actLabel}</div>
+          <div class="stat-label">Structure</div>
         </div>
       </div>
     </div>`;

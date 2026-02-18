@@ -13,6 +13,20 @@ class StorageService {
       name: 'Nouveau projet',
       narrativeLines: [],
       storyUnits: [],
+      thematicQuestions: [],
+      lineTensions: [],
+      dramaticStructure: {
+        totalPlannedUnits: null,
+        currentAct: 'setup',
+        turningPoints: [
+          { type: 'inciting_incident', unitId: null, description: '', reached: false },
+          { type: 'first_plot_point', unitId: null, description: '', reached: false },
+          { type: 'midpoint', unitId: null, description: '', reached: false },
+          { type: 'crisis', unitId: null, description: '', reached: false },
+          { type: 'climax_point', unitId: null, description: '', reached: false },
+          { type: 'denouement', unitId: null, description: '', reached: false }
+        ]
+      },
       settings: {
         neglectThreshold: 3,
         maxActiveLinesWarning: 5,

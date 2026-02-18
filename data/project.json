@@ -6,6 +6,9 @@
       "name": "L'ascension solitaire de Flagor",
       "description": "Le parcours de Flagor, tyran solitaire des Zordons, hissé au sommet par la violence. Mythifié par ses soldats, marqué par les cicatrices. Son rostre écarlate est le symbole de son règne.",
       "status": "active",
+      "level": "major",
+      "narrativeFunction": "tension",
+      "agency": "proactive",
       "weight": 0.80,
       "urgency": 0.0,
       "lastAdvancedInUnit": 0,
@@ -32,6 +35,9 @@
       "name": "La guerre Zordons vs Biomen",
       "description": "Le conflit central du récit. Flagor a déclaré la victoire finale contre les Biomen. La guerre n'a pas encore commencé sur le terrain — elle est une promesse, un horizon.",
       "status": "active",
+      "level": "major",
+      "narrativeFunction": "tension",
+      "agency": "reactive",
       "weight": 0.80,
       "urgency": 0.0,
       "lastAdvancedInUnit": 1,
@@ -67,6 +73,9 @@
       "name": "Le passé de Flagor",
       "description": "Histoire violente et tourmentée. Pour les Zordons, c'est un mythe. Les cicatrices de son rostre sont celles 'portées par les grands destins'. Graine plantée pour des flashbacks.",
       "status": "dormant",
+      "level": "secondary",
+      "narrativeFunction": "foreshadowing",
+      "agency": "passive",
       "weight": 0.60,
       "urgency": 0.0,
       "lastAdvancedInUnit": -1,
@@ -83,6 +92,9 @@
       "name": "La féodalité Flagor / Malak",
       "description": "Malak appelle Flagor 'Maître'. Rapport féodal, pas militaire. Soumission totale ou calcul ? Potentiel de trahison, de loyauté aveugle, ou de révélation sur la nature du pouvoir Zordon.",
       "status": "emerging",
+      "level": "secondary",
+      "narrativeFunction": "catalyst",
+      "agency": "reactive",
       "weight": 0.50,
       "urgency": 0.0,
       "lastAdvancedInUnit": 0,
@@ -109,6 +121,9 @@
       "name": "La conquête de l'astre éteint",
       "description": "L'opération militaire immédiate. Un monde mort, sans vie, constellé de cratères. Théâtre de la bataille à venir. Le contraste entre la beauté légère du vent et la mort derrière le verre.",
       "status": "active",
+      "level": "secondary",
+      "narrativeFunction": "connector",
+      "agency": "passive",
       "weight": 0.65,
       "urgency": 0.0,
       "lastAdvancedInUnit": 0,
@@ -135,6 +150,9 @@
       "name": "Les Biomen — héros corrompus",
       "description": "Le camp adverse, des 'héros' à la The Boys : racistes, masculinistes, peu fréquentables. La façade héroïque cache une réalité toxique. Lecture inversée du sentai classique.",
       "status": "active",
+      "level": "major",
+      "narrativeFunction": "tension",
+      "agency": "proactive",
       "weight": 0.75,
       "urgency": 0.0,
       "lastAdvancedInUnit": 1,
@@ -161,6 +179,9 @@
       "name": "\"La Bamboule\" — le souffre-douleur",
       "description": "Le Bioman métis, seul non-masculiniste du groupe. Surnommé 'la Bamboule' par les autres. Souffre-douleur mais pivot moral du récit — le seul lucide. Son arc est celui de la dignité face au mépris.",
       "status": "active",
+      "level": "major",
+      "narrativeFunction": "theme_carrier",
+      "agency": "passive",
       "weight": 0.85,
       "urgency": 0.0,
       "lastAdvancedInUnit": 1,
@@ -187,6 +208,9 @@
       "name": "L'oligarchie sous-jacente",
       "description": "Lecture politique en filigrane : l'organisation des Zordons comme métaphore de l'oligarchie post-communiste. Le pouvoir personnel de Flagor, la cour de Malak, la mythification du chef. Doit rester subtil.",
       "status": "emerging",
+      "level": "major",
+      "narrativeFunction": "theme_carrier",
+      "agency": "passive",
       "weight": 0.65,
       "urgency": 0.0,
       "lastAdvancedInUnit": 1,
@@ -275,11 +299,101 @@
       "updatedAt": "2026-02-18T19:30:00.000Z"
     }
   ],
+  "thematicQuestions": [
+    {
+      "id": "tq-pouvoir-performance",
+      "question": "Le pouvoir est-il une performance ou une substance ?",
+      "description": "Flagor règne par la mythologie personnelle. Dorian Vex règne par le spectacle. Le Haut-Conseil règne par la manipulation. Trois formes de pouvoir — aucune n'est légitime. Le récit interroge : le pouvoir existe-t-il en dehors de sa mise en scène ?",
+      "relatedLines": ["line-flagor-ascension", "line-biomen", "line-oligarchie", "line-feodalite"],
+      "contributions": [
+        { "unitNumber": 1, "note": "Flagor comme mythe vivant — ses cicatrices sont sa légitimité" },
+        { "unitNumber": 2, "note": "Dorian Vex : le pouvoir comme spectacle. La combinaison immaculée, le discours calibré." }
+      ]
+    },
+    {
+      "id": "tq-dignite-systeme",
+      "question": "La dignité peut-elle survivre à l'intérieur d'un système qui la nie ?",
+      "description": "Soren est à l'intérieur du système Biomen. Il voit sa toxicité. Il la subit. Mais il reste. La question est : rester en silence est-ce de la résistance ou de la complicité ?",
+      "relatedLines": ["line-bamboule", "line-biomen"],
+      "contributions": [
+        { "unitNumber": 2, "note": "Soren répare les câbles, encaisse les insultes, ne dit rien. Le silence comme armure — mais aussi comme piège." }
+      ]
+    },
+    {
+      "id": "tq-guerre-instrumentalisee",
+      "question": "À qui profite la guerre ?",
+      "description": "La guerre Zordons/Biomen semble être le conflit central. Mais le récit suggère qu'elle est instrumentalisée par les deux camps : Flagor en a besoin pour son mythe, le Haut-Conseil pour ses mandats.",
+      "relatedLines": ["line-guerre", "line-oligarchie", "line-flagor-ascension"],
+      "contributions": [
+        { "unitNumber": 1, "note": "Flagor déclare la guerre avec jubilation — c'est sa raison d'être retrouvée" },
+        { "unitNumber": 2, "note": "Le Haut-Conseil a laissé les Zordons approcher délibérément" }
+      ]
+    }
+  ],
+  "lineTensions": [
+    {
+      "id": "tension-flagor-biomen",
+      "lineA": "line-flagor-ascension",
+      "lineB": "line-biomen",
+      "type": "perspective",
+      "strength": 0.8,
+      "description": "Le pouvoir vu des deux camps : Flagor (féodal, mythique) vs Biomen (spectaculaire, performatif). Même sujet, deux angles.",
+      "active": true
+    },
+    {
+      "id": "tension-bamboule-biomen",
+      "lineA": "line-bamboule",
+      "lineB": "line-biomen",
+      "type": "contradictory",
+      "strength": 0.9,
+      "description": "Soren existe CONTRE les Biomen tout en étant à l'intérieur. Sa dignité contredit leur toxicité. L'avancer, c'est fragiliser leur façade.",
+      "active": true
+    },
+    {
+      "id": "tension-guerre-oligarchie",
+      "lineA": "line-guerre",
+      "lineB": "line-oligarchie",
+      "type": "catalytic",
+      "strength": 0.7,
+      "description": "La guerre catalyse l'oligarchie : plus le conflit s'intensifie, plus les structures de pouvoir en profitent. Relation asymétrique.",
+      "active": true
+    },
+    {
+      "id": "tension-flagor-malak",
+      "lineA": "line-flagor-ascension",
+      "lineB": "line-feodalite",
+      "type": "symbiotic",
+      "strength": 0.6,
+      "description": "Le pouvoir de Flagor n'existe que par la soumission de Malak. Si Malak doute, Flagor vacille.",
+      "active": true
+    },
+    {
+      "id": "tension-passe-ascension",
+      "lineA": "line-passe-flagor",
+      "lineB": "line-flagor-ascension",
+      "type": "thematic_echo",
+      "strength": 0.5,
+      "description": "Le passé de Flagor est l'écho de son présent : la violence qui l'a construit est la même qui le détruira.",
+      "active": true
+    }
+  ],
+  "dramaticStructure": {
+    "totalPlannedUnits": 12,
+    "currentAct": "setup",
+    "turningPoints": [
+      { "type": "inciting_incident", "unitId": null, "description": "Premier contact entre Zordons et Biomen sur l'astre éteint", "reached": false },
+      { "type": "first_plot_point", "unitId": null, "description": "Soren découvre la vérité sur la guerre instrumentalisée et doit choisir", "reached": false },
+      { "type": "midpoint", "unitId": null, "description": "Renversement : le lecteur comprend qui sont les vrais antagonistes", "reached": false },
+      { "type": "crisis", "unitId": null, "description": "Soren est contraint d'agir — fin de la passivité", "reached": false },
+      { "type": "climax_point", "unitId": null, "description": "Confrontation finale entre les systèmes de pouvoir", "reached": false },
+      { "type": "denouement", "unitId": null, "description": "", "reached": false }
+    ]
+  },
   "settings": {
     "neglectThreshold": 3,
     "maxActiveLinesWarning": 5,
     "resolutionPressureThreshold": 10
   },
   "createdAt": "2026-02-18T18:00:00.000Z",
-  "updatedAt": "2026-02-18T19:30:00.000Z"
+  "updatedAt": "2026-02-18T20:00:00.000Z"
 }
