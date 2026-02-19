@@ -36,7 +36,8 @@ class EvaluatorService {
       }
     }
 
-    const rawUrgency = timeDecay * statusMultiplier * weightFactor + tensionBoost;
+    const inertiaFactor = 1 - (line.inertia || 0) * 0.7;
+    const rawUrgency = timeDecay * statusMultiplier * weightFactor * inertiaFactor + tensionBoost;
     return Math.min(0.95, Math.max(0, rawUrgency));
   }
 

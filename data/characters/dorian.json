@@ -34,5 +34,11 @@
     "Ch.14: Confronte Kira dans le couloir — sans mépris. Révèle le message non ouvert de son frère. 'Pourquoi tu l'as protégé ?' Annonce la session d'Helena. Mains inutiles sur la table du Conseil.",
     "Ch.18: Commission suspendue. Trouve Kira dans le couloir. Admet sa faute (l'alerte ignorée). Révèle le titre du message : 'Pour après'. Kira dit la vérité sans punir. Annonce la délégation d'Helena — Kira sera envoyée sur l'astre. Quelque chose de privé, pour la première fois."
   ],
-  "contradictions": "Dorian accuse Soren de trahison, mais c'est lui qui a ignoré l'alerte qui aurait pu sauver son frère. Il cherche un coupable extérieur pour ne pas affronter sa propre responsabilité."
+  "contradictions": "Dorian accuse Soren de trahison, mais c'est lui qui a ignoré l'alerte qui aurait pu sauver son frère. Il cherche un coupable extérieur pour ne pas affronter sa propre responsabilité.",
+  "arc": {
+    "phases": ["setup", "test", "crisis", "climax", "resolution"],
+    "currentPhase": "crisis",
+    "trajectory": "Leader charismatique → deuil du frère → rage → vulnérabilité → ???",
+    "completionSignal": "Dorian accepte sa responsabilité (l'alerte ignorée) ou la transfère définitivement"
+  }
 }

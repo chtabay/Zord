@@ -40,5 +40,11 @@
     "Ch.19: Apprend que la délégation arrive en 8h. Choisit de retourner dans les vestiges. 'Huit heures. C'est assez.' Pas la démarche du commandant — celle d'un homme qui n'était plus certain de vouloir trouver ce qu'il allait chercher.",
     "Ch.20: Entre dans les vestiges. Trouve Soren — face à face. Le reconnaît comme la Bamboule. Échange factuel. Soren prononce 'Syra' — Flagor encaisse le coup. Un geste non contrôlé trahit l'émotion. Propose de protéger Soren ('Pas si tu restes ici.'). Soren refuse. Kira arrive — Biomen dans ses vestiges. Trois personnes, un mur ouvert, le commandant qui ne donne plus d'ordres."
   ],
-  "contradictions": "Flagor se croit seul maître de son destin, mais le passé (Syra) contrôle chacune de ses décisions depuis le ch.9. Il croit protéger Syra, mais il ne sait pas si elle veut être protégée — ni si elle est du même côté."
+  "contradictions": "Flagor se croit seul maître de son destin, mais le passé (Syra) contrôle chacune de ses décisions depuis le ch.9. Il croit protéger Syra, mais il ne sait pas si elle veut être protégée — ni si elle est du même côté.",
+  "arc": {
+    "phases": ["setup", "test", "crisis", "climax", "resolution"],
+    "currentPhase": "crisis",
+    "trajectory": "Tyran solitaire → hanté par le passé → choisit de ne pas agir → franchit le mur → ???",
+    "completionSignal": "Flagor fait un choix qui ne dépend plus de Syra — il agit pour lui-même, pas pour un fantôme"
+  }
 }

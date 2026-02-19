@@ -27,17 +27,62 @@ class OrchestratorService {
   // ÉTAPE 1 : Sélection et identification des entités
   // ────────────────────────────────────────────────────────
 
+  /**
+   * Mode convergence : activé quand project.convergence est défini.
+   * { remainingChapters: N, activated: true }
+   * En mode convergence :
+   * - Les lignes de fond (background) sont exclues de la sélection
+   * - Les lignes foreground non-resolved sont priorisées par poids décroissant
+   * - Les promesses ouvertes génèrent des alertes critiques
+   * - Interdiction de créer de nouvelles lignes
+   * - L'analyste est informé du décompte
+   */
   selectLines(project) {
     const lines = project.narrativeLines || [];
     const units = project.storyUnits || [];
     const currentUnitIndex = units.length;
+    const convergence = project.convergence;
+    const isConverging = convergence?.activated === true;
 
     evaluator.setProject(project);
     const preEval = evaluator.generatePreEvaluation(lines, currentUnitIndex);
     const alerts = evaluator.evaluateRules(lines, units, currentUnitIndex);
     const tension = evaluator.calculateGlobalTension(lines);
 
-    const activeSnapshots = preEval.lineSnapshots.filter(s => s.status !== 'resolved');
+    let activeSnapshots = preEval.lineSnapshots.filter(s => s.status !== 'resolved');
+
+    if (isConverging) {
+      activeSnapshots = activeSnapshots.filter(s => {
+        const full = lines.find(l => l.id === s.lineId);
+        return full?.temporalScale !== 'background';
+      });
+
+      activeSnapshots.sort((a, b) => {
+        const lineA = lines.find(l => l.id === a.lineId);
+        const lineB = lines.find(l => l.id === b.lineId);
+        return (lineB?.weight || 0) - (lineA?.weight || 0);
+      });
+
+      const openPromises = (project.promises || []).filter(p => p.status === 'open' || p.status === 'partially-paid');
+      if (openPromises.length > 0) {
+        alerts.push({
+          ruleId: 'convergence-promises',
+          ruleName: 'Convergence — promesses ouvertes',
+          type: 'constraint',
+          message: `MODE CONVERGENCE : ${openPromises.length} promesse(s) encore ouverte(s). Il reste ${convergence.remainingChapters} chapitres. Payer ou fermer.`,
+          severity: 0.9
+        });
+      }
+
+      alerts.push({
+        ruleId: 'convergence-countdown',
+        ruleName: 'Convergence — décompte',
+        type: 'constraint',
+        message: `MODE CONVERGENCE ACTIF : il reste ${convergence.remainingChapters} chapitre(s). Les lignes doivent converger vers la résolution. Pas de nouvelles lignes.`,
+        severity: 1.0
+      });
+    }
+
     const maxLines = Math.min(5, Math.max(3, activeSnapshots.length));
     const selected = activeSnapshots.slice(0, maxLines);
 
@@ -51,6 +96,8 @@ class OrchestratorService {
         level: full.level,
         narrativeFunction: full.narrativeFunction,
         agency: full.agency,
+        temporalScale: full.temporalScale || 'foreground',
+        surfacingMode: full.surfacingMode || 'scene',
         projection: full.projection || [],
         weight: full.weight,
         urgency: snap.urgency,
@@ -67,9 +114,11 @@ class OrchestratorService {
 
     return {
       selectedLines,
+      isConverging,
       mechanicalContext: {
         currentUnitIndex,
         totalUnits: units.length,
+        convergence: isConverging ? { remaining: convergence.remainingChapters } : null,
         tension: { value: tension.value, label: tension.label },
         alerts: relevantAlerts,
         suggestions: tension.suggestions
@@ -181,9 +230,21 @@ Réponds factuellement, 2-5 phrases. Sois concret et spécifique. Cite des déta
       ? mechanicalContext.alerts.map(a => `- ${a.message}`).join('\n')
       : 'Aucune alerte.';
 
+    const bgLines = (project.narrativeLines || [])
+      .filter(l => l.temporalScale === 'background' && l.status !== 'resolved');
+    const bgText = bgLines.length
+      ? bgLines.map(l =>
+        `■ ${l.name} [fond, inertie=${l.inertia}, surfaçage=${l.surfacingMode}]\n  ${l.description}`
+      ).join('\n\n')
+      : 'Aucune.';
+
+    const convergenceText = mechanicalContext.convergence
+      ? `\nMODE CONVERGENCE ACTIF — il reste ${mechanicalContext.convergence.remaining} chapitre(s). Toutes les lignes doivent converger vers la résolution. Pas de nouvelles lignes. Les promesses ouvertes doivent être payées ou fermées.`
+      : '';
+
     return `Tu es l'Agent Analyste. Tu identifies ce que chaque ligne narrative NÉCESSITE et tu STRUCTURES le chapitre en scènes.
 
-RÈGLE ABSOLUE : tu produis des contraintes sur CE QUI doit se passer, jamais sur COMMENT le rédacteur doit l'écrire.
+RÈGLE ABSOLUE : tu produis des contraintes sur CE QUI doit se passer, jamais sur COMMENT le rédacteur doit l'écrire.${convergenceText}
 
 CHAPITRES PRÉCÉDENTS :
 ${previousSummaries}
@@ -218,6 +279,9 @@ Pour chaque ligne non-absente :
 - BESOIN NARRATIF
 - AGENTIVITÉ REQUISE
 - PROJECTION RETENUE
+
+LIGNES DE FOND (à traiter par mention, écho ou implication — JAMAIS en A-story) :
+${bgText}
 
 Format : JSON structuré.`;
   }

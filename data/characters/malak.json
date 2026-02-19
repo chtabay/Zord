@@ -38,5 +38,11 @@
     "Ch.19: Detecte la signature de la délégation (8h). Flagor retourne aux vestiges. Malak reste seul au véhicule, mandibules serrées, scanners activés. Veille sans suivre.",
     "Ch.20: Voit la délégation Biomen atterrir au nord — vaisseau léger, trois signatures, pas d'armes lourdes. Kira passe devant le véhicule. Leurs regards se croisent — premier face-à-face Zordon/Biomen sur l'astre. Silence. Mandibules qui se décrispent. La laisse passer sans alerter Flagor. Le pouvoir de ne pas agir."
   ],
-  "contradictions": "Malak a trahi la loyauté féodale en parlant — mais ce faisant, il est devenu le seul en qui Flagor peut avoir confiance (le seul qui a dit la vérité). Il trace Soren mais ne sait pas si Flagor veut qu'il le trouve."
+  "contradictions": "Malak a trahi la loyauté féodale en parlant — mais ce faisant, il est devenu le seul en qui Flagor peut avoir confiance (le seul qui a dit la vérité). Il trace Soren mais ne sait pas si Flagor veut qu'il le trouve.",
+  "arc": {
+    "phases": ["setup", "test", "crisis", "climax", "resolution"],
+    "currentPhase": "resolution",
+    "trajectory": "Second féodal → doute → révèle Syra → face-à-face d'égaux → veille sans suivre",
+    "completionSignal": "Malak fait un choix qui n'est ni soumission ni trahison — un choix autonome"
+  }
 }

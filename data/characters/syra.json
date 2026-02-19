@@ -23,5 +23,11 @@
     "Ch.10: Flagor choisit de ne pas transmettre pour la protéger. 'Si je transmets, ils trouveront Syra.'",
     "Ch.12: Son visage apparaît dans les vestiges à côté de celui de Soren."
   ],
-  "contradictions": "Syra est le pivot émotionnel de Flagor mais elle n'est jamais apparue en personne. Elle pourrait être une alliée, une ennemie, ou quelque chose de complètement différent. Les vestiges la montrent — mais est-ce la vraie Syra ou un enregistrement ancien ?"
+  "contradictions": "Syra est le pivot émotionnel de Flagor mais elle n'est jamais apparue en personne. Elle pourrait être une alliée, une ennemie, ou quelque chose de complètement différent. Les vestiges la montrent — mais est-ce la vraie Syra ou un enregistrement ancien ?",
+  "arc": {
+    "phases": ["setup", "test", "crisis", "climax", "resolution"],
+    "currentPhase": "setup",
+    "trajectory": "Fantôme → nom → voix → visage → ???",
+    "completionSignal": "Syra apparaît en personne ou sa nature est révélée"
+  }
 }

@@ -35,5 +35,11 @@
     "Ch.19: Dans le vaisseau de la délégation. Helena l'a convoquee : 'Trouvez-le. Faites-le écouter.' Pas de protocole écrit. L'astre apparaît. Choisit d'atterrir au nord, près des vestiges. Premier choix autonome.",
     "Ch.20: Quitte le vaisseau. Trouve le véhicule Zordon — croise le regard de Malak (premier face-à-face intercamp silencieux). Entre dans les vestiges seule. Suit les empreintes. Trouve Soren et Flagor face à face dans un couloir de pierre froide. 'Je suis venue te chercher.' Soren répond 'Je sais.' Trois personnes, un mur ouvert, les vestiges silencieux."
   ],
-  "contradictions": "Kira défend Soren par conviction morale — mais la fuite de Soren a coûté 2 vaisseaux et des centaines de vies. Sa loyauté envers un homme a un prix collectif qu'elle n'admet pas."
+  "contradictions": "Kira défend Soren par conviction morale — mais la fuite de Soren a coûté 2 vaisseaux et des centaines de vies. Sa loyauté envers un homme a un prix collectif qu'elle n'admet pas.",
+  "arc": {
+    "phases": ["setup", "test", "crisis", "climax", "resolution"],
+    "currentPhase": "climax",
+    "trajectory": "Bioman anonyme → seule empathique → bouc émissaire → suspendue → autorité retrouvée (mission Helena)",
+    "completionSignal": "Kira retrouve Soren et choisit ce que ça signifie — protection, justice, ou autre chose"
+  }
 }

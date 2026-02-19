@@ -38,5 +38,11 @@
     "Ch.19: Franchit l'ouverture. Pierre froide de l'autre côté. Empreintes de Flagor au sol. Le réseau anonyme annonce la délégation en heures. S'assoit dans le froid. Le choix lui appartient mais le temps ne lui appartient plus.",
     "Ch.20: Flagor revient dans les vestiges. Face à face — Flagor le reconnaît comme la Bamboule. Échange minimal. Soren prononce le nom de Syra — Flagor encaisse. Flagor propose de le protéger. Soren refuse ('Non.'). Kira arrive. Trois personnes, deux camps, un mur ouvert. 'Je sais.' Les vestiges se taisent."
   ],
-  "contradictions": "Soren croit agir pour la justice, mais sa fuite a coûté 2 vaisseaux et des centaines de morts. Il pense être seul, mais un réseau le guide — il ne sait pas pour qui il travaille vraiment. Les vestiges le reconnaissent — pourquoi lui ?"
+  "contradictions": "Soren croit agir pour la justice, mais sa fuite a coûté 2 vaisseaux et des centaines de morts. Il pense être seul, mais un réseau le guide — il ne sait pas pour qui il travaille vraiment. Les vestiges le reconnaissent — pourquoi lui ?",
+  "arc": {
+    "phases": ["setup", "test", "crisis", "climax", "resolution"],
+    "currentPhase": "climax",
+    "trajectory": "Souffre-douleur invisible → traître clandestin → reconnu par les vestiges → au centre de la convergence",
+    "completionSignal": "Soren est vu pour ce qu'il est — pas comme Bamboule, pas comme traître, comme lui-même"
+  }
 }

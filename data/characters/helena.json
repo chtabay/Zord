@@ -34,5 +34,11 @@
     "Ch.18: Analyse le signal modifié — il répond. Détecte la présence Zordon sur l'astre. Compose la délégation : 3 profils. Le troisième nom hésité puis tapé (Kira). Pense à son fils mort. Le signal pulse, patient. Comme elle.",
     "Ch.19: Mention indirecte. A envoyé Kira avec des instructions verbales : 'Trouvez-le. Faites-le écouter.' Pas de protocole écrit. La délégation est son instrument."
   ],
-  "contradictions": "Helena prétend chercher la vérité, mais elle attend 'une transmission, un signe' — ce qui suggère qu'elle est connectée à un réseau qui opère en dehors de la loi. Elle utilise la procédure comme arme, pas comme justice."
+  "contradictions": "Helena prétend chercher la vérité, mais elle attend 'une transmission, un signe' — ce qui suggère qu'elle est connectée à un réseau qui opère en dehors de la loi. Elle utilise la procédure comme arme, pas comme justice.",
+  "arc": {
+    "phases": ["setup", "test", "crisis", "climax", "resolution"],
+    "currentPhase": "test",
+    "trajectory": "Membre du Conseil → mère endeuillée → enquêtrice → joueuse d'un jeu que personne ne comprend",
+    "completionSignal": "Le plan d'Helena est révélé — ce qu'elle cherche vraiment et pour qui"
+  }
 }
