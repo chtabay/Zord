@@ -16,7 +16,7 @@
       ],
       "weight": 0.9,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-passe-flagor",
@@ -109,10 +109,28 @@
           "weightAfter": 0.9,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "Le Conseil de Néo-Terra a voté. Helena ne pardonnera pas. Le passé (Syra) contrôle chaque décision. Flagor ne peut plus reculer.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Apprend de Malak que Soren = la Bamboule, en route vers les vestiges. Choisit d'attendre encore. Le message d'Helena résonne.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-guerre",
@@ -129,7 +147,7 @@
       ],
       "weight": 0.8,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension",
@@ -231,15 +249,33 @@
           "weightAfter": 0.8,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "La guerre reste suspendue. Le Conseil a voté le statu quo. Mais la pression monte.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Statu quo confirmé. La guerre reste en suspens. Mais quelque chose a bougé.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-passe-flagor",
       "name": "Le passé de Flagor",
-      "description": "Histoire violente et tourmentée. Pour les Zordons, c'est un mythe. Les cicatrices de son rostre sont celles 'portées par les grands destins'. Graine plantée pour des flashbacks.",
+      "description": "Histoire violente et tourmentée. Pour les Zordons, c'est un mythe. Les cicatrices de son rostre sont celles 'portées par les grands destins'. Syra — une femme que Flagor croyait morte — est réapparue. Elle était avec lui dans la cellule, avant son ascension.",
       "status": "climax",
       "level": "secondary",
       "narrativeFunction": "foreshadowing",
@@ -251,7 +287,7 @@
       ],
       "weight": 0.7,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension"
@@ -307,10 +343,28 @@
           "weightAfter": 0.7,
           "statusBefore": "climax",
           "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "Le poids de Syra sur chaque seconde. Le passé ne se tait jamais longtemps.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Syra apparaît dans les vestiges — son visage sur l'écran ancien. Le passé de Flagor est lié à l'astre éteint et à une civilisation inconnue.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-feodalite",
@@ -327,7 +381,7 @@
       ],
       "weight": 0.65,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension",
@@ -384,10 +438,28 @@
           "weightAfter": 0.65,
           "statusBefore": "climax",
           "statusAfter": "resolving"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "La nouvelle relation se traduit en face-à-face — plus de hiérarchie, mais pas encore d'alliance.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "resolving",
+          "statusAfter": "resolving"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Malak utilise 'Maître' comme forme, pas comme soumission. Face-à-face stable. Malak a identifié Soren.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "resolving",
+          "statusAfter": "resolving"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-astre-eteint",
@@ -404,7 +476,7 @@
       ],
       "weight": 0.65,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-guerre"
@@ -442,10 +514,28 @@
           "weightAfter": 0.65,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "Soren se dirige vers l'astre. Les vieux rapports parlent de structures abandonnées.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Soren atterrit. Poussière grise, cratères, lumière froide. Les vestiges sont au nord.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-18T23:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-biomen",
@@ -462,7 +552,7 @@
       ],
       "weight": 0.85,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-guerre",
@@ -555,10 +645,28 @@
           "weightAfter": 0.85,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "Dorian confronte Kira — elle admet protéger Soren. La commission se referme sur elle.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Kira suspendue — pas condamnée, pas acquittée. Entre deux. Dorian part sans un mot.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-bamboule",
@@ -575,7 +683,7 @@
       ],
       "weight": 0.75,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-biomen"
@@ -636,7 +744,7 @@
         {
           "unitId": "unit-ch7",
           "unitNumber": 7,
-          "note": "Point de bascule franchi : transmission des coordonnées du convoi envoyée. Dilemme moral assumé. Malak a trouvé l'anomalie — terminal maintenance.",
+          "note": "Point de bascule franchi : transmission des coordonnées du prochain convoi envoyée. C'est cette signature que Malak trace dans les chapitres suivants.",
           "weightBefore": 0.75,
           "weightAfter": 0.75,
           "statusBefore": "active",
@@ -668,10 +776,28 @@
           "weightAfter": 0.75,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "Soren a disparu — vu se dirigeant vers les hangars, direction l'astre éteint. Fuite vers les vestiges.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Soren arrive sur l'astre éteint. Découvre les vestiges. L'écran ancien montre son visage puis celui de Syra. Quelque chose s'est activé. Message du réseau : 'Ils savent où tu es.'",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-oligarchie",
@@ -688,7 +814,7 @@
       ],
       "weight": 0.7,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension",
@@ -745,10 +871,28 @@
           "weightAfter": 0.7,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "Helena envoie un message à Flagor : 'Vous avez choisi. Nous aussi.' Le Conseil a voté.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Helena reste debout face aux écrans. Elle ne sait pas ce qui se passe sur l'astre. Mais le statu quo est sa trêve, pas sa paix.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     },
     {
       "id": "line-message-ils-savent",
@@ -765,7 +909,7 @@
       ],
       "weight": 0.35,
       "urgency": 0,
-      "lastAdvancedInUnit": 9,
+      "lastAdvancedInUnit": 11,
       "createdInUnit": 2,
       "dependencies": [
         "line-guerre",
@@ -813,10 +957,69 @@
           "weightAfter": 0.35,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "Réseau anonyme avertit Soren : 'Ils savent où tu es. Fuis. Ou reste.'",
+          "weightBefore": 0.35,
+          "weightAfter": 0.35,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T21:00:00.000Z",
-      "updatedAt": "2026-02-19T00:30:00.000Z"
+      "updatedAt": "2026-02-19T02:00:00.000Z"
+    },
+    {
+      "id": "line-vestiges-astre",
+      "name": "Les vestiges de l'astre",
+      "description": "Des structures anciennes découvertes sur l'astre éteint — ni Zordon, ni Biomen. Un vestige d'une civilisation inconnue. Beauté inattendue dans un théâtre de mort. Mystère et émerveillement au milieu du conflit.",
+      "status": "active",
+      "level": "secondary",
+      "narrativeFunction": "relief",
+      "agency": "passive",
+      "projection": [
+        "Les vestiges posent une question : pourquoi les deux camps se battent-ils pour cet astre ?",
+        "Un personnage découvre les vestiges et en est transformé",
+        "Les vestiges contiennent quelque chose que les deux camps ignorent"
+      ],
+      "weight": 0.45,
+      "urgency": 0,
+      "lastAdvancedInUnit": 11,
+      "createdInUnit": 9,
+      "dependencies": [
+        "line-astre-eteint"
+      ],
+      "tags": [
+        "astre",
+        "mystère",
+        "worldbuilding",
+        "respiration"
+      ],
+      "color": "#16a085",
+      "history": [
+        {
+          "unitId": "unit-ch11",
+          "unitNumber": 11,
+          "note": "Évoqués pour la première fois : 'structures abandonnées, vestiges d'une époque où l'astre brillait encore'. Mystère.",
+          "weightBefore": 0.35,
+          "weightAfter": 0.4,
+          "statusBefore": "dormant",
+          "statusAfter": "emerging"
+        },
+        {
+          "unitId": "unit-ch12",
+          "unitNumber": 12,
+          "note": "ACTIVÉS. Structures anciennes, symboles, écran qui s'illumine. Visage de Soren puis Syra. Signal. Quelque chose sait qu'il est là.",
+          "weightBefore": 0.4,
+          "weightAfter": 0.45,
+          "statusBefore": "emerging",
+          "statusAfter": "active"
+        }
+      ],
+      "createdAt": "2026-02-19T00:30:00.000Z",
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     }
   ],
   "storyUnits": [
@@ -1059,8 +1262,8 @@
       "number": 5,
       "title": "L'écho",
       "status": "completed",
-      "content": "Le piège se referma au crépuscule.\n\nFlagor avait fait installer les émetteurs de leurre sur la face nord de l'astre éteint, là où les falaises de basalte plongeaient dans l'ombre. Les Biomen avaient intercepté leurs communications — ils le savaient. Ils viendraient. Il fallait seulement que le leurre soit assez crédible pour les attirer dans la zone de tir.\n\n— Ils n'ont pas modifié leur trajectoire, dit Malak derrière lui.\n\nFlagor ne répondit pas. Soit le message n'avait pas atteint les Biomen. Soit ils n'y avaient pas cru. Soit quelqu'un avait voulu les envoyer au casse-pipe. Il leva la main. L'officier de tir attendait.\n\n— Feu.\n\nL'espace se déchira. Les projectiles à énergie cinétique traversèrent le vide en silence. Le premier vaisseau explosa avant que quiconque puisse réagir — une gerbe de débris et de corps. Le second tenta une manœuvre désespérée ; il prit un impact latéral et commença à se désintégrer. Le troisième, le plus éloigné, réussit à virer. Une partie de sa coque fut arrachée, mais il resta en vol et disparut dans un saut d'urgence.\n\nFlagor compta les secondes. Deux sur trois. Pas la victoire totale qu'il avait imaginée. Mais une victoire quand même.\n\n— Rapportez les pertes ennemies au Haut-Conseil, ordonna-t-il. Et ouvrez une enquête sur la fuite. Je veux un nom.\n\nMalak hocha la tête. Son regard, furtif, croisa celui de Flagor. Il y avait quelque chose de neuf dans ce regard. Du doute. Flagor le nota. Plus tard.\n\nSur le Vigilant, l'unique vaisseau rescapé, Kira tenait le pilote mourant contre elle. Le sang coulait entre ses doigts. Autour d'eux, les alarmes hurlaient, les couloirs étaient pleins de fumée.\n\n— Tenez bon, souffla-t-elle. On va vous sortir de là.\n\nLe pilote secoua la tête. Ses lèvres bougèrent sans son.\n\n— Ils savaient, dit-il enfin. On nous a prévenus. Dorian n'a pas voulu écouter.\n\nKira sentit son cœur se serrer. Elle leva les yeux vers Dorian Vex, qui donnait des ordres à l'autre bout du pont. Il avait reçu un message. Il l'avait ignoré. Ou jugé peu fiable. Ou utilisé pour autre chose.\n\n— Pourquoi ? demanda-t-elle à voix basse.\n\nLe pilote ne répondit plus. Il était mort.\n\nKira le déposa doucement et se releva. Les autres Biomen discutaient à voix basse. L'un d'eux pointa du doigt vers elle.\n\n— Elle était proche de lui. Du métis.\n\n— De qui tu parles ?\n\n— De La Bamboule. Elle lui a parlé. Elle l'a défendu.\n\nKira ne répondit pas. Elle tourna le dos et regagna son poste. Mais elle savait. Le filet se resserrait. Et Soren — où qu'il soit — avait peut-être sauvé ce vaisseau. Le seul. Au prix de deux autres.\n\nSoren attendait dans l'ombre d'un conduit de maintenance, sur une station orbitale secondaire. Son contact — une silhouette sans visage, voix modulée — avait confirmé la réception des coordonnées. Rien de plus.\n\nIl avait agi. Les conséquences arrivaient. Deux vaisseaux détruits. Un sauvé. Pas une victoire. Pas une défaite. Un compromis sanglant.\n\nUne main se posa sur son épaule. Il sursauta.\n\n— Tu as l'air perdu, Bamboule.\n\nC'était un technicien Zordon. Un de ceux qui l'avaient vu traîner dans les couloirs. Soren baissa les yeux.\n\n— Je cherche mon chemin.\n\n— Tu cherches quelque chose, en tout cas.\n\nLe technicien le dévisagea un instant, puis haussa les épaules et s'éloigna. Soren resta immobile. Un message anonyme venait d'arriver sur son terminal personnel : « Tu as bien fait. Reste discret. On te recontactera. »\n\nIl effaça le message. Son cœur battait trop fort. Il était passé de spectateur à acteur. Et le prix — ou le gain — n'était pas encore fixé.\n\nSur Néo-Terra, dans la salle du Haut-Conseil, une femme aux cheveux gris et au regard aigu leva la main pour demander la parole. Les autres conseillers se turent.\n\n— Le message « Ils savent » n'était pas une rumeur, dit-elle. C'était une alerte. Et nous l'avons traitée comme une information secondaire. Deux vaisseaux Biomen ont été détruits. Des centaines de morts. Flagor a frappé le premier. Et nous, nous avons laissé faire.\n\n— Councillor Vex, l'interrompit un homme plus jeune, nous ne pouvions pas —\n\n— Nous pouvions. Nous aurions dû. La guerre ne se gagne pas en fermant les yeux.\n\nElle se leva. Son nom — Helena Vex — apparaissait sur l'écran derrière elle. Membre du Haut-Conseil depuis douze ans. Mandat exceptionnel renouvelé trois fois.\n\n— Je demande l'ouverture d'une commission d'enquête. Sur la fuite. Sur les décisions prises. Et sur les liens entre certains membres de ce Conseil et les opérations de Flagor.\n\nLe silence qui suivit fut plus lourd que n'importe quel bruit. Helena Vex ne sourit pas. Elle attendit. Et le jeu — politique, sanglant, impitoyable — venait de changer de niveau.",
-      "summary": "Le piège de Flagor se déclenche : 2 vaisseaux Biomen détruits, 1 sauvé grâce à la fuite de Soren. Dorian Vex avait ignoré l'alerte. Kira accusée de proximité avec Soren. Soren reçoit un message anonyme. Au Haut-Conseil, Helena Vex exige une commission d'enquête.",
+      "content": "Le piège se referma au crépuscule.\n\nFlagor avait fait installer les émetteurs de leurre sur la face nord de l'astre éteint, là où les falaises de basalte plongeaient dans l'ombre. Les Biomen avaient intercepté leurs communications — ils le savaient. Ils viendraient. Il fallait seulement que le leurre soit assez crédible pour les attirer dans la zone de tir.\n\n— Ils n'ont pas modifié leur trajectoire, dit Malak derrière lui.\n\nFlagor ne répondit pas. Soit le message n'avait pas atteint les Biomen. Soit ils n'y avaient pas cru. Soit quelqu'un avait voulu les envoyer au casse-pipe. Il leva la main. L'officier de tir attendait.\n\n— Feu.\n\nL'espace se déchira. Les projectiles à énergie cinétique traversèrent le vide en silence. Le premier vaisseau explosa avant que quiconque puisse réagir — une gerbe de débris et de corps. Le second tenta une manœuvre désespérée ; il prit un impact latéral et commença à se désintégrer. Le troisième, le plus éloigné, réussit à virer. Une partie de sa coque fut arrachée, mais il resta en vol et disparut dans un saut d'urgence.\n\nFlagor compta les secondes. Deux sur trois. Pas la victoire totale qu'il avait imaginée. Mais une victoire quand même.\n\n— Rapportez les pertes ennemies au Commandement, ordonna-t-il. Et ouvrez une enquête sur la fuite. Je veux un nom.\n\nMalak hocha la tête. Son regard, furtif, croisa celui de Flagor. Il y avait quelque chose de neuf dans ce regard. Du doute. Flagor le nota. Plus tard.\n\nSur le Vigilant, l'unique vaisseau rescapé, Kira tenait le pilote mourant contre elle. Le sang coulait entre ses doigts. Autour d'eux, les alarmes hurlaient, les couloirs étaient pleins de fumée.\n\n— Tenez bon, souffla-t-elle. On va vous sortir de là.\n\nLe pilote secoua la tête. Ses lèvres bougèrent sans son.\n\n— Ils savaient, dit-il enfin. On nous a prévenus. Dorian n'a pas voulu écouter.\n\nKira sentit son cœur se serrer. Elle leva les yeux vers Dorian Vex, qui donnait des ordres à l'autre bout du pont. Il avait reçu un message. Il l'avait ignoré. Ou jugé peu fiable. Ou utilisé pour autre chose.\n\n— Pourquoi ? demanda-t-elle à voix basse.\n\nLe pilote ne répondit plus. Il était mort.\n\nKira le déposa doucement et se releva. Les autres Biomen discutaient à voix basse. L'un d'eux pointa du doigt vers elle.\n\n— Elle était proche de lui. Du métis.\n\n— De qui tu parles ?\n\n— De La Bamboule. Elle lui a parlé. Elle l'a défendu.\n\nKira ne répondit pas. Elle tourna le dos et regagna son poste. Mais elle savait. Le filet se resserrait. Et Soren — où qu'il soit — avait peut-être sauvé ce vaisseau. Le seul. Au prix de deux autres.\n\nSoren attendait dans les sous-niveaux du Complexe, là où les conduits de maintenance longeaient les serveurs de communication. Son contact — une voix modulée sur un canal chiffré — avait confirmé la réception des coordonnées. Rien de plus.\n\nIl avait agi. Les conséquences arrivaient. Deux vaisseaux détruits. Un sauvé. Pas une victoire. Pas une défaite. Un compromis sanglant.\n\nUne main se posa sur son épaule. Il sursauta.\n\n— Tu as l'air perdu, Bamboule.\n\nC'était un agent de maintenance. Un de ceux qui traînaient dans les mêmes couloirs que lui. Soren baissa les yeux.\n\n— Je cherche mon chemin.\n\n— Tu cherches quelque chose, en tout cas.\n\nLe technicien le dévisagea un instant, puis haussa les épaules et s'éloigna. Soren resta immobile. Un message anonyme venait d'arriver sur son terminal personnel : « Tu as bien fait. Reste discret. On te recontactera. »\n\nIl effaça le message. Son cœur battait trop fort. Il était passé de spectateur à acteur. Et le prix — ou le gain — n'était pas encore fixé.\n\nSur Néo-Terra, dans la salle du Haut-Conseil, une femme aux cheveux gris et au regard aigu leva la main pour demander la parole. Les autres conseillers se turent.\n\n— Le message « Ils savent » n'était pas une rumeur, dit-elle. C'était une alerte. Et nous l'avons traitée comme une information secondaire. Deux vaisseaux Biomen ont été détruits. Des centaines de morts. Flagor a frappé le premier. Et nous, nous avons laissé faire.\n\n— Councillor Vex, l'interrompit un homme plus jeune, nous ne pouvions pas —\n\n— Nous pouvions. Nous aurions dû. La guerre ne se gagne pas en fermant les yeux.\n\nElle se leva. Son nom — Helena Vex — apparaissait sur l'écran derrière elle. Membre du Conseil de Néo-Terra depuis douze ans. Mandat exceptionnel renouvelé trois fois. La mère de Dorian. Et du pilote mort.\n\n— Je demande l'ouverture d'une commission d'enquête. Sur la fuite. Sur les décisions prises. Et sur les liens entre certains membres de ce Conseil et les opérations de Flagor.\n\nLe silence qui suivit fut plus lourd que n'importe quel bruit. Helena Vex ne sourit pas. Elle attendit. Et le jeu — politique, sanglant, impitoyable — venait de changer de niveau.",
+      "summary": "Le piège de Flagor se déclenche : 2 vaisseaux Biomen détruits, 1 sauvé grâce à la fuite de Soren. Dorian Vex avait ignoré l'alerte. Kira accusée de proximité avec Soren. Soren reçoit un message anonyme. Au Conseil de Néo-Terra, Helena Vex exige une commission d'enquête.",
       "advancedLines": [
         "line-flagor-ascension",
         "line-guerre",
@@ -1082,7 +1285,7 @@
       "number": 6,
       "title": "Noms et ombres",
       "status": "completed",
-      "content": "Le couloir sentait le métal brûlé et la peur. Flagor s'arrêta devant la cellule, les jointures blanches sur la rampe. Deux vaisseaux. Pas trois. La victoire avait un goût de défaite.\n\n— Malak.\n\nSon second sortit de l'ombre, le regard fuyant. Depuis le piège, quelque chose s'était fissuré entre eux. Flagor le savait.\n\n— L'enquête avance, dit Malak. Les techniciens du secteur Gamma ont été interrogés. Aucun n'a reconnu de contact extérieur.\n\n— Et les logs ?\n\n— Purges partielles. Quelqu'un savait où chercher.\n\nFlagor se tourna vers la vitre. Au-delà, les étoiles. Il se revit, des années plus tôt, dans une cellule pareille à celle-ci — les murs gris, la lumière crue, les poings qui frappaient la porte jusqu'à ce que le sang coule. On ne l'avait pas cru. On ne l'avait jamais cru. Il avait appris à ne compter que sur lui-même.\n\n— Continuez, ordonna-t-il. Fouillez chaque terminal. Chaque transmission. Je veux un nom.\n\nMalak acquiesça sans un mot. Son silence en disait long.\n\nSur le Vigilant, l'air était lourd. Les survivants des deux vaisseaux détruits remplissaient les couloirs — blessés, familles, pilotes hagards. Kira passa devant un groupe qui se tut à son approche. Les regards la suivaient. Soren. Toujours Soren.\n\n— Tu aurais dû le dénoncer avant, lança une voix derrière elle.\n\nElle se retourna. Dorian Vex — le frère du pilote mort — se tenait au milieu du couloir, le visage fermé. Autour de lui, d'autres Biomen. L'ambiance était tendue.\n\n— Je n'ai rien à dénoncer, répondit Kira. Soren est un technicien. Un parmi des centaines.\n\n— Ton Soren a transmis les coordonnées. Tout le monde le sait.\n\n— Personne ne le sait. C'est une rumeur.\n\nDorian s'avança. Ses poings étaient serrés.\n\n— Mon frère est mort parce qu'il a ignoré l'alerte. C'est vrai. Mais quelqu'un a vendu notre position. Et toi, tu le défends.\n\nLe cercle se resserrait. Kira sentit les regards se poser sur elle. Elle ne recula pas.\n\n— Je défends la vérité. Pas les suppositions.\n\n— La vérité, c'est que nous avons perdu deux vaisseaux. Des centaines de morts. Et toi, tu parles encore de « suppositions ».\n\nHelena Vex apparut au bout du couloir, imposante, le regard noir. La foule s'écarta.\n\n— Assez, dit-elle. Le Conseil a voté la commission d'enquête. Nous aurons des réponses. Pas des lynchages.\n\nDorian recula, mais son regard resta fixé sur Kira. Le message était clair : la guerre ne se jouait plus seulement contre les Zordons.\n\nSoren reçut le message à l'aube, sur un terminal de maintenance. Une ligne, anonyme : « La prochaine transmission sera plus risquée. Tu es prêt ? »\n\nIl effaça l'historique. Ses mains tremblaient. Un technicien Zordon l'avait vu, la semaine dernière, près des serveurs de communication. Il n'avait rien dit. Pas encore. Mais le doute était là, comme une ombre.\n\nSoren regarda par le hublot. Le Vigilant, au loin, silhouette blessée mais vivante. Il avait fait ce qu'il fallait. Le message « Tu as bien fait » le hantait encore. Bien fait pour qui ? Pour quoi ?\n\nIl ouvrit une nouvelle fenêtre. Tapa : « Oui. »\n\nIl n'envoya pas tout de suite. Il resta là, le doigt sur la touche, à écouter le battement de son cœur. Quelque part, le réseau anonyme attendait. Et Flagor cherchait un nom.\n\nAu Centre de commandement, Malak consulta les rapports une dernière fois. Les purges. Les techniciens. Le secteur Gamma. Un détail lui échappait — une coïncidence, peut-être. Celui qu'on appelait la Bamboule. Assigné aux communications. Transféré juste avant le piège.\n\nIl ferma le fichier. Ne dit rien. Pas encore. Flagor avait les yeux partout. Et Malak commençait à se demander ce qu'il cherchait vraiment.",
+      "content": "Le couloir sentait le métal brûlé et la peur. Flagor s'arrêta devant la cellule, les jointures blanches sur la rampe. Deux vaisseaux. Pas trois. La victoire avait un goût de défaite.\n\n— Malak.\n\nSon second sortit de l'ombre, le regard fuyant. Depuis le piège, quelque chose s'était fissuré entre eux. Flagor le savait.\n\n— L'enquête avance, dit Malak. Les techniciens du secteur Gamma ont été interrogés. Aucun n'a reconnu de contact extérieur.\n\n— Et les logs ?\n\n— Purges partielles. Quelqu'un savait où chercher.\n\nFlagor se tourna vers la vitre. Au-delà, les étoiles. Il se revit, des années plus tôt, dans une cellule pareille à celle-ci — les murs gris, la lumière crue, les poings qui frappaient la porte jusqu'à ce que le sang coule. On ne l'avait pas cru. On ne l'avait jamais cru. Il avait appris à ne compter que sur lui-même.\n\n— Continuez, ordonna-t-il. Fouillez chaque terminal. Chaque transmission. Je veux un nom.\n\nMalak acquiesça sans un mot. Son silence en disait long.\n\nSur le Vigilant, l'air était lourd. Les survivants des deux vaisseaux détruits remplissaient les couloirs — blessés, familles, pilotes hagards. Kira passa devant un groupe qui se tut à son approche. Les regards la suivaient. Soren. Toujours Soren.\n\n— Tu aurais dû le dénoncer avant, lança une voix derrière elle.\n\nElle se retourna. Dorian Vex — le frère du pilote mort — se tenait au milieu du couloir, le visage fermé. Autour de lui, d'autres Biomen. L'ambiance était tendue.\n\n— Je n'ai rien à dénoncer, répondit Kira. Soren est un technicien. Un parmi des centaines.\n\n— Ton Soren a transmis les coordonnées. Tout le monde le sait.\n\n— Personne ne le sait. C'est une rumeur.\n\nDorian s'avança. Ses poings étaient serrés.\n\n— Mon frère est mort parce qu'il a ignoré l'alerte. C'est vrai. Mais quelqu'un a vendu notre position. Et toi, tu le défends.\n\nLe cercle se resserrait. Kira sentit les regards se poser sur elle. Elle ne recula pas.\n\n— Je défends la vérité. Pas les suppositions.\n\n— La vérité, c'est que nous avons perdu deux vaisseaux. Des centaines de morts. Et toi, tu parles encore de « suppositions ».\n\nHelena Vex apparut au bout du couloir, imposante, le regard noir. La foule s'écarta.\n\n— Assez, dit-elle. Le Conseil a voté la commission d'enquête. Nous aurons des réponses. Pas des lynchages.\n\nDorian recula, mais son regard resta fixé sur Kira. Le message était clair : la guerre ne se jouait plus seulement contre les Zordons.\n\nSoren reçut le message à l'aube, sur un terminal de maintenance. Une ligne, anonyme : « La prochaine transmission sera plus risquée. Tu es prêt ? »\n\nIl effaça l'historique. Ses mains tremblaient. Un technicien Zordon l'avait vu, la semaine dernière, près des serveurs de communication. Il n'avait rien dit. Pas encore. Mais le doute était là, comme une ombre.\n\nSoren regarda par le hublot. Le Vigilant, au loin, silhouette blessée mais vivante. Il avait fait ce qu'il fallait. Le message « Tu as bien fait » le hantait encore. Bien fait pour qui ? Pour quoi ?\n\nIl ouvrit une nouvelle fenêtre. Tapa : « Oui. »\n\nIl n'envoya pas tout de suite. Il resta là, le doigt sur la touche, à écouter le battement de son cœur. Quelque part, le réseau anonyme attendait. Et Flagor cherchait un nom.\n\nAu Centre de commandement, Malak consulta les rapports une dernière fois. Les purges. Les techniciens. Le secteur Gamma. Un détail lui échappait — une coïncidence, peut-être. Un identifiant dans les logs d'interception : « Bamboule ». Le signal venait du secteur Biomen — un terminal du Complexe de Néo-Terra. Émission juste avant le piège.\n\nIl ferma le fichier. Ne dit rien. Pas encore. Flagor avait les yeux partout. Et Malak commençait à se demander ce qu'il cherchait vraiment.",
       "summary": "Enquête en cours sur la fuite. Le passé de Flagor ressurgit (fragment cellule). Conflit interne chez les Biomen : Dorian accuse Kira, Helena impose la commission. Soren accepte une transmission plus risquée. Malak relie 'la Bamboule' aux communications — mais ne dit rien.",
       "advancedLines": [
         "line-flagor-ascension",
@@ -1150,7 +1353,7 @@
       "number": 9,
       "title": "Le nom",
       "status": "completed",
-      "content": "Le nom lui brûlait la langue depuis quarante-huit heures. Flagor le gardait au fond de sa gorge, comme une balle qu'il n'osait pas recracher. Malak le savait — il le voyait dans le regard fuyant du technicien, dans la façon dont il évitait les couloirs du Secteur 7. Quelqu'un qu'on croyait mort. Quelqu'un qui avait signé le convoi.\n\nLa commission avait ajourné. Helena tenait les rênes, mais le Conseil murmurait déjà. Dorian avait posé ses dossiers sur la table comme des armes — Kira avait parlé, l'échange avec Soren était confirmé. Le verdict pendait. Flagor sentait le temps se resserrer.\n\nIl intercepta Malak au sortir des archives. Le couloir était vide, les lumières basses. Malak tenta de passer — Flagor bloqua le passage.\n\n— Tu sais qui c'est. La signature. La localisation.\n\nMalak secoua la tête. Ses mains tremblaient.\n\n— Tu ne comprends pas. Si je parle...\n\n— Si tu ne parles pas, on crève tous. La riposte est en attente. Ils ont la source. Ils savent.\n\nLe mot resta entre eux. Malak pâlit. Flagor vit la fracture — la peur, la loyauté brisée, quelque chose d'ancien qui résistait encore.\n\n— Elle n'est pas morte, dit Malak. Elle n'a jamais été morte.\n\nLe nom sortit enfin. Un souffle. Un fantôme.\n\nFlagor sentit le sol se dérober. Pas elle. Pas après tout ce temps.\n\nPendant ce temps, dans la salle du Conseil, Helena regardait les écrans. La localisation clignotait — un avant-poste, une zone neutre. Dorian exigeait une décision. Les Biomen attendaient. Le verdict ne tiendrait plus quarante-huit heures. Quelqu'un avait parlé — l'aveu de Kira avait ouvert une brèche. Bamboule était à découvert.\n\nHelena leva la main. Le Conseil se tut.\n\n— On attend encore, dit-elle. Une transmission. Un signe.\n\nPersonne ne demanda de qui. Ils savaient déjà que la réponse venait d'ailleurs — de quelqu'un qu'on avait cru perdu, de quelqu'un qui détenait encore les fils.\n\nFlagor quitta Malak dans le couloir. Le nom résonnait dans sa tête. Il devait agir. Il devait choisir : révéler ou protéger. Le passé ou la guerre.\n\nIl se dirigea vers les transmissions. Quelque part, quelqu'un attendait. Quelqu'un qui savait qu'ils savaient.",
+      "content": "Le nom lui brûlait la langue depuis quarante-huit heures. Flagor le gardait au fond de sa gorge, comme une balle qu'il n'osait pas recracher. Malak le savait — il le voyait dans le regard fuyant du technicien, dans la façon dont il évitait les couloirs du Secteur 7. Quelqu'un qu'on croyait mort. Quelqu'un qui avait signé le convoi.\n\nLa commission avait ajourné. Helena tenait les rênes, mais le Conseil murmurait déjà. Dorian avait posé ses dossiers sur la table comme des armes — Kira avait parlé, l'échange avec Soren était confirmé. Le verdict pendait. Flagor sentait le temps se resserrer.\n\nIl intercepta Malak au sortir des archives. Le couloir était vide, les lumières basses. Malak tenta de passer — Flagor bloqua le passage.\n\n— Tu sais qui c'est. La signature. La localisation.\n\nMalak secoua la tête. Ses mains tremblaient.\n\n— Tu ne comprends pas. Si je parle...\n\n— Si tu ne parles pas, on crève tous. La riposte est en attente. Ils ont la source. Ils savent.\n\nLe mot resta entre eux. Malak pâlit. Flagor vit la fracture — la peur, la loyauté brisée, quelque chose d'ancien qui résistait encore.\n\n— Syra, dit Malak. Syra n'est pas morte. Elle n'a jamais été morte.\n\nLe nom sortit enfin. Un souffle. Un fantôme.\n\nFlagor sentit le sol se dérober. Pas Syra. Pas après tout ce temps.\n\nPendant ce temps, dans la salle du Conseil, Helena regardait les écrans. La localisation clignotait — un avant-poste, une zone neutre. Dorian exigeait une décision. Les Biomen attendaient. Le verdict ne tiendrait plus quarante-huit heures. Quelqu'un avait parlé — l'aveu de Kira avait ouvert une brèche. Bamboule était à découvert.\n\nHelena leva la main. Le Conseil se tut.\n\n— On attend encore, dit-elle. Une transmission. Un signe.\n\nPersonne ne demanda de qui. Ils savaient déjà que la réponse venait d'ailleurs — de quelqu'un qu'on avait cru perdu, de quelqu'un qui détenait encore les fils.\n\nFlagor quitta Malak dans le couloir. Le nom résonnait dans sa tête. Il devait agir. Il devait choisir : révéler ou protéger. Le passé ou la guerre.\n\nIl se dirigea vers les transmissions. Quelque part, quelqu'un attendait. Quelqu'un qui savait qu'ils savaient.",
       "summary": "Flagor confronte Malak — le nom du passé est révélé : une femme crue morte. Malak choisit de parler. Bamboule à découvert. Le verdict ne tiendra plus. Helena attend une transmission. Flagor face au choix : révéler ou protéger.",
       "advancedLines": [
         "line-flagor-ascension",
@@ -1173,7 +1376,7 @@
       "number": 10,
       "title": "Le choix",
       "status": "completed",
-      "content": "La salle des transmissions était vide. Flagor s'arrêta devant le terminal, les doigts posés sur le clavier. Le nom tournait dans sa tête — celui qu'il avait cru mort, celui que Malak avait lâché dans le couloir. Pas elle. Pas après tout ce temps.\n\nLes écrans affichaient la localisation. Un avant-poste. Une zone neutre. La source des fuites. La Bamboule. Et derrière, le fantôme.\n\nIl n'appuya pas. Pas encore.\n\n— Maître.\n\nMalak se tenait sur le seuil. Il n'avait plus ce regard fuyant — quelque chose s'était figé entre eux. La vérité dite. La loyauté brisée. Flagor ne se retourna pas.\n\n— Tu viens m'arrêter ?\n\n— Non.\n\n— Alors ?\n\n— Je viens vous demander ce que vous allez faire.\n\nLe silence s'étira. Au-dehors, les cratères de l'astre éteint luisaient sous les projecteurs. Le paysage mort. Le théâtre de tout ce qui avait commencé.\n\n— Si je transmets, dit Flagor, ils la trouveront. Le Conseil. Dorian. Ils l'utiliseront.\n\n— Et si vous ne transmettez pas ?\n\n— Elle reste cachée. Le réseau reste intact. La guerre continue comme avant.\n\nMalak s'approcha d'un pas. Pas de soumission, cette fois. Une forme de parité — ou de défi.\n\n— Vous ne pouvez pas protéger les deux. La guerre et elle.\n\n— Je sais.\n\nFlagor retira sa main du clavier. Quelque part, de l'autre côté du vide, Helena attendait. Dorian exigeait. Kira était entre deux. Soren — la Bamboule — était à découvert. Tous les fils convergeaient ici. Dans cette salle. Dans ce choix.\n\n— On attend encore, dit-il.\n\nMalak ne répondit pas. Il comprit. Flagor ne choisirait pas. Pas maintenant. Il suspendrait. Comme Helena. Comme le Conseil. Comme la riposte. Le pouvoir, parfois, c'était de ne pas agir.\n\nMais en bas, dans les couloirs du Vigilant, les choses ne s'arrêtaient pas.\n\nDorian avait franchi la porte de la cellule de détention. Kira leva les yeux. Elle n'était pas enchaînée — pas encore. Entre deux. Comme le verdict. Comme tout.\n\n— Quarante-huit heures, c'est fini, dit Dorian. Helena ne pourra plus tenir. Le Conseil va voter.\n\n— Et alors ?\n\n— Alors tu vas me dire où il est. Soren. La Bamboule. Tu vas me donner un nom, une trace, quelque chose.\n\n— Je n'ai rien à te donner.\n\nDorian s'assit en face d'elle. Son visage était creusé — le deuil, la colère, l'impuissance. Son frère était mort. Il avait besoin d'un coupable. Et Kira, par son aveu, s'était offerte.\n\n— Tu l'as défendu. Tu lui as parlé. Tu sais où il se cache.\n\n— Je sais qu'il a sauvé un vaisseau. Le tien, peut-être.\n\n— Un vaisseau. Pas deux. Deux sont morts.\n\n— Parce que tu as ignoré l'alerte.\n\nLe silence tomba. Dorian serra les poings. Kira ne baissa pas les yeux. Quelque chose avait changé — elle ne jouait plus le jeu. La dignité. Le mot lui revint. Ce que Soren avait fait. Ce qu'elle refusait de trahir.\n\n— Tu vas regretter, dit Dorian en se levant.\n\n— Probablement.\n\nIl sortit. La porte se referma. Kira resta seule. Elle pensa à Soren — où qu'il soit. Au réseau anonyme. Au message : « Tu as bien fait ». Elle ne savait pas si c'était vrai. Mais elle savait une chose : les alliances se déplaçaient. Dorian contre Helena. Helena contre le temps. Flagor contre lui-même. Et au centre, une femme qu'on croyait morte, et un métis qu'on méprisait. Les pivots. Les fantômes.\n\nSur l'astre éteint, Flagor quitta la salle des transmissions sans avoir envoyé. Malak le suivit. Entre eux, le vide. Plus de Maître. Plus de second. Juste deux hommes qui avaient choisi — l'un de parler, l'autre de ne pas agir. Pour l'instant.\n\nLe vent soulevait la poussière sur les cratères. Le paysage ne changeait pas. Mais quelque part, dans l'ombre, les fils continuaient de se tendre.",
+      "content": "La salle des transmissions était vide. Flagor s'arrêta devant le terminal, les doigts posés sur le clavier. Le nom tournait dans sa tête — Syra, celle que Malak avait nommée dans le couloir. Pas Syra. Pas après tout ce temps.\n\nLes écrans affichaient la localisation. Un avant-poste. Une zone neutre. La source des fuites. La Bamboule. Et derrière, le fantôme.\n\nIl n'appuya pas. Pas encore.\n\n— Maître.\n\nMalak se tenait sur le seuil. Il n'avait plus ce regard fuyant — quelque chose s'était figé entre eux. La vérité dite. La loyauté brisée. Flagor ne se retourna pas.\n\n— Tu viens m'arrêter ?\n\n— Non.\n\n— Alors ?\n\n— Je viens vous demander ce que vous allez faire.\n\nLe silence s'étira. Au-dehors, les cratères de l'astre éteint luisaient sous les projecteurs. Le paysage mort. Le théâtre de tout ce qui avait commencé.\n\n— Si je transmets, dit Flagor, ils trouveront Syra. Le Conseil. Dorian. Ils l'utiliseront.\n\n— Et si vous ne transmettez pas ?\n\n— Elle reste cachée. Le réseau reste intact. La guerre continue comme avant.\n\nMalak s'approcha d'un pas. Pas de soumission, cette fois. Une forme de parité — ou de défi.\n\n— Vous ne pouvez pas protéger les deux. La guerre et elle.\n\n— Je sais.\n\nFlagor retira sa main du clavier. Quelque part, de l'autre côté du vide, Helena attendait. Dorian exigeait. Kira était entre deux. Soren — la Bamboule — était à découvert. Tous les fils convergeaient ici. Dans cette salle. Dans ce choix.\n\n— On attend encore, dit-il.\n\nMalak ne répondit pas. Il comprit. Flagor ne choisirait pas. Pas maintenant. Il suspendrait. Comme Helena. Comme le Conseil. Comme la riposte. Le pouvoir, parfois, c'était de ne pas agir.\n\nMais en bas, dans les couloirs du Vigilant, les choses ne s'arrêtaient pas.\n\nDorian avait franchi la porte de la cellule de détention. Kira leva les yeux. Elle n'était pas enchaînée — pas encore. Entre deux. Comme le verdict. Comme tout.\n\n— Quarante-huit heures, c'est fini, dit Dorian. Helena ne pourra plus tenir. Le Conseil va voter.\n\n— Et alors ?\n\n— Alors tu vas me dire où il est. Soren. La Bamboule. Tu vas me donner un nom, une trace, quelque chose.\n\n— Je n'ai rien à te donner.\n\nDorian s'assit en face d'elle. Son visage était creusé — le deuil, la colère, l'impuissance. Son frère était mort. Il avait besoin d'un coupable. Et Kira, par son aveu, s'était offerte.\n\n— Tu l'as défendu. Tu lui as parlé. Tu sais où il se cache.\n\n— Je sais qu'il a sauvé un vaisseau. Le tien, peut-être.\n\n— Un vaisseau. Pas deux. Deux sont morts.\n\n— Parce que tu as ignoré l'alerte.\n\nLe silence tomba. Dorian serra les poings. Kira ne baissa pas les yeux. Quelque chose avait changé — elle ne jouait plus le jeu. La dignité. Le mot lui revint. Ce que Soren avait fait. Ce qu'elle refusait de trahir.\n\n— Tu vas regretter, dit Dorian en se levant.\n\n— Probablement.\n\nIl sortit. La porte se referma. Kira resta seule. Elle pensa à Soren — où qu'il soit. Au réseau anonyme. Au message : « Tu as bien fait ». Elle ne savait pas si c'était vrai. Mais elle savait une chose : les alliances se déplaçaient. Dorian contre Helena. Helena contre le temps. Flagor contre lui-même. Et au centre, une femme qu'on croyait morte, et un métis qu'on méprisait. Les pivots. Les fantômes.\n\nSur l'astre éteint, Flagor quitta la salle des transmissions sans avoir envoyé. Malak le suivit. Entre eux, le vide. Plus de Maître. Plus de second. Juste deux hommes qui avaient choisi — l'un de parler, l'autre de ne pas agir. Pour l'instant.\n\nLe vent soulevait la poussière sur les cratères. Le paysage ne changeait pas. Mais quelque part, dans l'ombre, les fils continuaient de se tendre.",
       "summary": "Flagor choisit de ne pas transmettre — protège la femme du passé. Dorian confronte Kira qui refuse de livrer Soren. La féodalité se transforme : plus de Maître, plus de second. Le Conseil va voter.",
       "advancedLines": [
         "line-flagor-ascension",
@@ -1190,6 +1393,56 @@
       "postEvaluation": null,
       "createdAt": "2026-02-19T00:30:00.000Z",
       "updatedAt": "2026-02-19T00:30:00.000Z"
+    },
+    {
+      "id": "unit-ch11",
+      "type": "chapter",
+      "number": 11,
+      "title": "Le statu quo",
+      "status": "completed",
+      "content": "Le vote du Conseil de Néo-Terra tomba comme une sentence sans appel. Helena, debout derrière la vitre de la salle des délibérations, ne bougea pas. Son visage — celui d'une mère qui avait perdu un fils au combat et qui en voyait un autre s'enfoncer dans la colère — resta de marbre. Flagor avait choisi de ne pas transmettre. Le Conseil aussi avait choisi : pas de riposte immédiate. La guerre resterait en suspens.\n\nFlagor sentit le poids du passé — Syra, ce nom prononcé par Malak, cette femme qu'il avait cru morte, cette décision prise vingt ans plus tôt — peser sur chaque seconde. Il ne pouvait plus reculer. Le passé contrôlait le présent. Il le savait. Et pourtant, il ne savait pas ce qu'il allait faire.\n\nDorian entra dans le bureau de la commission sans frapper. Kira était assise, seule, les mains à plat sur la table. Ils se regardèrent.\n\n— Tu l'as protégé, dit Dorian. Depuis le début.\n\nKira ne nia pas. Plus maintenant.\n\n— La commission va te détruire.\n\n— Peut-être. Mais pas pour les raisons que tu crois.\n\nDorian voyait en elle une forme de loyauté qu'il ne comprenait plus — ou qu'il n'avait jamais comprise. Ce n'était plus une accusée face à un accusateur. C'était un face-à-face entre deux convictions. Et dans ce face-à-face, Kira tenait.\n\nSoren, lui, avait disparu. Pas dans les registres, pas dans les couloirs du Complexe. Un agent de maintenance l'avait vu se diriger vers les hangars de secours — direction l'astre éteint. Les vieux rapports parlaient de structures abandonnées là-bas, de vestiges d'une époque où l'astre brillait encore. Personne n'y allait. Sauf ceux qui n'avaient plus rien à perdre.\n\nFlagor reçut le message d'Helena une heure plus tard. Court. Sec. « Vous avez choisi. Nous aussi. » Il ne sut pas si c'était une menace ou un adieu. Helena — mère de Dorian, mère du pilote mort — ne pardonnerait pas. Le Conseil avait voté le statu quo. Mais le statu quo, chez Helena, n'était jamais qu'une pause avant la frappe.\n\nMalak, dans l'ombre, traçait toujours. Le signal qu'il avait isolé dans les logs menait quelque part — un terminal du Complexe, un identifiant, un nom qui n'existait dans aucun fichier Zordon. Il finirait par atteindre Flagor. Le passé ne se taisait jamais longtemps.\n\nEt sur l'astre éteint, dans le silence des cratères, quelque chose attendait. Des formes dans la roche. Des structures trop régulières pour être naturelles. Une beauté inattendue dans ce paysage de mort. Personne n'était allé vérifier depuis des années. Mais quelqu'un venait. Quelqu'un qui n'avait plus rien à perdre.",
+      "summary": "Le Conseil de Néo-Terra vote le statu quo — pas de riposte. Helena envoie un message glacial à Flagor. Kira admet avoir protégé Soren. Soren a disparu — direction l'astre éteint et ses vestiges. Malak trace toujours le signal. Syra pèse sur chaque décision de Flagor.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-passe-flagor",
+        "line-feodalite",
+        "line-astre-eteint",
+        "line-biomen",
+        "line-bamboule",
+        "line-oligarchie",
+        "line-message-ils-savent",
+        "line-vestiges-astre"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T01:30:00.000Z",
+      "updatedAt": "2026-02-19T02:00:00.000Z"
+    },
+    {
+      "id": "unit-ch12",
+      "type": "chapter",
+      "number": 12,
+      "title": "Les vestiges",
+      "status": "completed",
+      "content": "Le vaisseau de secours toucha la surface de l'astre éteint dans un crissement de gravier. Soren coupa les moteurs. Le silence l'enveloppa — pas de sirènes, pas de voix. Seulement le crépitement du métal qui se refroidissait et le souffle de son propre corps dans le casque.\n\nIl avait quitté Néo-Terra sans laisser de trace. Les hangars de secours, les codes de maintenance, le réseau anonyme — tout avait fonctionné. Ou presque. Quelqu'un l'avait vu partir. Quelqu'un savait. Mais plus rien ne comptait. Il avait choisi.\n\nIl ouvrit l'écoutille. La poussière grise s'éleva sous ses bottes. Les cratères s'étendaient jusqu'à l'horizon, sous une lumière froide. Les vieux rapports parlaient de structures abandonnées — des vestiges d'une époque où l'astre brillait encore. Personne n'y allait. Sauf ceux qui n'avaient plus rien à perdre.\n\nIl marcha.\n\nSur le poste de commandement, Flagor reçut le message d'Helena une seconde fois. Les mêmes mots. « Vous avez choisi. Nous aussi. » Il ne répondit pas. Il savait ce que cela signifiait : le statu quo n'était qu'une trêve. Helena — mère de Dorian, mère du pilote mort — ne pardonnerait pas. Et lui, il avait choisi de protéger Syra. De ne pas transmettre. Le passé pesait sur chaque seconde.\n\n— Maître.\n\nMalak se tenait sur le seuil. Il n'utilisait plus ce mot comme avant — c'était une forme, pas une soumission. Flagor se retourna.\n\n— Tu as trouvé quelque chose.\n\n— Le signal. Il mène à l'astre. Un terminal du Complexe. Un identifiant.\n\n— Un nom ?\n\nMalak hésita. Son regard croisa celui de Flagor — plus de fuite, plus de crainte. Un face-à-face.\n\n— La Bamboule. Soren. Il est parti. Direction ici.\n\nFlagor ne bougea pas. La Bamboule. Le métis méprisé. Celui qui avait transmis les coordonnées. Celui qui avait sauvé un vaisseau. Et derrière lui — Syra. Le réseau. Les fils.\n\n— Où exactement ?\n\n— Les vestiges. La zone nord. Personne n'y va depuis des années.\n\nFlagor contempla le hublot. Les cratères luisaient sous les projecteurs. Quelque part, dans ce paysage mort, un homme marchait. Un homme qui savait. Un homme qui avait choisi.\n\n— On ne bouge pas. Pas encore.\n\nMalak inclina la tête. Il comprit. Flagor suspendait encore. Comme Helena. Comme le Conseil. Le pouvoir, parfois, c'était d'attendre.\n\nSoren atteignit les vestiges au crépuscule.\n\nLes structures émergeaient de la roche — des formes trop régulières pour être naturelles. Des arcs, des colonnes brisées, une géométrie qui ne ressemblait à rien de Zordon ni de Biomen. Une civilisation inconnue. Une époque où l'astre brillait encore.\n\nIl s'arrêta devant une ouverture. L'obscurité à l'intérieur semblait absorber la lumière. Un courant d'air chaud en sortait — une respiration. Comme si quelque chose vivait encore là-dedans.\n\nIl alluma sa lampe et entra.\n\nLes murs étaient couverts de symboles. Des lignes, des cercles, des motifs qui évoquaient des cartes ou des calculs. Il ne comprenait pas. Mais il sentit — une vibration. Un bourdonnement à peine audible. Comme un signal.\n\nAu fond de la salle, un écran. Ou ce qui en tenait lieu. Une surface plane, noire, qui reflétait sa silhouette. Il s'approcha. La surface s'illumina. Des caractères apparurent — une langue qu'il ne connaissait pas. Puis une image. Un visage.\n\nLe sien.\n\nIl recula. L'image changea. Un autre visage. Une femme. Des cheveux courts, des cicatrices sur le front. Un regard qu'il avait déjà vu — dans les archives, dans les rapports. Syra.\n\nLe signal augmenta. Une alerte. Quelque chose avait été activé. Quelque chose savait qu'il était là.\n\nSoren éteignit sa lampe. Dans l'obscurité, l'écran continuait de briller. Le visage de Syra le fixait. Et quelque part, au-dehors, dans le silence des cratères, un autre signal — celui de Malak — convergeait vers ce point.\n\nSur Néo-Terra, la commission rendit son verdict. Kira fut suspendue — pas condamnée, pas acquittée. Entre deux. Comme tout. Dorian quitta la salle sans un mot. Helena resta debout, le regard perdu vers les écrans. L'astre éteint y apparaissait — une tache grise, une zone morte. Elle ne savait pas ce qui s'y passait. Personne ne le savait.\n\nMais quelque chose avait bougé. Le statu quo tenait. La guerre restait en suspens. Et dans l'ombre, les fils continuaient de se tendre.\n\nSoren sortit des vestiges. Le ciel était noir. Les étoiles brillaient, indifférentes. Il regarda son terminal — un message. Du réseau anonyme. Une seule ligne : « Ils savent où tu es. Fuis. Ou reste. »\n\nIl éteignit le terminal. Il ne savait pas ce qu'il allait faire. Mais il savait une chose : les vestiges avaient répondu. Ils avaient montré un visage. Un nom. Et ce nom — Syra — changeait tout.\n\nIl reprit sa marche dans la poussière. Derrière lui, les structures anciennes continuaient de respirer. Devant lui, l'obscurité. Et quelque part, de l'autre côté du vide, Flagor attendait. Helena attendait. Malak traçait encore.\n\nLa saison se terminait. Mais l'histoire, elle, ne faisait que commencer.",
+      "summary": "Soren arrive sur l'astre éteint et découvre les vestiges — structures anciennes d'une civilisation inconnue. Un écran s'active et montre son visage, puis celui de Syra. Flagor apprend de Malak que Soren est la Bamboule — il choisit d'attendre. Kira est suspendue, pas condamnée. Le réseau avertit Soren : 'Ils savent où tu es.' La saison se termine — les fils restent tendus.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-biomen",
+        "line-guerre",
+        "line-bamboule",
+        "line-oligarchie",
+        "line-passe-flagor",
+        "line-feodalite",
+        "line-astre-eteint",
+        "line-vestiges-astre",
+        "line-message-ils-savent"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T02:00:00.000Z",
+      "updatedAt": "2026-02-19T02:00:00.000Z"
     }
   ],
   "thematicQuestions": [
@@ -1239,6 +1492,14 @@
         {
           "unitNumber": 9,
           "note": "Flagor : le pouvoir confronté au passé — 'pas elle'. Le pouvoir vacille quand le passé revient. Helena : le pouvoir comme attente ('on attend encore')."
+        },
+        {
+          "unitNumber": 11,
+          "note": "Helena : 'Vous avez choisi. Nous aussi.' Le pouvoir comme ultimatum silencieux. Le Conseil vote le statu quo — le pouvoir de ne rien faire comme arme."
+        },
+        {
+          "unitNumber": 12,
+          "note": "Flagor attend. Helena attend. Le Conseil attend. Soren agit. Le pouvoir est immobile — l'action vient du méprisé."
         }
       ]
     },
@@ -1282,6 +1543,14 @@
         {
           "unitNumber": 9,
           "note": "Malak : dignité = parler malgré la peur ('si je parle...'). Choix de la vérité contre la loyauté. Kira : brèche ouverte par son aveu — conséquences sur Soren."
+        },
+        {
+          "unitNumber": 11,
+          "note": "Kira ne nie plus — elle assume la protection de Soren. Soren fuit vers l'astre éteint. La dignité comme départ, pas comme résistance."
+        },
+        {
+          "unitNumber": 12,
+          "note": "Soren découvre les vestiges seul. Les structures lui répondent — lui montrent son visage. La dignité comme reconnaissance par quelque chose de plus ancien que les systèmes qui le nient."
         }
       ]
     },
@@ -1330,6 +1599,14 @@
         {
           "unitNumber": 9,
           "note": "Helena attend une transmission avant de juger — la guerre et la politique sont suspendues à un même fil. La localisation de la source est le pivot."
+        },
+        {
+          "unitNumber": 11,
+          "note": "Le statu quo EST l'instrumentalisation — personne ne veut la paix, personne ne veut la guerre. Tout le monde attend que l'autre bouge."
+        },
+        {
+          "unitNumber": 12,
+          "note": "La guerre est suspendue mais les vestiges suggèrent un enjeu plus ancien. Les deux camps se battent pour un astre qu'ils ne comprennent pas."
         }
       ]
     }
@@ -1435,5 +1712,5 @@
     "resolutionPressureThreshold": 10
   },
   "createdAt": "2026-02-18T18:00:00.000Z",
-  "updatedAt": "2026-02-19T00:30:00.000Z"
+  "updatedAt": "2026-02-19T02:00:00.000Z"
 }
