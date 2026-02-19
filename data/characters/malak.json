@@ -1,0 +1,36 @@
+{
+  "id": "malak",
+  "name": "Commandant Malak",
+  "faction": "zordons",
+  "physical": "Silhouette massive. Mandibules qui se crispent quand il retient quelque chose. Se tient toujours à un pas de distance de Flagor — jamais plus, jamais moins. Ne s'approche pas sans y être invité. Yeux qui fuient puis, depuis le ch.9, regard qui croise celui de Flagor.",
+  "voice": {
+    "register": "Formel, militaire. Utilisait 'Maître' comme titre — devenu une forme vide depuis le ch.10. Phrases de rapport : sujet-verbe-complément. Parle par faits, pas par opinions.",
+    "patterns": "Commence par un fait ('Les purges sont terminées'). Retient l'essentiel pour la fin. Son silence est plus éloquent que ses mots.",
+    "examples": [
+      "Maître.",
+      "Le secteur sept est opérationnel. Les scanners n'ont rien détecté. Rien.",
+      "Rien de concluant. Je continue.",
+      "Syra n'est pas morte. Elle n'a jamais été morte.",
+      "La Bamboule. Soren. Il est parti. Direction ici."
+    ]
+  },
+  "currentState": "A identifié Soren comme la source. A révélé Syra à Flagor. La relation Maître/second est terminée — c'est un face-à-face entre deux hommes. Il trace toujours le signal. Il comprend que Flagor ne transmettra pas.",
+  "location": "Astre éteint — entre les archives, les serveurs et le poste de commandement",
+  "relationships": {
+    "flagor": "Ancien rapport féodal (Maître/second) transformé en face-à-face. Malak a choisi de parler — la loyauté s'est brisée pour la vérité. 'Plus de Maître. Plus de second.'",
+    "syra": "Connaît son existence. C'est lui qui a prononcé le nom. On ne sait pas comment il savait.",
+    "soren": "L'a identifié comme 'la Bamboule' dans les logs d'interception. Sait qu'il est sur l'astre, dans les vestiges."
+  },
+  "history": [
+    "Ch.1: Premier échange avec Flagor — 'Maître'. Rapport de soumission.",
+    "Ch.3: Exécute les ordres. 'Mon commandant, les conditions de l'astre...' — rabroué.",
+    "Ch.4: Regard fuyant. Quelque chose de trouvé, de non dit. Doute perceptible.",
+    "Ch.5: Rapporte la fuite. Regard 'respect ou crainte renouvelée'.",
+    "Ch.6: Trouve l'anomalie dans les logs. Ne prévient pas Flagor. Veut comprendre.",
+    "Ch.7: Ment mal. Trouve le terminal de maintenance. Continue seul.",
+    "Ch.9: Confronté par Flagor. Révèle Syra. La fracture est consommée.",
+    "Ch.10: 'Tu viens m'arrêter ?' — 'Non.' Le rapport change de nature.",
+    "Ch.12: Identifie Soren par son nom. Direction : vestiges."
+  ],
+  "contradictions": "Malak a trahi la loyauté féodale en parlant — mais ce faisant, il est devenu le seul en qui Flagor peut avoir confiance (le seul qui a dit la vérité). Il trace Soren mais ne sait pas si Flagor veut qu'il le trouve."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "helena",
+  "name": "Helena Vex",
+  "faction": "conseil-neo-terra",
+  "physical": "Cheveux gris. Regard aigu. Imposante — la foule s'écarte quand elle apparaît. Les projecteurs creusent les ombres sous ses pommettes. Se lève pour parler — ne reste jamais assise quand elle tranche.",
+  "voice": {
+    "register": "Autoritaire, institutionnel. Phrases qui coupent court aux débordements. Utilise le silence après ses déclarations pour laisser le poids s'installer.",
+    "patterns": "Commence par le fait, finit par l'ordre. Utilise 'nous' quand elle parle au Conseil, 'je' quand elle tranche seule. Ses messages écrits sont courts et secs.",
+    "examples": [
+      "Assez. Le Conseil a voté la commission d'enquête. Nous aurons des réponses. Pas des lynchages.",
+      "La commission n'est pas un tribunal de vengeance, Dorian. Nous cherchons la vérité.",
+      "Nous pouvions. Nous aurions dû. La guerre ne se gagne pas en fermant les yeux.",
+      "Vous avez choisi. Nous aussi.",
+      "On attend encore. Une transmission. Un signe."
+    ]
+  },
+  "currentState": "A envoyé un ultimatum à Flagor. Le Conseil a voté le statu quo — mais pour Helena, le statu quo est une pause avant la frappe. Attend une transmission. Semble connectée au réseau anonyme. Ne pardonnera pas — elle a perdu un fils.",
+  "location": "Néo-Terra — salle du Conseil, salle de commission",
+  "relationships": {
+    "dorian": "Son fils. Leader des Biomen. Elle préside la commission qui l'affecte. Tension mère/fils + politique. Son autre fils (le pilote) est mort.",
+    "flagor": "Adversaire politique à distance. 'Vous avez choisi. Nous aussi.' Ne se sont jamais rencontrés en personne.",
+    "kira": "Cible indirecte de la commission. Helena impose l'ordre ('pas des lynchages') mais la procédure se referme sur Kira.",
+    "soren": "Ne le connaît probablement pas directement. Mais attend 'une transmission' — est-elle liée au réseau anonyme ?",
+    "conseil": "Mandat exceptionnel de 12 ans, renouvelé 3 fois. Contrôle le rythme des débats. Le Conseil murmure mais ne la défie pas encore."
+  },
+  "history": [
+    "Ch.5: Apparaît au Conseil. Exige une commission d'enquête. Nommée — cheveux gris, 12 ans de mandat. Mère de Dorian et du pilote mort.",
+    "Ch.6: Impose la commission. 'Pas des lynchages.'",
+    "Ch.7: Préside la commission. Dorian à sa droite. Ouvre les débats.",
+    "Ch.8: Ajourne — 48 heures. Le Conseil paraît divisé pour la première fois.",
+    "Ch.11: Message à Flagor : 'Vous avez choisi. Nous aussi.' Le Conseil vote le statu quo.",
+    "Ch.12: Debout face aux écrans. L'astre éteint y apparaît. Elle ne sait pas ce qui s'y passe."
+  ],
+  "contradictions": "Helena prétend chercher la vérité, mais elle attend 'une transmission, un signe' — ce qui suggère qu'elle est connectée à un réseau qui opère en dehors de la loi. Elle utilise la procédure comme arme, pas comme justice."
+}

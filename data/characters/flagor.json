@@ -1,0 +1,38 @@
+{
+  "id": "flagor",
+  "name": "Flagor",
+  "faction": "zordons",
+  "physical": "Rostre écarlate couvert d'innombrables cicatrices — celles portées par les grands destins. Stature imposante, silhouette qui se découpe contre les hublots. Jointures qui blanchissent quand il serre les poings. Mains larges, doigts qui se posent sur les épaules comme une menace silencieuse. Regard égaré par moments, puis soudain tranchant. Ne sourit jamais.",
+  "voice": {
+    "register": "Terse, impératif. Phrases courtes. Ordres sans explication. Ne répète pas. Ne crie jamais — la menace est dans le calme.",
+    "patterns": "Commence rarement par un sujet — coupe directement au verbe. Utilise le silence comme ponctuation. Pose des questions auxquelles il connaît déjà la réponse.",
+    "examples": [
+      "Inutile.",
+      "Les conditions n'existent pas. La précision existe.",
+      "Ça change rien. On adapte. On les attend quand même.",
+      "On ne les attend pas. On les attire.",
+      "On ne bouge pas. Pas encore."
+    ]
+  },
+  "currentState": "Hanté par Syra — le nom prononcé par Malak le paralyse. A choisi de ne pas transmettre la localisation de Soren pour protéger Syra. Le passé contrôle ses décisions. Paranoïaque mais lucide. Sait que Malak lui cache des choses. Sait que le Conseil le menace. Choisit l'immobilité comme arme.",
+  "location": "Astre éteint — poste de commandement, salle des transmissions",
+  "relationships": {
+    "malak": "Ex-rapport Maître/second devenu un face-à-face entre égaux. Malak a révélé Syra. Flagor ne l'a pas puni. 'Plus de Maître. Plus de second. Juste deux hommes.'",
+    "syra": "Femme du passé crue morte. Était avec lui dans la cellule, avant son ascension. Le seul nom qui fait vaciller le tyran. Flagor la protège au prix de la guerre.",
+    "helena": "Adversaire politique. Elle a envoyé un ultimatum : 'Vous avez choisi. Nous aussi.' Flagor ne répond pas.",
+    "soren": "Ne le connaît que comme 'la Bamboule' — l'identifiant dans les logs. Le traître lucide. Flagor le respecte sans le savoir : 'Quelqu'un de lucide. Quelqu'un qui ne jouait pas le jeu.'"
+  },
+  "history": [
+    "Ch.1: Atterrissage sur l'astre éteint. Regard égaré face au hublot. Déclare la victoire finale.",
+    "Ch.3: Sanctionne un technicien. Prépare un piège. Souvenir de la cellule (premier fragment).",
+    "Ch.4: Le piège est compromis par une fuite. Maintient le plan. Ordonne l'enquête.",
+    "Ch.5: Ordre de feu — 2/3 vaisseaux Biomen détruits. Note le doute de Malak.",
+    "Ch.6: Enquête obsessionnelle. Cellule récurrente. Poings contre la porte.",
+    "Ch.7: Noms barrés, raturés. Un nom du passé souligné — quelqu'un cru mort.",
+    "Ch.8: Parcourt les logs. Sait que Malak cache. Cellule encore.",
+    "Ch.9: Confronte Malak. Syra nommée. Le sol se dérobe.",
+    "Ch.10: Choisit de ne pas transmettre. Protège Syra. 'Le pouvoir, parfois, c'était de ne pas agir.'",
+    "Ch.12: Apprend que Soren = la Bamboule. Choisit encore d'attendre."
+  ],
+  "contradictions": "Flagor se croit seul maître de son destin, mais le passé (Syra) contrôle chacune de ses décisions depuis le ch.9. Il croit protéger Syra, mais il ne sait pas si elle veut être protégée — ni si elle est du même côté."
+}

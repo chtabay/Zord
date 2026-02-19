@@ -1,0 +1,27 @@
+{
+  "id": "syra",
+  "name": "Syra",
+  "faction": "inconnue",
+  "physical": "Cheveux courts, cicatrices sur le front. Son visage apparaît sur l'écran ancien des vestiges. Au-delà de ça, on ne sait presque rien — elle n'a jamais été vue en chair et en os dans le récit. Elle est un fantôme, une image, un nom.",
+  "voice": {
+    "register": "Inconnue — Syra n'a jamais parlé dans le récit. Sa voix est un vide à remplir.",
+    "patterns": "Aucune donnée.",
+    "examples": []
+  },
+  "currentState": "Vivante — Malak l'a confirmé. Son visage apparaît dans les vestiges de l'astre éteint, à côté de celui de Soren. Liée à la civilisation ancienne ? Au réseau anonyme ? On ne sait pas. Elle est le mystère central de la fin de saison.",
+  "location": "Inconnue. Malak dit qu'elle n'est pas morte. Flagor la protège. Les vestiges la montrent. Mais personne ne sait où elle est physiquement.",
+  "relationships": {
+    "flagor": "Étaient ensemble dans la cellule, avant l'ascension de Flagor. Le seul nom qui fait vaciller le tyran. Flagor la croit vivante et la protège au prix de la guerre.",
+    "malak": "Malak connaît son existence. C'est lui qui a prononcé le nom. Comment savait-il ?",
+    "soren": "Les vestiges montrent le visage de Soren puis celui de Syra. Lien inconnu — la civilisation ancienne les connecte ?",
+    "vestiges": "Son visage apparaît sur l'écran ancien. Quelque chose l'a reconnue ou l'a enregistrée. Clé du mystère."
+  },
+  "history": [
+    "Ch.3: Flagor se souvient d'une cellule — les murs gris, la faim, les poings contre la porte. Syra était probablement là.",
+    "Ch.7: Flagor souligne un nom du passé — quelqu'un cru mort ou changé.",
+    "Ch.9: Malak la nomme : 'Syra n'est pas morte. Elle n'a jamais été morte.' Turning point.",
+    "Ch.10: Flagor choisit de ne pas transmettre pour la protéger. 'Si je transmets, ils trouveront Syra.'",
+    "Ch.12: Son visage apparaît dans les vestiges à côté de celui de Soren."
+  ],
+  "contradictions": "Syra est le pivot émotionnel de Flagor mais elle n'est jamais apparue en personne. Elle pourrait être une alliée, une ennemie, ou quelque chose de complètement différent. Les vestiges la montrent — mais est-ce la vraie Syra ou un enregistrement ancien ?"
+}

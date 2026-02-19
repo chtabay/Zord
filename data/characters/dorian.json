@@ -1,0 +1,36 @@
+{
+  "id": "dorian",
+  "name": "Dorian Vex",
+  "faction": "biomen",
+  "physical": "Le plus charismatique des Biomen. Combinaison de combat immaculée (jamais vue le combat). Sourire calibré pour les caméras. Poings serrés quand les caméras s'éteignent. Visage creusé depuis la mort de son frère — le deuil a changé ses traits.",
+  "voice": {
+    "register": "Deux registres : public (discours grandiloquents, voix amplifiée, mots calibrés) et privé (sec, menaçant, phrases qui tombent comme des verdicts).",
+    "patterns": "En public : phrases longues, vocabulaire de sacrifice et de devoir. En privé : ultimatums, chantage émotionnel, accusations directes.",
+    "examples": [
+      "Peuple de Néo-Terra ! Les Zordons croient pouvoir nous atteindre. Ils se trompent.",
+      "Tant que nous serons là, vous n'avez rien à craindre.",
+      "Mon frère est mort parce qu'il a ignoré l'alerte. C'est vrai. Mais quelqu'un a vendu notre position.",
+      "Helena veut ta tête. Moi aussi, certains jours.",
+      "Tu vas regretter."
+    ]
+  },
+  "currentState": "En deuil — son frère est mort dans le piège de Flagor. Instrumentalise ce deuil comme arme politique contre Kira. A quitté la dernière session de la commission sans un mot. Impuissant face à la procédure d'Helena (sa propre mère).",
+  "location": "Néo-Terra — entre le Complexe et le Conseil",
+  "relationships": {
+    "helena": "Sa mère. Helena est au Conseil, Dorian est le leader des Biomen. Elle préside la commission qui le concerne indirectement. Tension familiale + politique.",
+    "kira": "L'accuse de complicité avec Soren. La confronte directement. Mais il voit en elle une loyauté qu'il ne comprend pas.",
+    "soren": "Le méprise (La Bamboule). Le cherche comme traître. Mais sa fuite a peut-être sauvé le vaisseau de Dorian.",
+    "frere": "Pilote mort dans l'explosion du ch.5. Dorian avait reçu l'alerte et l'avait ignorée. Culpabilité transformée en rage.",
+    "biomen": "Leader respecté en public, de plus en plus isolé en privé depuis la commission."
+  },
+  "history": [
+    "Ch.2: Discours devant la foule. Façade héroïque. Combinaison immaculée.",
+    "Ch.5: Son frère meurt dans le piège. Dorian avait ignoré l'alerte.",
+    "Ch.6: Accuse Kira devant le groupe. Cercle qui se resserre.",
+    "Ch.7: Convoque Kira. 'Tu seras entendue en premier.'",
+    "Ch.8: À la commission. Accuse. Helena ajourne.",
+    "Ch.10: Confronte Kira dans la cellule. 'Tu vas regretter.'",
+    "Ch.11: Quitte la commission sans un mot."
+  ],
+  "contradictions": "Dorian accuse Soren de trahison, mais c'est lui qui a ignoré l'alerte qui aurait pu sauver son frère. Il cherche un coupable extérieur pour ne pas affronter sa propre responsabilité."
+}

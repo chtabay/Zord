@@ -1,0 +1,82 @@
+[
+  {
+    "id": "promise-syra-identity",
+    "description": "Syra — femme du passé de Flagor crue morte. Qui est-elle ? Quel est son rôle ?",
+    "madeInChapter": 3,
+    "reinforcedInChapters": [7, 9, 10, 12],
+    "paidOffInChapter": null,
+    "status": "open",
+    "relatedLines": ["line-passe-flagor"],
+    "urgency": "haute — ouverte depuis 9 chapitres, renforcée 4 fois"
+  },
+  {
+    "id": "promise-vestiges-nature",
+    "description": "Les vestiges de l'astre éteint — civilisation inconnue. Que sont-ils ? Pourquoi reconnaissent-ils Soren et Syra ?",
+    "madeInChapter": 12,
+    "reinforcedInChapters": [],
+    "paidOffInChapter": null,
+    "status": "open",
+    "relatedLines": ["line-vestiges-astre"],
+    "urgency": "moyenne — récente, cliffhanger de saison"
+  },
+  {
+    "id": "promise-reseau-anonyme",
+    "description": "Le réseau anonyme qui contacte Soren. Qui est derrière ? Helena ? Autre ?",
+    "madeInChapter": 4,
+    "reinforcedInChapters": [5, 6, 7, 12],
+    "paidOffInChapter": null,
+    "status": "open",
+    "relatedLines": ["line-bamboule", "line-message-ils-savent"],
+    "urgency": "haute — ouverte depuis 8 chapitres, jamais payée"
+  },
+  {
+    "id": "promise-dorian-alerte",
+    "description": "Dorian Vex a ignoré l'alerte qui aurait pu sauver son frère. Conséquences ?",
+    "madeInChapter": 5,
+    "reinforcedInChapters": [6, 8, 10],
+    "paidOffInChapter": null,
+    "status": "open",
+    "relatedLines": ["line-biomen"],
+    "urgency": "moyenne — partiellement adressée (commission) mais pas résolue"
+  },
+  {
+    "id": "promise-malak-loyalty",
+    "description": "Malak a brisé la loyauté féodale pour la vérité. Où va cette relation ?",
+    "madeInChapter": 9,
+    "reinforcedInChapters": [10, 12],
+    "paidOffInChapter": null,
+    "status": "open",
+    "relatedLines": ["line-feodalite"],
+    "urgency": "moyenne — en résolution active"
+  },
+  {
+    "id": "promise-kira-verdict",
+    "description": "Kira suspendue — ni condamnée ni acquittée. Quel sera son sort ?",
+    "madeInChapter": 8,
+    "reinforcedInChapters": [10, 11, 12],
+    "paidOffInChapter": null,
+    "status": "open",
+    "relatedLines": ["line-biomen"],
+    "urgency": "moyenne — suspendue, statu quo"
+  },
+  {
+    "id": "promise-helena-plan",
+    "description": "Helena attend 'une transmission, un signe'. Quel est son plan ?",
+    "madeInChapter": 9,
+    "reinforcedInChapters": [11, 12],
+    "paidOffInChapter": null,
+    "status": "open",
+    "relatedLines": ["line-oligarchie"],
+    "urgency": "haute — suggère une connexion au réseau anonyme"
+  },
+  {
+    "id": "promise-biomen-facade",
+    "description": "Le lecteur doit croire à la façade héroïque avant la subversion. Moment d'héroïsme authentique posé au ch.3 (viaduc).",
+    "madeInChapter": 2,
+    "reinforcedInChapters": [3, 4],
+    "paidOffInChapter": 5,
+    "status": "paid",
+    "relatedLines": ["line-biomen"],
+    "urgency": "résolue — la subversion est effective depuis le ch.5"
+  }
+]

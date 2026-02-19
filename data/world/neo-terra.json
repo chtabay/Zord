@@ -1,0 +1,27 @@
+{
+  "id": "neo-terra",
+  "name": "Néo-Terra",
+  "type": "location",
+  "description": "Le monde des Biomen et du Conseil. Civilisation avancée, urbanisée, médiatisée. Les Biomen sont les protecteurs publics — célébrés, filmés, adulés. Derrière la façade : un système politique de mandats exceptionnels et de guerre instrumentalisée.",
+  "sensory": {
+    "visual": "Écrans géants diffusant les exploits des Biomen en boucle. Drapeaux aux couleurs des Cinq. Projecteurs sur les estrades. Milliers de visages levés. Architecture de verre et d'acier. Lumière artificielle omniprésente — Néo-Terra ne dort jamais vraiment.",
+    "sound": "Foule qui rugit, tonnerre d'applaudissements, amplificateurs. Dans les couloirs : silence et écho des pas sur le métal poli. Grésillement des écrans d'information. Alarmes sur le Vigilant.",
+    "smell": "Dans les lieux publics : air filtré, propre, presque sans odeur. Dans les vestiaires : sueur, désinfectant. Dans les couloirs du Complexe : acier poli et néon.",
+    "tactile": "Surfaces lisses, verre, métal poli. La foule presse contre les barrières. Les combinaisons de combat sont rigides, ajustées. Le sol des couloirs est froid sous les pieds."
+  },
+  "areas": {
+    "place-commandement": "Estrade publique avec amplificateurs. Lieu des discours de Dorian Vex. Drapeaux, projecteurs, enfants sur les épaules.",
+    "complexe-biomen": "Voir fiche séparée (complexe-biomen.json)",
+    "salle-conseil": "Grand amphithéâtre du Conseil. Table en arc de cercle, projecteurs, écrans. Lieu de la commission Helena Vex.",
+    "couloirs": "Longs, vides, écrans d'information défilant. C'est ici que Soren s'arrête devant les alertes."
+  },
+  "events": [
+    "Ch.2: Discours de Dorian Vex. Présentation des Biomen. Introduction de Soren.",
+    "Ch.3: Biomen sauvent le viaduc Est. 300 civils évacués.",
+    "Ch.4: Sécurisation du dépôt de carburant secteur 7.",
+    "Ch.5: Helena Vex exige la commission d'enquête.",
+    "Ch.7-8: Commission. Kira entendue. Helena ajourne.",
+    "Ch.11: Le Conseil vote le statu quo. Helena envoie l'ultimatum."
+  ],
+  "significance": "Néo-Terra est la vitrine et le mensonge. Tout y est spectacle — les héros, la politique, la guerre. Le vrai pouvoir est invisible (Conseil). La vraie dignité est méprisée (Soren)."
+}

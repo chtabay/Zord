@@ -1,0 +1,27 @@
+{
+  "id": "complexe-biomen",
+  "name": "Le Complexe",
+  "type": "location",
+  "description": "Palais de verre et d'acier construit par le Conseil de Néo-Terra pour les Biomen — pas pour les protéger mais pour les montrer. Vitrine du programme héroïque. Contient les vestiaires, les quartiers, les serveurs de communication, les sous-niveaux de maintenance.",
+  "sensory": {
+    "visual": "Verre et acier. Surfaces réfléchissantes. Écrans d'information dans les couloirs diffusant les alertes et les exploits. Vestiaires aux murs blancs. Lumière artificielle crue. Les sous-niveaux sont plus sombres — conduits, serveurs, néons intermittents.",
+    "sound": "Écho des pas dans les couloirs. Grésillement des écrans. Rires dans les vestiaires (quand Soren n'est pas là, le ton change). En sous-niveau : bourdonnement des serveurs.",
+    "smell": "Vestiaires : sueur, désinfectant. Couloirs : air filtré, presque stérile. Sous-niveaux : câbles chauds, graisse de maintenance.",
+    "tactile": "Bancs métalliques dans les vestiaires. Gants de combat (rigides, ajustés). Les terminaux de maintenance vibrent légèrement. Le sol des sous-niveaux est granuleux."
+  },
+  "areas": {
+    "vestiaires": "Murs blancs, bancs métalliques, bac à linge. C'est ici que Vex jette son gant, que Torvald ricane, que les masques tombent.",
+    "couloirs": "Longs, éclairés par des écrans. Soren s'y arrête devant les alertes. Kira y est suivie par les regards.",
+    "sous-niveaux": "Conduits de maintenance longeant les serveurs de communication. C'est ici que Soren accède aux canaux chiffrés pour transmettre.",
+    "hangars-secours": "Navettes de secours. C'est d'ici que Soren fuit vers l'astre éteint (ch.11).",
+    "chambres": "Minuscules. Hublot donnant sur Néo-Terra et les étoiles. Soren y est seul."
+  },
+  "events": [
+    "Ch.2: Après le discours — les masques tombent. Kael : 'Bamboule, le câble 3 grésille.'",
+    "Ch.3: Biomen sauvent le viaduc. En coulisses, Vex jette son gant au visage de Soren.",
+    "Ch.4: Soren dans les sous-niveaux, transmet les coordonnées du piège.",
+    "Ch.6: Soren accepte une nouvelle transmission. Le technicien le remarque.",
+    "Ch.11: Soren disparaît via les hangars de secours."
+  ],
+  "significance": "Le Complexe est le miroir inversé des Biomen — brillant à l'extérieur, toxique à l'intérieur. C'est aussi le lieu de la trahison de Soren et de sa fuite. Les sous-niveaux sont l'envers du spectacle."
+}

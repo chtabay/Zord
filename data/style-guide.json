@@ -1,0 +1,44 @@
+{
+  "narrativeVoice": {
+    "person": "troisième personne",
+    "focalization": "interne alternée — on suit le point de vue d'un personnage par scène, sans omniscience",
+    "tense": "passé simple et imparfait",
+    "interiority": "pensées intégrées au récit (pas d'italique, pas de guillemets intérieurs), glissées dans la narration"
+  },
+  "tone": {
+    "register": "littéraire mais économe — phrases courtes en tension, plus longues en contemplation",
+    "atmosphere": "sombre, politique, oppressant avec des percées de beauté inattendue",
+    "humor": "absent pour l'instant — la respiration passe par le mystère et le worldbuilding, pas par l'humour"
+  },
+  "dialogueStyle": {
+    "marker": "tirets longs (—)",
+    "register": "chaque personnage a son registre propre (voir fiches personnages)",
+    "density": "dialogues courts, sous-texte. Ce qui n'est pas dit compte plus que ce qui est dit",
+    "attribution": "minimale — éviter les 'dit-il' quand le contexte suffit"
+  },
+  "vocabulary": {
+    "universe": [
+      "astre", "rostre", "Complexe", "Conseil de Néo-Terra", "Commandement",
+      "Biomen", "Zordons", "secteur Gamma", "Vigilant", "vestiges",
+      "mandats exceptionnels", "canal chiffré", "logs d'interception"
+    ],
+    "sensoryPalette": [
+      "poussière stellaire", "lumière froide des projecteurs", "métal chaud",
+      "acier poli", "basalte", "cratères", "vent fantôme",
+      "désinfectant", "sueur", "fumée", "sang"
+    ]
+  },
+  "references": [
+    "The Boys — déconstruction du mythe superhéroïque, toxicité derrière la façade",
+    "Lelouch (Code Geass) — construction dramatique, retournements, jeux de pouvoir",
+    "Bioman / Super Sentai — structure sentai inversée, les héros sont les corrompus",
+    "Watchmen (Moore) — politique et déconstruction",
+    "Le Maître et Marguerite (Boulgakov) — satire sous couvert de genre"
+  ],
+  "chapterConventions": {
+    "length": "600-1000 mots",
+    "structure": "2-3 scènes par chapitre, séparées par des sauts ou des changements de lieu/POV",
+    "ending": "fin ouverte — pas de résolution fermée, le lecteur doit vouloir tourner la page",
+    "pov": "alterner les POV entre Zordon et Biomen, ne pas toujours commencer par le même camp"
+  }
+}

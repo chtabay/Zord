@@ -1,0 +1,20 @@
+{
+  "id": "biomen",
+  "name": "Les Biomen",
+  "type": "faction",
+  "description": "Cinq héros publics de Néo-Terra — protecteurs médiatisés, adulés par la foule. Derrière la façade : racisme, masculinisme, toxicité de groupe. Lecture inversée du sentai classique (Bioman/Power Rangers) — les héros sont les corrompus.",
+  "structure": "Groupe de 5 : Dorian Vex (leader, discours), Kael (le massif, sourire de caméra), Mara (la seule femme du noyau originel), Torvald (le moqueur), Soren/La Bamboule (le souffre-douleur). Kira est une alliée/membre plus récente. Hiérarchie informelle basée sur la force et le charisme.",
+  "culture": "Façade : sacrifice, devoir, héroïsme public. Réalité : mépris des faibles, racisme envers Soren (métis), masculinisme ambiant. Le surnom 'La Bamboule' est utilisé comme insulte. Les performances héroïques sont calibrées pour les caméras — la combinaison de Dorian n'a jamais vu le combat.",
+  "members": ["dorian", "soren", "kira"],
+  "secondaryMembers": ["kael", "mara", "torvald"],
+  "vocabulary": ["Les Cinq", "Bamboule", "viaduc Est", "secteur 7", "combinaison de combat"],
+  "events": [
+    "Ch.2: Discours de Dorian. Présentation de la façade. Introduction de Soren et du mépris.",
+    "Ch.3: Sauvetage du viaduc Est — 300 civils. Humiliation de Soren en coulisses.",
+    "Ch.4: Sécurisation dépôt secteur 7. Kira offre un verre à Soren.",
+    "Ch.5: 2 vaisseaux Biomen détruits. Dorian avait ignoré l'alerte. Kira accusée.",
+    "Ch.7-8: Commission. Le groupe se divise.",
+    "Ch.11: Kira suspendue. Soren disparaît."
+  ],
+  "significance": "Les Biomen incarnent la satire du héros — la toxicité derrière le spectacle. Mais la fissure Kira/reste du groupe montre que même un système toxique produit des dissidents. Le départ de Soren les prive de leur bouc émissaire — et donc de leur cohésion."
+}

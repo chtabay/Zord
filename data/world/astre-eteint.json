@@ -1,0 +1,29 @@
+{
+  "id": "astre-eteint",
+  "name": "L'astre éteint (CX-440)",
+  "type": "location",
+  "description": "Un monde mort en orbite autour de soleils mourants. Paysage constellé de cratères anciens, sans vie. Choisi par Flagor comme théâtre de l'affrontement final contre les Biomen. Devenu le lieu de convergence de toutes les lignes narratives.",
+  "sensory": {
+    "visual": "Cratères à perte de vue sous une lumière froide. Poussière grise soulevée par des brises légères — un voile qui couvre et recouvre tout. Les derniers rayons des soleils rasent la surface. Projecteurs Zordons qui percent l'obscurité en faisceaux rouges et blancs. Falaises de basalte noires au nord. Pas de ciel — les étoiles sont directes, crues, indifférentes.",
+    "sound": "Silence presque total. Le crépitement du métal qui se refroidit après un atterrissage. Le bourdonnement à peine audible des vestiges. Pas d'atmosphère pour porter les sons — tout est étouffé, avalé.",
+    "smell": "À l'intérieur des modules : métal chaud, sueur retenue, circuits surchauffés. À l'extérieur : rien — le vide n'a pas d'odeur, mais les combinaisons sentent le caoutchouc et la sueur recyclée.",
+    "tactile": "Sol défiguré, gravier fin qui crisse sous les bottes. Température létale au-delà du verre. Les rampes sont froides. Les claviers des terminaux vibrent légèrement sous les doigts."
+  },
+  "areas": {
+    "poste-commandement": "Centre nerveux de Flagor. Écrans rouges, consoles, hublots donnant sur les cratères. C'est ici que Flagor observe, ordonne, et choisit de ne pas agir.",
+    "face-nord": "Falaises de basalte plongeant dans l'ombre. Zone de tir où le piège a été tendu. Émetteurs de leurre installés ici.",
+    "vestiges": "Zone nord. Structures anciennes émergeant de la roche — arcs, colonnes brisées, géométrie inconnue. Ni Zordon ni Biomen. Murs couverts de symboles (lignes, cercles, motifs). Écran ancien — surface plane noire qui s'illumine et montre des visages. Courant d'air chaud à l'entrée — comme une respiration. Quelque chose vit encore.",
+    "hangars": "Modules de déploiement. Vibrations des atterrissages. Techniciens Zordons en activité.",
+    "salle-transmissions": "Salle vide avec un terminal. C'est ici que Flagor a choisi de ne pas transmettre."
+  },
+  "events": [
+    "Ch.1: Atterrissage des Zordons. Flagor contemple le paysage mort.",
+    "Ch.3: Déploiement, installation des pièges. Technicien sanctionné.",
+    "Ch.4: Piège compromis par la fuite de Soren. Vaisseaux Biomen dans la zone de tir.",
+    "Ch.5: Premier combat. 2 vaisseaux Biomen détruits, 1 sauvé.",
+    "Ch.8: Flagor parcourt les logs. La signature du convoi identifiée.",
+    "Ch.10: Flagor dans la salle des transmissions — choisit de ne pas envoyer.",
+    "Ch.12: Soren atterrit. Découvre les vestiges. L'écran s'active."
+  ],
+  "significance": "L'astre éteint est le lieu où tout converge : la guerre, le passé, les vestiges. C'est un monde mort qui contient quelque chose de vivant. Le contraste central du récit — la beauté légère du vent face à la mort derrière le verre."
+}

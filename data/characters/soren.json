@@ -1,0 +1,36 @@
+{
+  "id": "soren",
+  "name": "Soren / La Bamboule",
+  "faction": "biomen",
+  "physical": "Métis — le seul du groupe. Costume souvent taché de suie ou de poussière. Plus petit que les autres Biomen. Mains qui ne tremblent plus (depuis le ch.6). Épaules droites même sous le mépris. Regard qui observe tout sans rien montrer. Se tient toujours à l'écart, dans les angles, les zones d'ombre.",
+  "voice": {
+    "register": "Économe. Parle peu, par phrases minimales. Ne se justifie pas. Répond aux provocations par le silence ou par une phrase sèche qui coupe court.",
+    "patterns": "Refuse les offres ('Non. Merci.'). Répond par des actions, pas par des mots. Quand il parle, c'est factuel.",
+    "examples": [
+      "Je cherche mon chemin.",
+      "Non. Merci.",
+      "Dehors. J'ai besoin d'air.",
+      "Oui. C'est Soren. J'ai des informations."
+    ]
+  },
+  "currentState": "En fuite vers l'astre éteint. A découvert les vestiges — l'écran ancien a montré son visage puis celui de Syra. Quelque chose s'est activé. Le réseau anonyme l'a averti : 'Ils savent où tu es. Fuis. Ou reste.' Il ne sait pas quoi faire. Il marche dans la poussière.",
+  "location": "Astre éteint — zone des vestiges (structures anciennes, face nord)",
+  "relationships": {
+    "kira": "La seule qui l'a défendu. Elle a refusé de le livrer à Dorian. Elle a été suspendue à cause de lui. Il ne le sait peut-être pas encore.",
+    "dorian": "Le leader qui le méprise et le cherche. 'La Bamboule qui se prend pour un héros.'",
+    "biomen": "Le groupe l'a toujours traité comme un souffre-douleur. Torvald, Kael, Vex — tous l'ont humilié. Il n'a jamais répondu. Jusqu'au ch.4.",
+    "flagor": "Ne le connaît pas personnellement. Mais Flagor le cherche comme 'la Bamboule' — l'identifiant du traître.",
+    "reseau": "Contact anonyme. Voix modulée, messages chiffrés. 'Tu as bien fait. Reste discret.' Qui est derrière ? Helena ?"
+  },
+  "history": [
+    "Ch.2: Présenté comme le souffre-douleur. Range les câbles. Silence comme armure.",
+    "Ch.3: Gant jeté par Vex. Le ramasse, le tend sans mot. Visage absent des écrans.",
+    "Ch.4: PIVOT — compose un numéro interdit, transmet les coordonnées du piège. Fin de la passivité.",
+    "Ch.5: 1 vaisseau sauvé, 2 détruits par sa fuite. Reçoit 'Tu as bien fait'. Technicien le remarque.",
+    "Ch.6: Accepte une transmission plus risquée. Hésite. Tape 'Oui'.",
+    "Ch.7: Envoie les coordonnées du prochain convoi. Point de bascule irréversible.",
+    "Ch.11: Disparaît. Direction l'astre éteint via les hangars de secours.",
+    "Ch.12: Arrive sur l'astre. Découvre les vestiges. L'écran montre son visage, puis Syra. Quelque chose s'active."
+  ],
+  "contradictions": "Soren croit agir pour la justice, mais sa fuite a coûté 2 vaisseaux et des centaines de morts. Il pense être seul, mais un réseau le guide — il ne sait pas pour qui il travaille vraiment. Les vestiges le reconnaissent — pourquoi lui ?"
+}

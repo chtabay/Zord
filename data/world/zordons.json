@@ -1,0 +1,24 @@
+{
+  "id": "zordons",
+  "name": "Les Zordons",
+  "type": "faction",
+  "description": "Armée extraterrestre sous le commandement absolu de Flagor. Structure féodale, pas militaire classique — Malak appelle Flagor 'Maître', les soldats s'écartent et saluent. Flagor est mythifié par ses troupes.",
+  "structure": "Commandement pyramidal : Flagor au sommet, Malak comme second, officiers et techniciens en dessous. Pas de conseil, pas de contre-pouvoir — jusqu'à ce que Malak commence à penser par lui-même.",
+  "culture": "Mythification du chef. Les cicatrices de Flagor sont 'celles portées par les grands destins'. L'obéissance est totale. Les erreurs sont sanctionnées immédiatement (technicien remplacé au ch.3). La précision est une valeur absolue.",
+  "members": ["flagor", "malak"],
+  "vocabulary": ["Maître", "Commandement", "secteur Gamma", "émetteurs de leurre", "projectiles à énergie cinétique", "sondes", "logs d'interception", "purges"],
+  "technology": {
+    "weapons": "Projectiles à énergie cinétique — traversent le vide en silence, impacts dévastateurs",
+    "surveillance": "Sondes, scanners, logs d'interception des canaux ennemis",
+    "traps": "Émetteurs de leurre sur la face nord de l'astre éteint",
+    "vessels": "Vaisseau-mère (non nommé) avec poste de commandement, hangars, modules de déploiement"
+  },
+  "events": [
+    "Ch.1: Atterrissage sur l'astre éteint. Flagor déclare la victoire finale.",
+    "Ch.3: Installation du piège. Technicien sanctionné.",
+    "Ch.5: Ordre de feu — 2 vaisseaux Biomen détruits.",
+    "Ch.9: Malak révèle Syra. La structure féodale se fissure.",
+    "Ch.12: Malak identifie Soren. Flagor choisit d'attendre."
+  ],
+  "significance": "Les Zordons sont le miroir de l'oligarchie — un pouvoir personnel mythifié. Mais la fissure Flagor/Malak montre que même le pouvoir absolu dépend de la loyauté de ceux qui exécutent."
+}

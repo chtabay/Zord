@@ -1,0 +1,19 @@
+{
+  "id": "conseil-neo-terra",
+  "name": "Le Conseil de Néo-Terra",
+  "type": "faction",
+  "description": "Institution politique suprême de Néo-Terra. Gouverne par mandats exceptionnels renouvelés — structure oligarchique derrière une façade démocratique. A construit le Complexe pour montrer les Biomen. A laissé les Zordons approcher délibérément pour justifier les mandats.",
+  "structure": "Membres du Conseil avec mandats exceptionnels. Helena Vex — 12 ans, renouvelé 3 fois. Au moins 3 autres conseillers (visages fermés, indéchiffrables). Commissions d'enquête comme outil de pouvoir.",
+  "culture": "Le pouvoir comme procédure. Les décisions sont prises dans des salles fermées. La guerre est un outil politique, pas un objectif. Le statu quo profite à ceux qui sont en place. 'La guerre ne se gagne pas en fermant les yeux' — mais fermer les yeux est parfois le plan.",
+  "members": ["helena"],
+  "vocabulary": ["Conseil de Néo-Terra", "mandats exceptionnels", "commission d'enquête", "ajournement", "statu quo"],
+  "events": [
+    "Ch.2: Évoqué en sous-texte — mandats exceptionnels, guerre instrumentalisée.",
+    "Ch.3: Un message 'Ils savent' arrive au Conseil. Traité comme information secondaire.",
+    "Ch.5: Helena Vex exige la commission d'enquête. Le Conseil paraît divisé.",
+    "Ch.7-8: Commission en session. Helena préside. Ajournement 48h.",
+    "Ch.11: Le Conseil vote le statu quo. Helena envoie l'ultimatum à Flagor.",
+    "Ch.12: Helena debout face aux écrans. L'astre éteint y apparaît."
+  ],
+  "significance": "Le Conseil est l'oligarchie post-communiste en métaphore — le pouvoir personnel derrière les institutions, la guerre comme outil de maintien. Helena est à la fois le produit et la critique de ce système."
+}

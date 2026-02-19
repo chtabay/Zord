@@ -350,7 +350,52 @@ class EvaluatorService {
       });
     }
 
+    // Alertes promesses/payoffs
+    const promiseAlerts = this._evaluatePromises(currentUnitIndex);
+    allAlerts.push(...promiseAlerts);
+
     return allAlerts.sort((a, b) => b.severity - a.severity);
+  }
+
+  _evaluatePromises(currentUnitIndex) {
+    const alerts = [];
+    const promises = this._currentProject?.promises;
+    if (!Array.isArray(promises)) return alerts;
+
+    const openPromises = promises.filter(p => p.status === 'open');
+
+    if (openPromises.length >= 6) {
+      alerts.push({
+        ruleId: 'promise-overload',
+        ruleName: 'Surcharge de promesses',
+        type: 'warning',
+        message: `${openPromises.length} promesses narratives ouvertes. Le récit risque de frustrer le lecteur — envisager de payer au moins une promesse.`,
+        severity: 0.7
+      });
+    }
+
+    for (const p of openPromises) {
+      const age = currentUnitIndex - p.madeInChapter;
+      if (age >= 8 && !p.reinforcedInChapters?.length) {
+        alerts.push({
+          ruleId: 'promise-forgotten',
+          ruleName: 'Promesse oubliée',
+          type: 'constraint',
+          message: `Promesse "${p.description}" ouverte depuis ${age} chapitres sans renforcement. Le lecteur l'a peut-être oubliée.`,
+          severity: 0.8
+        });
+      } else if (age >= 6) {
+        alerts.push({
+          ruleId: 'promise-aging',
+          ruleName: 'Promesse vieillissante',
+          type: 'guideline',
+          message: `Promesse "${p.description}" ouverte depuis ${age} chapitres. Renforcer ou payer bientôt.`,
+          severity: 0.5
+        });
+      }
+    }
+
+    return alerts;
   }
 
   getStatistics(lines, units) {

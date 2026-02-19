@@ -1,0 +1,25 @@
+{
+  "id": "vigilant",
+  "name": "Le Vigilant",
+  "type": "location",
+  "description": "Vaisseau Biomen rescapé du piège de Flagor (ch.5). Le seul sur trois à avoir survécu — coque arrachée, saut d'urgence. Devenu un lieu de rancœur, de deuil et de guerre interne.",
+  "sensory": {
+    "visual": "Couloirs remplis de fumée. Alarmes clignotantes. Silhouette blessée vue de l'extérieur — coque arrachée, cicatrice visible. Blessés dans les couloirs. Lumières d'urgence rouge-orange.",
+    "sound": "Alarmes qui hurlent puis se taisent. Murmures des survivants. Pas lourds dans les couloirs métalliques. Le silence quand Kira passe — les conversations s'arrêtent.",
+    "smell": "Sang. Fumée. Désinfectant médical. Métal brûlé. Sueur de peur.",
+    "tactile": "Parois chaudes (dommages thermiques). Sol glissant (fluides). Vibrations du moteur endommagé. L'air est lourd, difficile à respirer."
+  },
+  "areas": {
+    "pont": "Poste de commandement du vaisseau. Dorian Vex y donne ses ordres. C'est ici que le pilote est mort dans les bras de Kira.",
+    "couloirs": "Remplis de survivants, familles, blessés. Les regards suivent Kira. L'atmosphère est à la rancœur.",
+    "bureau-dorian": "Bureau où Dorian convoque Kira. Petite pièce fonctionnelle."
+  },
+  "events": [
+    "Ch.5: Le Vigilant échappe au piège — le seul vaisseau à survivre. Coque arrachée, saut d'urgence.",
+    "Ch.5: Le pilote mourant révèle que Dorian avait ignoré l'alerte.",
+    "Ch.5: Kira accusée de proximité avec Soren.",
+    "Ch.7: Dorian convoque Kira. Commission en préparation.",
+    "Ch.8: La commission se tient — Kira devant les juges."
+  ],
+  "significance": "Le Vigilant est le symbole de la survie au prix du deuil. C'est le lieu où la guerre externe devient guerre interne — les Biomen se retournent les uns contre les autres."
+}

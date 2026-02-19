@@ -2,26 +2,28 @@ import evaluator from './evaluator.js';
 import { STATUS_LABELS } from '../models/narrative-line.js';
 
 /**
- * Orchestrateur du protocole agent pour Zord.
+ * Orchestrateur v3 — Mémoire distribuée et experts interrogeables.
  *
- * Principes (hérités de V1.0 / novel_generator) :
- * - L'orchestrateur CALCULE et SÉLECTIONNE, ne génère jamais de contenu.
- * - Chaque agent reçoit UNIQUEMENT son slice de données.
- * - Le rédacteur ne connait ni scores, ni structure, ni priorités.
+ * Principes :
+ * - Le contexte narratif vit dans des FICHIERS PAR ENTITÉ, pas dans les prompts.
+ * - Chaque agent accède à ce dont il a besoin via queryExpert().
+ * - L'orchestrateur coordonne sans porter le contexte — il connaît l'index, pas le contenu.
+ * - Le scénariste reçoit de la MATIÈRE (personnages, lieux, style), pas des résumés.
  * - Les turning points ÉMERGENT, ils ne sont pas planifiés.
  *
- * Flux (v2 — avec vérificateur) :
- *   1. Orchestrateur → pré-évalue, sélectionne les lignes
- *   2. Agent Analyste → lignes + alertes + projections → contraintes (QUOI, pas COMMENT)
- *   3. Agent Scénariste → contraintes + descriptions → texte du chapitre
- *   4. Agent Critique → texte + lignes assignées → statuts + notes
- *   5. Agent Vérificateur → texte + TOUTES les lignes → détecte les avancements implicites
- *   6. Orchestrateur → applique les résultats, calcule les poids mécaniquement, itère
+ * Flux v3 :
+ *   1. Orchestrateur → pré-évalue, sélectionne lignes, identifie entités
+ *   2. queryExpert() × N → briefs personnages + lieux
+ *   3. Agent Analyste → contraintes (QUOI, pas COMMENT)
+ *   4. Agent Scénariste → style-guide + briefs + contraintes + derniers paragraphes → texte
+ *   5. Agent Critique → statuts + projections + notes personnages
+ *   6. Agent Vérificateur → avancements implicites
+ *   7. Orchestrateur → poids mécaniques + mise à jour des fichiers entités
  */
 class OrchestratorService {
 
   // ────────────────────────────────────────────────────────
-  // ÉTAPE 1 : Sélection des lignes à traiter
+  // ÉTAPE 1 : Sélection et identification des entités
   // ────────────────────────────────────────────────────────
 
   selectLines(project) {
@@ -75,8 +77,70 @@ class OrchestratorService {
     };
   }
 
+  /**
+   * Identifie les personnages et lieux impliqués par les lignes sélectionnées.
+   * Retourne les IDs à interroger via queryExpert.
+   */
+  identifyEntities(selectedLines, characterIndex, worldIndex) {
+    const characterIds = new Set();
+    const locationIds = new Set();
+
+    const tagToChar = {
+      'flagor': 'flagor', 'malak': 'malak', 'bamboule': 'soren',
+      'soren': 'soren', 'biomen': null, 'kira': 'kira',
+      'dorian': 'dorian', 'helena': 'helena', 'syra': 'syra'
+    };
+    const tagToLoc = {
+      'lieu': 'astre-eteint', 'guerre': null, 'astre': 'astre-eteint',
+      'haut-conseil': null, 'politique': null
+    };
+
+    for (const line of selectedLines) {
+      for (const tag of (line.tags || [])) {
+        const charId = tagToChar[tag.toLowerCase()];
+        if (charId) characterIds.add(charId);
+        const locId = tagToLoc[tag.toLowerCase()];
+        if (locId) locationIds.add(locId);
+      }
+    }
+
+    if (characterIds.size === 0) characterIds.add('flagor');
+    if (locationIds.size === 0) locationIds.add('astre-eteint');
+
+    return {
+      characterIds: [...characterIds],
+      locationIds: [...locationIds]
+    };
+  }
+
   // ────────────────────────────────────────────────────────
-  // ÉTAPE 2 : Brief Analyste (QUOI, pas COMMENT)
+  // queryExpert — cœur du système distribué
+  // ────────────────────────────────────────────────────────
+
+  /**
+   * Construit le prompt pour interroger un micro-expert.
+   * L'appelant charge les données du fichier et passe entityData.
+   *
+   * @param {string} entityType - "characters" ou "world"
+   * @param {Object} entityData - contenu du fichier JSON de l'entité
+   * @param {string} question - la question posée à l'expert
+   * @returns {string} prompt pour le micro-agent
+   */
+  buildExpertQuery(entityType, entityData, question) {
+    const typeLabel = entityType === 'characters' ? 'personnage' : 'élément du monde';
+    return `Tu es l'expert responsable du ${typeLabel} "${entityData.name}".
+
+DONNÉES :
+${JSON.stringify(entityData, null, 2)}
+
+QUESTION :
+${question}
+
+Réponds factuellement, 2-5 phrases. Sois concret et spécifique. Cite des détails des données.`;
+  }
+
+  // ────────────────────────────────────────────────────────
+  // ÉTAPE 2 : Brief Analyste (v3 — scènes + rôles A/B)
   // ────────────────────────────────────────────────────────
 
   buildAnalystBrief(selectedLines, mechanicalContext, project) {
@@ -88,6 +152,10 @@ class OrchestratorService {
     const previousSummaries = units.length
       ? units.map(u => `Ch.${u.number} "${u.title}" : ${u.summary}`).reverse().join('\n')
       : 'Aucun chapitre précédent.';
+
+    const lastTone = units.length
+      ? this._assessChapterTone(units[0])
+      : 'inconnu';
 
     const linesText = selectedLines.map(l => {
       const historyText = l.history.length
@@ -112,81 +180,124 @@ class OrchestratorService {
       ? mechanicalContext.alerts.map(a => `- ${a.message}`).join('\n')
       : 'Aucune alerte.';
 
-    return `Tu es l'Agent Analyste. Tu identifies ce que chaque ligne narrative NÉCESSITE à ce stade du récit.
+    return `Tu es l'Agent Analyste. Tu identifies ce que chaque ligne narrative NÉCESSITE et tu STRUCTURES le chapitre en scènes.
 
-RÈGLE ABSOLUE : tu produis des contraintes sur CE QUI doit se passer, jamais sur COMMENT le rédacteur doit l'écrire. Tu ne proposes pas de scènes, pas de dialogues, pas d'actions spécifiques. Tu dis : "cette ligne doit progresser", "ce personnage doit agir", "cette tension doit être nourrie". Le COMMENT appartient au rédacteur.
+RÈGLE ABSOLUE : tu produis des contraintes sur CE QUI doit se passer, jamais sur COMMENT le rédacteur doit l'écrire.
 
 CHAPITRES PRÉCÉDENTS :
 ${previousSummaries}
 
-LIGNES NARRATIVES À TRAITER :
+TON DU DERNIER CHAPITRE : ${lastTone}
+
+LIGNES NARRATIVES SÉLECTIONNÉES :
 ${linesText}
 
 ALERTES DU MOTEUR :
 ${alertsText}
 
-TÂCHE :
-Pour chaque ligne, produis :
-1. BESOIN NARRATIF : ce que cette ligne nécessite à ce stade (progression, pause, inflexion, escalade)
-2. PRIORITÉ : haute / moyenne / basse
-3. AGENTIVITÉ REQUISE : le personnage doit-il agir / subir / observer ?
-4. PROJECTION RETENUE : parmi les projections possibles, laquelle est la plus pertinente (ou aucune)
+TÂCHE EN 3 PARTIES :
 
-Produis aussi :
-- CONTRAINTES GÉNÉRALES : nombre max de lignes en premier plan, nécessité de micro-événements
+PARTIE 1 — RÔLES STRUCTURELS
+Assigne un rôle à chaque ligne pour CE chapitre :
+- A-STORY : intrigue principale, traitement profond (1-2 lignes max)
+- B-STORY : contrepoint thématique, éclairage différent (1 ligne)
+- RUNNER : mention légère, pas de développement (0-2 lignes)
+- ABSENT : délibérément pas dans ce chapitre (justifier)
 
-Format de sortie : JSON structuré.`;
+PARTIE 2 — DÉCOUPE EN SCÈNES
+Propose 2-3 scènes pour le chapitre :
+Pour chaque scène :
+- LIEU : où se passe la scène
+- PERSONNAGES : qui est présent
+- OBJECTIF : ce qui doit CHANGER dans cette scène (pas ce qui se passe — ce qui change)
+- LIGNES CONCERNÉES : quelles lignes cette scène fait avancer
+
+PARTIE 3 — CONTRAINTES PAR LIGNE
+Pour chaque ligne non-absente :
+- BESOIN NARRATIF
+- AGENTIVITÉ REQUISE
+- PROJECTION RETENUE
+
+Format : JSON structuré.`;
+  }
+
+  _assessChapterTone(unit) {
+    if (!unit || !unit.content) return 'inconnu';
+    const content = unit.content.toLowerCase();
+    const tensionWords = ['mort', 'sang', 'explosion', 'détruit', 'menace', 'peur', 'guerre', 'poings'];
+    const reliefWords = ['beauté', 'silence', 'étoiles', 'lumière', 'marche', 'respir', 'calme'];
+    const tensionScore = tensionWords.filter(w => content.includes(w)).length;
+    const reliefScore = reliefWords.filter(w => content.includes(w)).length;
+    if (tensionScore > reliefScore + 2) return 'haute tension — le prochain chapitre gagnerait à offrir un contraste';
+    if (reliefScore > tensionScore + 2) return 'respiration — le prochain chapitre peut escalader';
+    return 'équilibré';
   }
 
   // ────────────────────────────────────────────────────────
-  // ÉTAPE 3 : Brief Scénariste (inchangé — isolation totale)
+  // ÉTAPE 3 : Brief Scénariste v3 (matière, pas résumés)
   // ────────────────────────────────────────────────────────
 
-  buildWriterBrief(analystOutput, selectedLines, project) {
-    const units = (project.storyUnits || [])
-      .filter(u => u.status === 'completed')
-      .sort((a, b) => b.number - a.number)
-      .slice(0, 3);
+  /**
+   * Construit le brief du scénariste avec la matière riche :
+   * - Style guide (chargé depuis le fichier)
+   * - Briefs personnages (réponses des micro-experts)
+   * - Briefs lieux (réponses des micro-experts)
+   * - Contraintes de l'analyste
+   * - Derniers paragraphes du chapitre précédent (continuité de prose)
+   *
+   * Le scénariste NE reçoit PAS : résumés, scores, structure, turning points.
+   */
+  buildWriterBriefV3({
+    chapterNumber,
+    styleGuide,
+    characterBriefs,
+    locationBriefs,
+    analystConstraints,
+    lastParagraphs
+  }) {
+    const styleText = [
+      `Voix : ${styleGuide.narrativeVoice?.person}, ${styleGuide.narrativeVoice?.focalization}`,
+      `Temps : ${styleGuide.narrativeVoice?.tense}`,
+      `Ton : ${styleGuide.tone?.register}`,
+      `Dialogues : ${styleGuide.dialogueStyle?.marker}, ${styleGuide.dialogueStyle?.density}`,
+      `Chapitre : ${styleGuide.chapterConventions?.length}, ${styleGuide.chapterConventions?.ending}`
+    ].join('\n');
 
-    const chapterNumber = (project.storyUnits || []).length + 1;
+    const charsText = Object.entries(characterBriefs)
+      .map(([id, brief]) => `■ ${id.toUpperCase()}\n${brief}`)
+      .join('\n\n');
 
-    const previousSummaries = units.length
-      ? units.map(u => `Ch.${u.number} "${u.title}" : ${u.summary}`).reverse().join('\n')
-      : 'Premier chapitre.';
+    const locsText = Object.entries(locationBriefs)
+      .map(([id, brief]) => `■ ${id.toUpperCase()}\n${brief}`)
+      .join('\n\n');
 
-    const linesText = selectedLines.map(l =>
-      `■ ${l.name} [${STATUS_LABELS[l.status] || l.status}]\n  ${l.description}`
-    ).join('\n\n');
-
-    const constraintsText = typeof analystOutput === 'string'
-      ? analystOutput
-      : JSON.stringify(analystOutput, null, 2);
+    const constraintsText = typeof analystConstraints === 'string'
+      ? analystConstraints
+      : JSON.stringify(analystConstraints, null, 2);
 
     return `Tu es l'Agent Scénariste. Tu rédiges le chapitre ${chapterNumber} du roman.
 
-RÉSUMÉS DES CHAPITRES PRÉCÉDENTS :
-${previousSummaries}
+STYLE D'ÉCRITURE :
+${styleText}
 
-LIGNES NARRATIVES ASSIGNÉES :
-${linesText}
+PERSONNAGES PRÉSENTS (fiches vivantes) :
+${charsText}
 
-CONTRAINTES DE RÉDACTION (fournies par l'analyste) :
+LIEUX (palette sensorielle) :
+${locsText}
+
+CONTRAINTES NARRATIVES (fournies par l'analyste) :
 ${constraintsText}
 
-RÈGLES D'ÉCRITURE :
-- Prose littéraire, pas de narration didactique
-- Dialogues avec tirets (—)
-- Montrer, pas expliquer
-- Paragraphes séparés par des doubles sauts de ligne
-- Environ 600-900 mots
-- Ne pas conclure le chapitre de façon fermée
+CONTINUITÉ — derniers paragraphes du chapitre précédent :
+${lastParagraphs}
 
-Tu ne connais PAS la suite du récit. Écris ce chapitre en répondant aux contraintes.
+Tu ne connais PAS la suite du récit. Écris ce chapitre en t'appuyant sur la matière ci-dessus.
 Texte seulement, pas de méta-commentaire.`;
   }
 
   // ────────────────────────────────────────────────────────
-  // ÉTAPE 4 : Brief Critique (sans ajustement de poids)
+  // ÉTAPE 4 : Brief Critique (+ notes personnages)
   // ────────────────────────────────────────────────────────
 
   buildCriticBrief(chapterText, selectedLines, analystOutput) {
@@ -198,44 +309,41 @@ Texte seulement, pas de méta-commentaire.`;
       ? analystOutput
       : JSON.stringify(analystOutput, null, 2);
 
-    return `Tu es l'Agent Critique. Tu évalues le chapitre produit et proposes des mises à jour de STATUT pour chaque ligne narrative.
+    return `Tu es l'Agent Critique. Tu évalues le chapitre et proposes des mises à jour.
 
-IMPORTANT : tu ne proposes PAS d'ajustement de poids. Les poids sont calculés mécaniquement par le système. Tu évalues uniquement le STATUT et l'AGENTIVITÉ.
+IMPORTANT : tu ne proposes PAS d'ajustement de poids (calculé mécaniquement).
 
 TEXTE DU CHAPITRE :
 ${chapterText}
 
-LIGNES NARRATIVES ASSIGNÉES (état avant le chapitre) :
+LIGNES ASSIGNÉES (état avant) :
 ${linesText}
 
-CONTRAINTES QUI AVAIENT ÉTÉ DONNÉES AU RÉDACTEUR :
+CONTRAINTES DONNÉES AU RÉDACTEUR :
 ${constraintsText}
 
 TÂCHE :
-Pour chaque ligne assignée, évalue :
-1. AVANCÉE : la ligne a-t-elle progressé dans ce chapitre ? (oui/non)
-2. NOUVEAU STATUT : dormante / émergente / active / climax / en résolution / résolue
-3. AGENTIVITÉ OBSERVÉE : passive / reactive / proactive
-4. NOTE : ce qui s'est passé pour cette ligne (factuel, 1-2 phrases)
-5. PROJECTION MISE À JOUR : que pourrait-il se passer ensuite pour cette ligne ?
+Pour chaque ligne :
+1. AVANCÉE : oui/non
+2. NOUVEAU STATUT
+3. AGENTIVITÉ OBSERVÉE
+4. NOTE (factuel)
+5. PROJECTION MISE À JOUR
 
-Évalue aussi :
-- NOUVELLES LIGNES à créer ? (micro-accroches, sous-intrigues émergentes)
-- INCOHÉRENCES avec les chapitres précédents ?
-- RÉSUMÉ du chapitre (2-3 phrases)
-- TITRE suggéré
+Pour chaque PERSONNAGE apparu dans le chapitre :
+- Nouveau trait physique ou vocal observé ?
+- Changement d'état émotionnel ?
+- Nouvelle relation ou changement de relation ?
+- Nouvelle localisation ?
 
-Format de sortie : JSON structuré.`;
++ NOUVELLES LIGNES, INCOHÉRENCES, RÉSUMÉ, TITRE
+JSON structuré.`;
   }
 
   // ────────────────────────────────────────────────────────
-  // ÉTAPE 5 : Brief Vérificateur (TOUTES les lignes)
+  // ÉTAPE 5 : Brief Vérificateur (inchangé)
   // ────────────────────────────────────────────────────────
 
-  /**
-   * Le vérificateur revoit le chapitre contre TOUTES les lignes du projet,
-   * pas seulement les assignées. Il détecte les avancements implicites.
-   */
   buildVerifierBrief(chapterText, project) {
     const allLines = (project.narrativeLines || [])
       .filter(l => l.status !== 'resolved');
@@ -244,39 +352,72 @@ Format de sortie : JSON structuré.`;
       `■ ${l.name} [${STATUS_LABELS[l.status] || l.status}]\n  ${l.description}`
     ).join('\n\n');
 
-    return `Tu es l'Agent Vérificateur. Tu relis le chapitre et identifies TOUTES les lignes narratives qui ont été touchées, même implicitement.
-
-Certaines lignes n'étaient pas assignées au rédacteur mais peuvent avoir été avancées dans le texte (un personnage mentionné, un thème effleuré, une tension nourrie indirectement).
+    return `Tu es l'Agent Vérificateur. Identifie TOUTES les lignes touchées, même implicitement.
 
 TEXTE DU CHAPITRE :
 ${chapterText}
 
-TOUTES LES LIGNES NARRATIVES DU PROJET :
+TOUTES LES LIGNES :
 ${linesText}
 
-TÂCHE :
-Pour chaque ligne, indique :
+Pour chaque ligne :
 1. TOUCHÉE : oui / non
-2. TYPE : directement avancée / mentionnée / effleurée thématiquement / absente
-3. NOTE : ce qui dans le texte touche cette ligne (citation courte ou description)
-4. CHANGEMENT DE STATUT NÉCESSAIRE : oui (lequel) / non
+2. TYPE : directement avancée / mentionnée / effleurée / absente
+3. NOTE
+4. CHANGEMENT DE STATUT NÉCESSAIRE
 
-Sois exhaustif. Ne rate aucune ligne touchée même indirectement.
-Format de sortie : JSON structuré.`;
+JSON structuré.`;
   }
 
   // ────────────────────────────────────────────────────────
-  // ÉTAPE 6 : Application des résultats (poids mécaniques)
+  // ÉTAPE 6 : Brief Mise à jour des entités (NOUVEAU)
   // ────────────────────────────────────────────────────────
 
   /**
-   * Applique les résultats du critique ET du vérificateur.
-   * Les poids sont calculés mécaniquement :
-   * - Ligne avancée + changement de statut → +0.05
-   * - Ligne avancée sans changement de statut → poids inchangé
-   * - Ligne touchée implicitement (vérificateur) → lastAdvancedInUnit mis à jour, poids inchangé
-   * - Ligne non touchée → poids inchangé (l'urgence montera naturellement au cycle suivant)
+   * Construit le prompt pour mettre à jour les fichiers d'entités
+   * après un chapitre. L'agent reçoit le texte + les fiches actuelles
+   * et produit les deltas à appliquer.
    */
+  buildEntityUpdateBrief(chapterText, chapterNumber, characterFiles, worldFiles) {
+    const charsText = Object.entries(characterFiles)
+      .map(([id, data]) => `■ ${id}: currentState="${data.currentState}", location="${data.location}"`)
+      .join('\n');
+
+    const locsText = Object.entries(worldFiles)
+      .map(([id, data]) => `■ ${id}: ${data.name}`)
+      .join('\n');
+
+    return `Tu es l'Agent de Mise à jour. Tu lis le chapitre et identifies les changements à appliquer aux fiches personnages et monde.
+
+TEXTE DU CHAPITRE ${chapterNumber} :
+${chapterText}
+
+PERSONNAGES ACTUELS :
+${charsText}
+
+LIEUX ACTUELS :
+${locsText}
+
+TÂCHE :
+Pour chaque personnage APPARU ou MENTIONNÉ dans le chapitre :
+- currentState : nouvel état émotionnel/physique
+- location : nouvelle localisation (si changée)
+- relationships : relations changées (avec qui, comment)
+- newVoiceExample : nouvelle réplique notable (si pertinent)
+
+Pour chaque lieu UTILISÉ dans le chapitre :
+- newEvent : "Ch.${chapterNumber}: ce qui s'est passé ici"
+- newArea : nouvelle sous-zone mentionnée (si pertinent)
+- newSensoryDetail : nouveau détail sensoriel (si pertinent)
+
+Ne liste QUE les changements. Pas de répétition de l'existant.
+JSON structuré.`;
+  }
+
+  // ────────────────────────────────────────────────────────
+  // ÉTAPE 7 : Application des résultats (poids mécaniques)
+  // ────────────────────────────────────────────────────────
+
   applyResults(criticOutput, verifierOutput, chapterText, project) {
     const units = project.storyUnits || [];
     const lines = project.narrativeLines || [];
@@ -285,7 +426,6 @@ Format de sortie : JSON structuré.`;
 
     const advancedLineIds = [];
 
-    // Appliquer les résultats du critique (lignes assignées)
     const lineUpdates = criticOutput.lineUpdates || criticOutput.lines || [];
     for (const update of lineUpdates) {
       const line = lines.find(l =>
@@ -302,7 +442,6 @@ Format de sortie : JSON structuré.`;
       if (update.agency) line.agency = update.agency;
       if (update.newProjection) line.projection = update.newProjection;
 
-      // Poids mécanique : +0.05 si le statut a changé, sinon inchangé
       if (statusChanged && update.advanced) {
         line.weight = Math.min(1.0, line.weight + 0.05);
       }
@@ -324,7 +463,6 @@ Format de sortie : JSON structuré.`;
       line.updatedAt = new Date().toISOString();
     }
 
-    // Appliquer les résultats du vérificateur (lignes non-assignées touchées)
     const verifierUpdates = verifierOutput?.lines || verifierOutput?.lineUpdates || [];
     for (const vUpdate of verifierUpdates) {
       if (!vUpdate.touched || vUpdate.type === 'absente') continue;
@@ -357,7 +495,6 @@ Format de sortie : JSON structuré.`;
       }
     }
 
-    // Nouvelles lignes
     if (criticOutput.newLines) {
       for (const newLine of criticOutput.newLines) {
         project.narrativeLines.push({
@@ -383,7 +520,6 @@ Format de sortie : JSON structuré.`;
       }
     }
 
-    // Nouvelle unité
     const newUnit = {
       id: `unit-ch${chapterNumber}`,
       type: 'chapter',
@@ -403,6 +539,22 @@ Format de sortie : JSON structuré.`;
     project.updatedAt = new Date().toISOString();
 
     return project;
+  }
+
+  /**
+   * Extrait les derniers paragraphes du chapitre précédent
+   * pour la continuité de prose du scénariste.
+   */
+  getLastParagraphs(project, count = 3) {
+    const units = (project.storyUnits || [])
+      .filter(u => u.status === 'completed' && u.content)
+      .sort((a, b) => b.number - a.number);
+
+    if (!units.length) return 'Premier chapitre — pas de continuité.';
+
+    const lastContent = units[0].content;
+    const paragraphs = lastContent.split('\n\n').filter(Boolean);
+    return paragraphs.slice(-count).join('\n\n');
   }
 }
 

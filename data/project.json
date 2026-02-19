@@ -1706,11 +1706,21 @@
     "lecteur-naif",
     "showrunner"
   ],
+  "promises": [
+    {"id": "promise-syra-identity", "description": "Syra — qui est-elle ? Quel est son rôle ?", "madeInChapter": 3, "reinforcedInChapters": [7, 9, 10, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-passe-flagor"]},
+    {"id": "promise-vestiges-nature", "description": "Les vestiges — que sont-ils ? Pourquoi reconnaissent-ils Soren et Syra ?", "madeInChapter": 12, "reinforcedInChapters": [], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-vestiges-astre"]},
+    {"id": "promise-reseau-anonyme", "description": "Le réseau anonyme de Soren — qui est derrière ?", "madeInChapter": 4, "reinforcedInChapters": [5, 6, 7, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-bamboule", "line-message-ils-savent"]},
+    {"id": "promise-dorian-alerte", "description": "Dorian a ignoré l'alerte — conséquences complètes ?", "madeInChapter": 5, "reinforcedInChapters": [6, 8, 10], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-biomen"]},
+    {"id": "promise-malak-loyalty", "description": "Malak a brisé la loyauté — où va la relation ?", "madeInChapter": 9, "reinforcedInChapters": [10, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-feodalite"]},
+    {"id": "promise-kira-verdict", "description": "Kira suspendue — quel sera son sort ?", "madeInChapter": 8, "reinforcedInChapters": [10, 11, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-biomen"]},
+    {"id": "promise-helena-plan", "description": "Helena attend une transmission — quel est son plan ?", "madeInChapter": 9, "reinforcedInChapters": [11, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-oligarchie"]},
+    {"id": "promise-biomen-facade", "description": "Façade héroïque crédible avant subversion", "madeInChapter": 2, "reinforcedInChapters": [3, 4], "paidOffInChapter": 5, "status": "paid", "relatedLines": ["line-biomen"]}
+  ],
   "settings": {
     "neglectThreshold": 3,
     "maxActiveLinesWarning": 5,
     "resolutionPressureThreshold": 10
   },
   "createdAt": "2026-02-18T18:00:00.000Z",
-  "updatedAt": "2026-02-19T02:00:00.000Z"
+  "updatedAt": "2026-02-19T02:30:00.000Z"
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "astre-eteint",
+    "name": "L'astre éteint (CX-440)",
+    "type": "location",
+    "oneLiner": "Monde mort constellé de cratères, théâtre du piège de Flagor et gardien de vestiges d'une civilisation inconnue."
+  },
+  {
+    "id": "neo-terra",
+    "name": "Néo-Terra",
+    "type": "location",
+    "oneLiner": "Monde des Biomen — place du Commandement, foules en liesse, et coulisses politiques du Conseil."
+  },
+  {
+    "id": "vigilant",
+    "name": "Le Vigilant",
+    "type": "location",
+    "oneLiner": "Vaisseau Biomen rescapé du piège, couloirs pleins de fumée, survivants et rancœur."
+  },
+  {
+    "id": "complexe-biomen",
+    "name": "Le Complexe",
+    "type": "location",
+    "oneLiner": "Palais de verre et d'acier construit par le Conseil pour exposer les Biomen au public."
+  },
+  {
+    "id": "zordons",
+    "name": "Les Zordons",
+    "type": "faction",
+    "oneLiner": "Armée féodale de Flagor — soldats fidèles, mythification du chef, technologie militaire brutale."
+  },
+  {
+    "id": "biomen",
+    "name": "Les Biomen",
+    "type": "faction",
+    "oneLiner": "Cinq héros publics de Néo-Terra — façade héroïque, réalité toxique, structure sentai inversée."
+  },
+  {
+    "id": "conseil-neo-terra",
+    "name": "Le Conseil de Néo-Terra",
+    "type": "faction",
+    "oneLiner": "Institution politique dirigeante — mandats exceptionnels, guerre instrumentalisée, commission d'enquête."
+  }
+]

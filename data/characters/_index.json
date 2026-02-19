@@ -1,0 +1,9 @@
+[
+  {"id": "flagor", "name": "Flagor", "faction": "zordons", "role": "Commandant suprême des Zordons", "oneLiner": "Tyran solitaire hanté par Syra, protège le passé au détriment de la guerre"},
+  {"id": "soren", "name": "Soren / La Bamboule", "faction": "biomen", "role": "Bioman marginalisé, pivot moral et traître clandestin", "oneLiner": "En fuite vers l'astre éteint après avoir transmis les coordonnées du piège"},
+  {"id": "malak", "name": "Commandant Malak", "faction": "zordons", "role": "Second de Flagor, enquêteur", "oneLiner": "A révélé Syra, identifié Soren — relation avec Flagor transformée en face-à-face"},
+  {"id": "kira", "name": "Capitaine Kira", "faction": "biomen", "role": "Bioman empathique, protectrice de Soren", "oneLiner": "Suspendue par la commission — refuse de trahir Soren malgré la pression"},
+  {"id": "dorian", "name": "Dorian Vex", "faction": "biomen", "role": "Leader des Biomen, fils d'Helena", "oneLiner": "A perdu son frère dans le piège, instrumentalise le deuil comme arme politique"},
+  {"id": "helena", "name": "Helena Vex", "faction": "conseil-neo-terra", "role": "Membre du Conseil, mère de Dorian et du pilote mort", "oneLiner": "A imposé la commission d'enquête, envoyé un ultimatum à Flagor"},
+  {"id": "syra", "name": "Syra", "faction": "inconnue", "role": "Femme du passé de Flagor, crue morte", "oneLiner": "Son visage apparaît dans les vestiges de l'astre éteint — liée à la civilisation ancienne"}
+]

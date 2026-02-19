@@ -1,0 +1,35 @@
+{
+  "id": "kira",
+  "name": "Capitaine Kira",
+  "faction": "biomen",
+  "physical": "La seule femme mentionnée parmi les Biomen actifs (Mara est une autre mais moins présente). Dos droit, posture de parade. Mains à plat sur la table quand elle est sous pression. Ne recule pas physiquement, même entourée. Regard direct.",
+  "voice": {
+    "register": "Calme, mesuré. Phrases complètes. Répond aux accusations sans élever la voix. Utilise la précision comme arme — ne nie pas ce qui est vrai, reformule.",
+    "patterns": "Commence par ce qu'elle nie, puis affirme ce qu'elle croit. Utilise 'vérité' et 'suppositions' comme termes-clés. Ne supplie jamais.",
+    "examples": [
+      "Tu veux ?",
+      "Je n'ai rien à cacher.",
+      "Je défends la vérité. Pas les suppositions.",
+      "Je n'ai rien à te donner.",
+      "Parce que tu as ignoré l'alerte.",
+      "Probablement."
+    ]
+  },
+  "currentState": "Suspendue par la commission — pas condamnée, pas acquittée. Entre deux. A admis avoir protégé Soren. Ne sait pas où il est. Isolée : les Biomen la soupçonnent, Dorian la menace. Mais elle tient.",
+  "location": "Néo-Terra — entre le Complexe et la salle de commission. Statut ambigu (ni libre ni détenue).",
+  "relationships": {
+    "soren": "Le protège sans condition. A offert un verre d'eau (ch.4), défendu devant la commission. Refuse de le livrer. La dignité de Soren l'a contaminée.",
+    "dorian": "Confrontation directe. Dorian la menace, l'accuse. Elle lui renvoie sa responsabilité ('tu as ignoré l'alerte'). Face-à-face de convictions.",
+    "helena": "Helena préside la commission. Rapport ambigu — Helena impose l'ordre mais Kira est sa cible indirecte.",
+    "biomen": "Isolée du groupe. Accusée de proximité avec 'le métis'. Les regards la suivent."
+  },
+  "history": [
+    "Ch.4: Offre un verre d'eau à Soren. Première fissure dans le mur de mépris.",
+    "Ch.5: Tient le pilote mourant. Accusée de proximité avec Soren.",
+    "Ch.7: Convoquée avant la commission. Dorian : 'Tu seras entendue en premier.'",
+    "Ch.8: Devant la commission — nie le complot, confirme l'échange. 'Entre deux.'",
+    "Ch.10: Dorian la confronte. 'Tu as ignoré l'alerte.' Elle ne baisse pas les yeux.",
+    "Ch.11: Admet avoir protégé Soren. La commission se referme."
+  ],
+  "contradictions": "Kira défend Soren par conviction morale — mais la fuite de Soren a coûté 2 vaisseaux et des centaines de vies. Sa loyauté envers un homme a un prix collectif qu'elle n'admet pas."
+}
