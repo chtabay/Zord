@@ -555,7 +555,7 @@ class App {
                 <a href="#novel-ch-${u.number}" class="novel-toc-link" data-action="goto-chapter" data-chapter="${u.number}">
                   <span class="novel-toc-number">Ch.${u.number}</span>
                   <span class="novel-toc-title">${u.title || ''}</span>
-                  <span class="novel-toc-words">${u.content ? u.content.split(/\\s+/).filter(Boolean).length : 0}</span>
+                  <span class="novel-toc-words">${u.content ? u.content.split(/\s+/).filter(Boolean).length : 0}</span>
                 </a>
               </li>
             `).join('')}
