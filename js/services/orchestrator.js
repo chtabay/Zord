@@ -11,14 +11,15 @@ import { STATUS_LABELS } from '../models/narrative-line.js';
  * - Le scénariste reçoit de la MATIÈRE (personnages, lieux, style), pas des résumés.
  * - Les turning points ÉMERGENT, ils ne sont pas planifiés.
  *
- * Flux v3 :
+ * Flux v3.1 :
  *   1. Orchestrateur → pré-évalue, sélectionne lignes, identifie entités
  *   2. queryExpert() × N → briefs personnages + lieux
- *   3. Agent Analyste → contraintes (QUOI, pas COMMENT)
- *   4. Agent Scénariste → style-guide + briefs + contraintes + derniers paragraphes → texte
- *   5. Agent Critique → statuts + projections + notes personnages
- *   6. Agent Vérificateur → avancements implicites
- *   7. Orchestrateur → poids mécaniques + mise à jour des fichiers entités
+ *   3. Agent Analyste → question dramatique + scènes (A/B/runner) + contraintes (QUOI)
+ *   4. Agent Scénariste × N → une scène par appel, avec matière riche
+ *   5. Agent Éditeur → assemble les scènes en chapitre (transitions, rythme, hook)
+ *   6. Agent Critique → statuts + projections + notes personnages
+ *   7. Agent Vérificateur → avancements implicites
+ *   8. Orchestrateur → poids mécaniques + mise à jour des fichiers entités
  */
 class OrchestratorService {
 
@@ -370,7 +371,65 @@ JSON structuré.`;
   }
 
   // ────────────────────────────────────────────────────────
-  // ÉTAPE 6 : Brief Mise à jour des entités (NOUVEAU)
+  // ÉTAPE 6 : Agent Éditeur — assemblage des scènes en chapitre
+  // ────────────────────────────────────────────────────────
+
+  /**
+   * L'éditeur reçoit les scènes brutes (produites individuellement) et les
+   * assemble en un chapitre cohérent. Il ne RÉÉCRIT pas — il compose :
+   * - Ouverture du chapitre (accroche)
+   * - Transitions entre scènes (ruptures, ponts, blancs typographiques)
+   * - Rythme (variation de la densité, souffle entre les tensions)
+   * - Fermeture / hook de fin de chapitre
+   *
+   * C'est le travail d'un éditeur : couper, agencer, rythmer — pas réécrire.
+   */
+  buildEditorBrief({
+    chapterNumber,
+    dramaticQuestion,
+    scenes,
+    styleGuide,
+    previousChapterEnding
+  }) {
+    const scenesText = scenes.map((s, i) =>
+      `=== SCÈNE ${i + 1} : ${s.title || s.lieu || 'Sans titre'} ===\n${s.text}`
+    ).join('\n\n');
+
+    const styleText = [
+      `Voix : ${styleGuide.narrativeVoice?.person}, ${styleGuide.narrativeVoice?.tense}`,
+      `Chapitre : ${styleGuide.chapterConventions?.structure}`,
+      `Fin : ${styleGuide.chapterConventions?.ending}`
+    ].join('\n');
+
+    return `Tu es l'Agent Éditeur. Tu assembles des scènes brutes en un chapitre cohérent.
+
+Tu ne RÉÉCRIS PAS les scènes. Tu les COMPOSES :
+- Ajouter une OUVERTURE si la première scène commence trop abruptement (1-3 phrases max)
+- Insérer des TRANSITIONS entre les scènes (blancs typographiques, phrases de pont, ou coupures nettes — selon le rythme)
+- Ajuster le RYTHME : si deux scènes ont le même tempo, varier (couper un passage qui répète, aérer un passage dense)
+- Ajouter une FERMETURE / hook de fin de chapitre si la dernière scène ne se termine pas sur une ouverture
+- Corriger les INCOHÉRENCES mineures entre scènes (un personnage qui change de lieu sans transition, un détail contradictoire)
+- Supprimer les RÉPÉTITIONS entre scènes (même image, même formulation dans deux scènes différentes)
+
+Tu peux COUPER des phrases ou des paragraphes. Tu peux AJOUTER des phrases de transition (5-10 mots max). Tu ne peux PAS réécrire des passages entiers.
+
+CHAPITRE ${chapterNumber}
+QUESTION DRAMATIQUE : ${dramaticQuestion}
+
+STYLE :
+${styleText}
+
+FIN DU CHAPITRE PRÉCÉDENT :
+${previousChapterEnding}
+
+SCÈNES À ASSEMBLER :
+${scenesText}
+
+Produis le texte FINAL du chapitre — scènes assemblées, transitions en place, ouverture et fermeture. Texte seulement.`;
+  }
+
+  // ────────────────────────────────────────────────────────
+  // ÉTAPE 7 : Brief Mise à jour des entités
   // ────────────────────────────────────────────────────────
 
   /**
