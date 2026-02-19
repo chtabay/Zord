@@ -14,7 +14,7 @@
       "Tu vas regretter."
     ]
   },
-  "currentState": "Le deuil s'érode. A confronté Kira dans le couloir sans combinaison, sans mépris — vêtement civil, mains inutiles. A révélé le message non ouvert de son frère mort. A utilisé un pronom nu pour parler de Soren. Assiste à la session d'Helena, fixe ses mains sur la table. La rage se fissure.",
+  "currentState": "Le deuil se transforme. A trouvé Kira dans le couloir de la commission suspendue. Vêtement civil froissé, cernes visibles. A admis sa faute devant elle — 'celle où j'ai ignoré l'alerte'. A révélé le titre du message non ouvert de son frère : 'Pour après'. Kira a dit 'C'est ta faute' — et il a expiré. Premier pas après avoir porté trop longtemps. A annoncé à Kira qu'Helena l'enverra sur l'astre. Un pont. Quelque chose de privé a traversé son visage — ni rage, ni deuil, ni performance.",
   "location": "Néo-Terra — entre le Complexe et le Conseil",
   "relationships": {
     "helena": "Sa mère. Helena est au Conseil, Dorian est le leader des Biomen. Elle préside la commission qui le concerne indirectement. Tension familiale + politique.",
@@ -31,7 +31,8 @@
     "Ch.8: À la commission. Accuse. Helena ajourne.",
     "Ch.10: Confronte Kira dans la cellule. 'Tu vas regretter.'",
     "Ch.11: Quitte la commission sans un mot.",
-    "Ch.14: Confronte Kira dans le couloir — sans mépris. Révèle le message non ouvert de son frère. 'Pourquoi tu l'as protégé ?' Annonce la session d'Helena. Mains inutiles sur la table du Conseil."
+    "Ch.14: Confronte Kira dans le couloir — sans mépris. Révèle le message non ouvert de son frère. 'Pourquoi tu l'as protégé ?' Annonce la session d'Helena. Mains inutiles sur la table du Conseil.",
+    "Ch.18: Commission suspendue. Trouve Kira dans le couloir. Admet sa faute (l'alerte ignorée). Révèle le titre du message : 'Pour après'. Kira dit la vérité sans punir. Annonce la délégation d'Helena — Kira sera envoyée sur l'astre. Quelque chose de privé, pour la première fois."
   ],
   "contradictions": "Dorian accuse Soren de trahison, mais c'est lui qui a ignoré l'alerte qui aurait pu sauver son frère. Il cherche un coupable extérieur pour ne pas affronter sa propre responsabilité."
 }

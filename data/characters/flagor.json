@@ -14,8 +14,8 @@
       "On ne bouge pas. Pas encore."
     ]
   },
-  "currentState": "Dans les vestiges. A trouvé les empreintes de Soren mais c'est Syra qui occupe son esprit. Les vestiges ne l'accueillent pas — pierre froide sous ses doigts. Sent une présence de l'autre côté d'un mur. Première proximité avec Soren sans face-à-face. Écoute. 46h avant la délégation d'Helena.",
-  "location": "Astre éteint — à l'intérieur des vestiges",
+  "currentState": "Face à face avec Soren dans les vestiges. A entendu le nom de Syra de la bouche de Soren. A proposé de protéger Soren — refusé. Kira est arrivée. Trois personnes dans le couloir. Le commandant et l'homme de la cellule coexistent.",
+  "location": "Astre éteint — vestiges, couloir devant le mur ouvert, avec Soren et Kira",
   "relationships": {
     "malak": "Ex-rapport Maître/second devenu un face-à-face entre égaux. Malak a révélé Syra. Flagor ne l'a pas puni. 'Plus de Maître. Plus de second. Juste deux hommes.'",
     "syra": "Femme du passé crue morte. Était avec lui dans la cellule, avant son ascension. Le seul nom qui fait vaciller le tyran. Flagor la protège au prix de la guerre.",
@@ -35,7 +35,10 @@
     "Ch.12: Apprend que Soren = la Bamboule. Choisit encore d'attendre.",
     "Ch.13: Fixe l'image de Syra. Sait que les vestiges répondent à Soren. Choisit l'immobilité. Éteint l'image.",
     "Ch.15: Apprend que Néo-Terra a capté le signal. L'immobilité se brise. Décide d'aller aux vestiges. 'Ce n'est plus Soren que je vais chercher.'",
-    "Ch.16: Arrive aux vestiges avec Malak (46h avant la délégation). Entre seul. Les vestiges ne l'accueillent pas — pierre froide. Trouve les empreintes de Soren mais pense à Syra. Sent une présence derrière un mur. Première proximité avec Soren. Écoute sans parler."
+    "Ch.16: Arrive aux vestiges avec Malak (46h avant la délégation). Entre seul. Les vestiges ne l'accueillent pas — pierre froide. Trouve les empreintes de Soren mais pense à Syra. Sent une présence derrière un mur. Première proximité avec Soren. Écoute sans parler.",
+    "Ch.17: Le mur devient translucide — voit Soren. Entend la voix de Syra. Le mur s’ouvre comme une blessure. Syra apparaît entre eux. « Tu es là » — Soren ne répond pas. Avertissement des vestiges. Revient vers Malak, épaules basses. 46h.",
+    "Ch.19: Apprend que la délégation arrive en 8h. Choisit de retourner dans les vestiges. 'Huit heures. C'est assez.' Pas la démarche du commandant — celle d'un homme qui n'était plus certain de vouloir trouver ce qu'il allait chercher.",
+    "Ch.20: Entre dans les vestiges. Trouve Soren — face à face. Le reconnaît comme la Bamboule. Échange factuel. Soren prononce 'Syra' — Flagor encaisse le coup. Un geste non contrôlé trahit l'émotion. Propose de protéger Soren ('Pas si tu restes ici.'). Soren refuse. Kira arrive — Biomen dans ses vestiges. Trois personnes, un mur ouvert, le commandant qui ne donne plus d'ordres."
   ],
   "contradictions": "Flagor se croit seul maître de son destin, mais le passé (Syra) contrôle chacune de ses décisions depuis le ch.9. Il croit protéger Syra, mais il ne sait pas si elle veut être protégée — ni si elle est du même côté."
 }

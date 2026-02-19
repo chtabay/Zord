@@ -14,7 +14,7 @@
       "La Bamboule. Soren. Il est parti. Direction ici."
     ]
   },
-  "currentState": "A conduit Flagor aux vestiges. Reste près du véhicule à l'extérieur pendant que Flagor entre seul. Rappelle les 46h avant la délégation. Inclinaison de tête sans soumission. Attend.",
+  "currentState": "Seul au véhicule. A vu la délégation Biomen atterrir. A croisé le regard de Kira — l'a laissée passer vers les vestiges sans prévenir Flagor. Choix délibéré de non-intervention.",
   "location": "Astre éteint — à l'extérieur des vestiges, près du véhicule",
   "relationships": {
     "flagor": "Ancien rapport féodal (Maître/second) transformé en face-à-face. Malak a choisi de parler — la loyauté s'est brisée pour la vérité. 'Plus de Maître. Plus de second.'",
@@ -33,7 +33,10 @@
     "Ch.12: Identifie Soren par son nom. Direction : vestiges.",
     "Ch.13: 'Maître' creux. Prise de position. Ne fuit plus du regard. Signal localisé, purges terminées.",
     "Ch.15: Catalyseur — apporte l'info sur le signal capté par Néo-Terra. Prépare le véhicule sans acquiescement servile. Reconnaissance mutuelle.",
-    "Ch.16: Conduit Flagor aux vestiges. Rappelle les 46h avant la délégation. Reste au véhicule. Inclinaison sans soumission — post-féodal confirmé."
+    "Ch.16: Conduit Flagor aux vestiges. Rappelle les 46h avant la délégation. Reste au véhicule. Inclinaison sans soumission — post-féodal confirmé.",
+    "Ch.17: Attend près du véhicule. Voit Flagor revenir des vestiges, épaules basses. Ne pose pas de questions. Ne dit pas « Maître ». Rappelle les 46h. Post-féodal confirmé.",
+    "Ch.19: Detecte la signature de la délégation (8h). Flagor retourne aux vestiges. Malak reste seul au véhicule, mandibules serrées, scanners activés. Veille sans suivre.",
+    "Ch.20: Voit la délégation Biomen atterrir au nord — vaisseau léger, trois signatures, pas d'armes lourdes. Kira passe devant le véhicule. Leurs regards se croisent — premier face-à-face Zordon/Biomen sur l'astre. Silence. Mandibules qui se décrispent. La laisse passer sans alerter Flagor. Le pouvoir de ne pas agir."
   ],
   "contradictions": "Malak a trahi la loyauté féodale en parlant — mais ce faisant, il est devenu le seul en qui Flagor peut avoir confiance (le seul qui a dit la vérité). Il trace Soren mais ne sait pas si Flagor veut qu'il le trouve."
 }

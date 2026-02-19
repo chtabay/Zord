@@ -3,11 +3,11 @@
     "id": "promise-syra-identity",
     "description": "Syra — femme du passé de Flagor crue morte. Qui est-elle ? Quel est son rôle ?",
     "madeInChapter": 3,
-    "reinforcedInChapters": [7, 9, 10, 12, 15],
+    "reinforcedInChapters": [7, 9, 10, 12, 15, 20],
     "paidOffInChapter": null,
     "status": "partially-paid",
     "relatedLines": ["line-passe-flagor"],
-    "urgency": "haute — partiellement payée au ch.15 (voix de Syra, lien Soren/Syra). Reste : identité complète, localisation, rôle."
+    "urgency": "haute — avancée au ch.20 (Flagor parle de Syra à Soren : 'Elle était avec moi. Avant.'). Reste : identité complète, localisation, rôle dans les vestiges."
   },
   {
     "id": "promise-vestiges-nature",
@@ -33,41 +33,41 @@
     "id": "promise-dorian-alerte",
     "description": "Dorian Vex a ignoré l'alerte qui aurait pu sauver son frère. Conséquences ?",
     "madeInChapter": 5,
-    "reinforcedInChapters": [6, 8, 10],
+    "reinforcedInChapters": [6, 8, 10, 18, 20],
     "paidOffInChapter": null,
     "status": "open",
     "relatedLines": ["line-biomen"],
-    "urgency": "moyenne — partiellement adressée (commission) mais pas résolue"
+    "urgency": "moyenne — Kira agit hors commission (délégation). Dorian absent. La faute admise mais pas résolue."
   },
   {
     "id": "promise-malak-loyalty",
     "description": "Malak a brisé la loyauté féodale pour la vérité. Où va cette relation ?",
     "madeInChapter": 9,
-    "reinforcedInChapters": [10, 12],
+    "reinforcedInChapters": [10, 12, 20],
     "paidOffInChapter": null,
     "status": "open",
     "relatedLines": ["line-feodalite"],
-    "urgency": "moyenne — en résolution active"
+    "urgency": "moyenne — Malak laisse Kira passer sans prévenir Flagor. Autonomie confirmée."
   },
   {
     "id": "promise-kira-verdict",
     "description": "Kira suspendue — ni condamnée ni acquittée. Quel sera son sort ?",
     "madeInChapter": 8,
-    "reinforcedInChapters": [10, 11, 12],
+    "reinforcedInChapters": [10, 11, 12, 20],
     "paidOffInChapter": null,
     "status": "open",
     "relatedLines": ["line-biomen"],
-    "urgency": "moyenne — suspendue, statu quo"
+    "urgency": "haute — Kira agit hors commission. A trouvé Soren et Flagor ensemble. Son sort dépend de ce qu'elle rapportera."
   },
   {
     "id": "promise-helena-plan",
     "description": "Helena attend 'une transmission, un signe'. Quel est son plan ?",
     "madeInChapter": 9,
-    "reinforcedInChapters": [11, 12],
+    "reinforcedInChapters": [11, 12, 20],
     "paidOffInChapter": null,
-    "status": "open",
+    "status": "partially-paid",
     "relatedLines": ["line-oligarchie"],
-    "urgency": "haute — suggère une connexion au réseau anonyme"
+    "urgency": "haute — partiellement payée : Kira est l'instrument d'Helena sur l'astre. 'Trouvez-le. Faites-le écouter.' Reste : le plan complet."
   },
   {
     "id": "promise-biomen-facade",

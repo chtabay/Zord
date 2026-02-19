@@ -14,8 +14,8 @@
       "On attend encore. Une transmission. Un signe."
     ]
   },
-  "currentState": "A reçu un signal non identifié de l'astre éteint — ni Zordon, ni Biomen. A déclaré le statu quo caduc. A convoqué une session d'urgence et proposé une délégation de reconnaissance : trois personnes, un vaisseau léger. Son regard s'est posé sur Kira dans l'encadrement de la porte. N'a pas prononcé son nom. Ne pardonnera toujours pas.",
-  "location": "Néo-Terra — salle du Conseil, salle de commission",
+  "currentState": "La délégation est partie. Kira envoyée avec des instructions verbales, pas écrites. Helena reste à Néo-Terra, attend le retour du signal. Ne pardonne toujours pas. Mais a agi.",
+  "location": "Néo-Terra — salle du Conseil",
   "relationships": {
     "dorian": "Son fils. Leader des Biomen. Elle préside la commission qui l'affecte. Tension mère/fils + politique. Son autre fils (le pilote) est mort.",
     "flagor": "Adversaire politique à distance. 'Vous avez choisi. Nous aussi.' Ne se sont jamais rencontrés en personne.",
@@ -30,7 +30,9 @@
     "Ch.8: Ajourne — 48 heures. Le Conseil paraît divisé pour la première fois.",
     "Ch.11: Message à Flagor : 'Vous avez choisi. Nous aussi.' Le Conseil vote le statu quo.",
     "Ch.12: Debout face aux écrans. L'astre éteint y apparaît. Elle ne sait pas ce qui s'y passe.",
-    "Ch.14: Reçoit un signal inconnu de l'astre. Déclare le statu quo caduc. Convoque une session. Propose une délégation de reconnaissance. Son regard se pose sur Kira — sans prononcer son nom."
+    "Ch.14: Reçoit un signal inconnu de l'astre. Déclare le statu quo caduc. Convoque une session. Propose une délégation de reconnaissance. Son regard se pose sur Kira — sans prononcer son nom.",
+    "Ch.18: Analyse le signal modifié — il répond. Détecte la présence Zordon sur l'astre. Compose la délégation : 3 profils. Le troisième nom hésité puis tapé (Kira). Pense à son fils mort. Le signal pulse, patient. Comme elle.",
+    "Ch.19: Mention indirecte. A envoyé Kira avec des instructions verbales : 'Trouvez-le. Faites-le écouter.' Pas de protocole écrit. La délégation est son instrument."
   ],
   "contradictions": "Helena prétend chercher la vérité, mais elle attend 'une transmission, un signe' — ce qui suggère qu'elle est connectée à un réseau qui opère en dehors de la loi. Elle utilise la procédure comme arme, pas comme justice."
 }

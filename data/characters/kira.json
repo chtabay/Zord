@@ -15,8 +15,8 @@
       "Probablement."
     ]
   },
-  "currentState": "Toujours suspendue, mais le terrain a changé. Dorian lui a parlé sans mépris pour la première fois — le pronom nu, le message non ouvert de son frère. Helena a convoqué une session d'urgence sur l'astre éteint. Kira s'est présentée sans invitation, dos droit dans l'encadrement de la porte. Le regard d'Helena s'est posé sur elle. Plus entre deux — au seuil.",
-  "location": "Néo-Terra — entre le Complexe et la salle de commission. Statut ambigu (ni libre ni détenue).",
+  "currentState": "Dans les vestiges. A trouvé Soren — et Flagor avec lui. Face à face Zordon/Biomen dans les structures anciennes. 'Je suis venue te chercher.' Les vestiges se taisent. Trois personnes, deux camps, un mur ouvert.",
+  "location": "Astre éteint — vestiges, couloir devant le mur ouvert, avec Soren et Flagor",
   "relationships": {
     "soren": "Le protège sans condition. A offert un verre d'eau (ch.4), défendu devant la commission. Refuse de le livrer. La dignité de Soren l'a contaminée.",
     "dorian": "Confrontation directe. Dorian la menace, l'accuse. Elle lui renvoie sa responsabilité ('tu as ignoré l'alerte'). Face-à-face de convictions.",
@@ -30,7 +30,10 @@
     "Ch.8: Devant la commission — nie le complot, confirme l'échange. 'Entre deux.'",
     "Ch.10: Dorian la confronte. 'Tu as ignoré l'alerte.' Elle ne baisse pas les yeux.",
     "Ch.11: Admet avoir protégé Soren. La commission se referme.",
-    "Ch.14: Dorian la confronte dans le couloir — sans mépris. 'Pourquoi tu l'as protégé ?' Elle répond : 'Parce qu'il voyait.' Se présente à la session d'Helena sans invitation. Le regard d'Helena se pose sur elle."
+    "Ch.14: Dorian la confronte dans le couloir — sans mépris. 'Pourquoi tu l'as protégé ?' Elle répond : 'Parce qu'il voyait.' Se présente à la session d'Helena sans invitation. Le regard d'Helena se pose sur elle.",
+    "Ch.18: Commission suspendue. Dorian l'a trouvée dans le couloir. Admet sa faute. Révèle 'Pour après'. Kira dit 'C'est ta faute' sans punition. Dorian annonce la délégation — Helena l'envoie sur l'astre. Un pont.",
+    "Ch.19: Dans le vaisseau de la délégation. Helena l'a convoquee : 'Trouvez-le. Faites-le écouter.' Pas de protocole écrit. L'astre apparaît. Choisit d'atterrir au nord, près des vestiges. Premier choix autonome.",
+    "Ch.20: Quitte le vaisseau. Trouve le véhicule Zordon — croise le regard de Malak (premier face-à-face intercamp silencieux). Entre dans les vestiges seule. Suit les empreintes. Trouve Soren et Flagor face à face dans un couloir de pierre froide. 'Je suis venue te chercher.' Soren répond 'Je sais.' Trois personnes, un mur ouvert, les vestiges silencieux."
   ],
   "contradictions": "Kira défend Soren par conviction morale — mais la fuite de Soren a coûté 2 vaisseaux et des centaines de vies. Sa loyauté envers un homme a un prix collectif qu'elle n'admet pas."
 }

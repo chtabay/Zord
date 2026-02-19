@@ -13,8 +13,8 @@
       "Oui. C'est Soren. J'ai des informations."
     ]
   },
-  "currentState": "Dans les vestiges. Flagor est entré dans le complexe — Soren l'a senti de l'autre côté d'un mur. Les vestiges le protègent (chaleur, courant d'air qui le retient). L'écran a montré deux silhouettes côte à côte — une projection. Le réseau a envoyé 'Maintenant'. Première proximité avec Flagor sans face-à-face. Immobile. Écoute.",
-  "location": "Astre éteint — vestiges, à l'intérieur des structures",
+  "currentState": "Face à face avec Flagor dans les vestiges. A nommé Syra à voix haute. A refusé la protection de Flagor ('Non.'). Kira est arrivée — les trois sont dans le même couloir. Les vestiges se taisent. Le choix lui appartient.",
+  "location": "Astre éteint — vestiges, couloir devant le mur ouvert, avec Flagor et Kira",
   "relationships": {
     "kira": "La seule qui l'a défendu. Elle a refusé de le livrer à Dorian. Elle a été suspendue à cause de lui. Il ne le sait peut-être pas encore.",
     "dorian": "Le leader qui le méprise et le cherche. 'La Bamboule qui se prend pour un héros.'",
@@ -33,7 +33,10 @@
     "Ch.12: Arrive sur l'astre. Découvre les vestiges. L'écran montre son visage, puis Syra. Quelque chose s'active.",
     "Ch.13: Entre dans les vestiges. Voix, écran, coordonnées, chaleur au contact. Choisit de rester malgré l'avertissement.",
     "Ch.15: Les vestiges livrent un enregistrement audio de Syra — elle dit son nom. Le lien est établi. Un véhicule approche dans la poussière.",
-    "Ch.16: Les vestiges changent — bourdonnement fragmenté, symbole rouge inédit. Le réseau envoie 'Maintenant'. Flagor entre dans les vestiges. Les vestiges protègent Soren (chaleur, courant). Écran montre deux silhouettes côte à côte. Première proximité avec Flagor — séparés par un mur. Silence mutuel."
+    "Ch.16: Les vestiges changent — bourdonnement fragmenté, symbole rouge inédit. Le réseau envoie 'Maintenant'. Flagor entre dans les vestiges. Les vestiges protègent Soren (chaleur, courant). Écran montre deux silhouettes côte à côte. Première proximité avec Flagor — séparés par un mur. Silence mutuel.",
+    "Ch.17: Le mur devient translucide — voit Flagor de l’autre côté. Le mur s’ouvre comme une blessure. Syra apparaît entre les deux silhouettes. Ni l’un ni l’autre ne franchit. Les vestiges se retirent — lui donnent le choix.",
+    "Ch.19: Franchit l'ouverture. Pierre froide de l'autre côté. Empreintes de Flagor au sol. Le réseau anonyme annonce la délégation en heures. S'assoit dans le froid. Le choix lui appartient mais le temps ne lui appartient plus.",
+    "Ch.20: Flagor revient dans les vestiges. Face à face — Flagor le reconnaît comme la Bamboule. Échange minimal. Soren prononce le nom de Syra — Flagor encaisse. Flagor propose de le protéger. Soren refuse ('Non.'). Kira arrive. Trois personnes, deux camps, un mur ouvert. 'Je sais.' Les vestiges se taisent."
   ],
   "contradictions": "Soren croit agir pour la justice, mais sa fuite a coûté 2 vaisseaux et des centaines de morts. Il pense être seul, mais un réseau le guide — il ne sait pas pour qui il travaille vraiment. Les vestiges le reconnaissent — pourquoi lui ?"
 }
