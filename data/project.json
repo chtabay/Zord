@@ -16,7 +16,7 @@
       ],
       "weight": 0.9,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 0,
       "dependencies": [
         "line-passe-flagor",
@@ -127,10 +127,37 @@
           "weightAfter": 0.9,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "Fixe l'image de Syra en boucle. Sait que les vestiges répondent à Soren, pas à lui. Choisit l'immobilité. Éteint l'image.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch15",
+          "unitNumber": 15,
+          "note": "L'immobilité se brise. Apprend que Néo-Terra a capté le signal des vestiges. Décide d'aller aux vestiges lui-même — 'Ce n'est plus Soren que je vais chercher.' Le commandant redevient l'homme de la cellule.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Arrive aux vestiges. Entre seul. Les vestiges ne l'accueillent pas — pierre froide sous ses doigts. Trouve les empreintes de Soren mais pense à Syra. Sent une présence derrière un mur. Première proximité avec Soren sans face-à-face.",
+          "weightBefore": 0.9,
+          "weightAfter": 0.9,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-guerre",
@@ -147,7 +174,7 @@
       ],
       "weight": 0.8,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension",
@@ -267,10 +294,37 @@
           "weightAfter": 0.8,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "Mention indirecte : 'Les purges sont terminées. Le signal est localisé.' Guerre en toile de fond.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch14",
+          "unitNumber": 14,
+          "note": "Helena déclare le statu quo caduc. Propose une délégation de reconnaissance sur l'astre — pas une frappe, pas une flotte. Le conflit passe de l'attente à l'initiative diplomatique.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Mention indirecte : Malak rappelle les 46h avant l'arrivée de la délégation d'Helena. Les Biomen arrivent avec leurs scanners. La course pour les vestiges est lancée — Flagor tente de les atteindre avant Néo-Terra.",
+          "weightBefore": 0.8,
+          "weightAfter": 0.8,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-passe-flagor",
@@ -285,9 +339,9 @@
         "Passé et présent ont convergé — conséquences imminentes",
         "La femme du passé est la clé — son identité va tout changer"
       ],
-      "weight": 0.7,
+      "weight": 0.75,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension"
@@ -361,27 +415,54 @@
           "weightAfter": 0.7,
           "statusBefore": "climax",
           "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "Syra hante chaque décision de Flagor. 'Chaque décision passait par elle.' Chemin sans instructions. Flagor éteint l'image — saturation.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch15",
+          "unitNumber": 15,
+          "note": "ESCALADE. Flagor sort de l'immobilité : décide d'aller aux vestiges chercher Syra. La voix de Syra est entendue par Soren — enregistrement ancien qui dit son nom. Le passé passe de hantise à action.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.75,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Flagor dans les vestiges. Trouve les empreintes de Soren mais c'est Syra qui monte — 'ce lieu était le sien avant d'être celui de quiconque'. Le passé dicte le mouvement : il ne cherche pas le traître, il cherche la femme de la cellule.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-feodalite",
       "name": "La féodalité Flagor / Malak",
       "description": "Malak appelle Flagor 'Maître'. Rapport féodal, pas militaire. Soumission totale ou calcul ? Potentiel de trahison, de loyauté aveugle, ou de révélation sur la nature du pouvoir Zordon.",
-      "status": "resolving",
+      "status": "resolved",
       "level": "secondary",
       "narrativeFunction": "catalyst",
       "agency": "reactive",
       "projection": [
-        "Fracture consommée — Malak a choisi la vérité sur la loyauté",
-        "La relation Flagor/Malak est irréversiblement changée",
-        "Malak est désormais allié ou ennemi — pas les deux"
+        "La féodalité est morte — la nouvelle relation doit être définie",
+        "Malak a pris position — il attend, mais ne suivra plus aveuglément",
+        "Le mot 'Maître' pourrait disparaître ou revenir chargé d'ironie"
       ],
-      "weight": 0.65,
+      "weight": 0.70,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 12,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension",
@@ -456,10 +537,19 @@
           "weightAfter": 0.65,
           "statusBefore": "resolving",
           "statusAfter": "resolving"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "'Maître' sonne creux — plus une soumission, une question. 'Ce n'était plus féodal.' Inclination de Malak = prise de position. Féodalité morte.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.70,
+          "statusBefore": "resolving",
+          "statusAfter": "resolved"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T03:00:00.000Z"
     },
     {
       "id": "line-astre-eteint",
@@ -476,7 +566,7 @@
       ],
       "weight": 0.65,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 0,
       "dependencies": [
         "line-guerre"
@@ -532,10 +622,46 @@
           "weightAfter": 0.65,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "Théâtre complet : ciel noir, étoiles, falaises de basalte, arcs brisés, poussière. L'astre respire à travers les vestiges.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch14",
+          "unitNumber": 14,
+          "note": "Mention indirecte : l'astre éteint est le sujet de la session d'urgence. Helena propose d'y envoyer une délégation. L'astre devient un enjeu politique.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch15",
+          "unitNumber": 15,
+          "note": "Décor complet : Soren dans les vestiges, Flagor en route. L'astre n'est plus un théâtre mort — il est le lieu de la convergence. Véhicule dans la poussière.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Flagor arrive physiquement aux vestiges. L'astre est le lieu de la première proximité entre les deux camps. Poussière, arc, rectangle sombre — le décor devient scène de convergence. 46h avant que d'autres arrivent.",
+          "weightBefore": 0.65,
+          "weightAfter": 0.65,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-biomen",
@@ -552,7 +678,7 @@
       ],
       "weight": 0.85,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 0,
       "dependencies": [
         "line-guerre",
@@ -663,10 +789,37 @@
           "weightAfter": 0.85,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "Mention indirecte : Soren pense aux centaines de morts et à sa fuite. Contexte Biomen rappelé sans scène directe.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch14",
+          "unitNumber": 14,
+          "note": "Dorian confronte Kira dans le couloir — sans mépris pour la première fois. Montre une faille : le message non ouvert de son frère mort. Kira répond sans se soumettre. La commission est dépassée par la session d'Helena.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Mention indirecte : Malak mentionne les Biomen qui arriveraient avec leurs scanners dans 46h. Kira et Dorian absents en scène directe — le camp Biomen est le monde que Soren a quitté, l'horizon qui se rapproche.",
+          "weightBefore": 0.85,
+          "weightAfter": 0.85,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-bamboule",
@@ -681,9 +834,9 @@
         "L'aveu de Kira et la localisation convergent vers lui",
         "Prochaine étape : fuite, confrontation ou sacrifice"
       ],
-      "weight": 0.75,
+      "weight": 0.80,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 0,
       "dependencies": [
         "line-biomen"
@@ -794,10 +947,46 @@
           "weightAfter": 0.75,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "Soren entre dans les vestiges. Voix, écran, coordonnées, chaleur au contact. Choisit de rester malgré l'avertissement du réseau.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch14",
+          "unitNumber": 14,
+          "note": "Mention indirecte : Kira pense à l'astre où Soren a disparu. Dorian parle de lui sans mépris pour la première fois — pronom nu. Absent physiquement.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.75,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch15",
+          "unitNumber": 15,
+          "note": "Soren entend la voix de Syra dans les vestiges — un enregistrement ancien qui dit son nom. Le lien Soren/Syra est établi. Les vestiges parlent, ne montrent plus seulement. Un véhicule approche — convergence imminente.",
+          "weightBefore": 0.75,
+          "weightAfter": 0.80,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Les vestiges protègent Soren : courant d'air chaud qui le retient à l'intérieur, pierre chaude sous ses paumes. L'écran montre deux silhouettes côte à côte — projection d'un avenir. Première proximité avec Flagor. Soren écoute, immobile, de l'autre côté du mur.",
+          "weightBefore": 0.80,
+          "weightAfter": 0.80,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-oligarchie",
@@ -814,7 +1003,7 @@
       ],
       "weight": 0.7,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 0,
       "dependencies": [
         "line-flagor-ascension",
@@ -889,10 +1078,28 @@
           "weightAfter": 0.7,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch14",
+          "unitNumber": 14,
+          "note": "Helena reçoit un signal inconnu de l'astre. Déclare le statu quo caduc. Convoque une session d'urgence et propose une délégation de reconnaissance. Le Conseil passe de l'attente à l'action.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Mention indirecte : Malak rappelle les 46h avant la délégation d'Helena. Le Conseil en mouvement, les Biomen en route. L'oligarchie avance vers l'astre — la course au contrôle des vestiges est lancée.",
+          "weightBefore": 0.7,
+          "weightAfter": 0.7,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T18:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-message-ils-savent",
@@ -909,7 +1116,7 @@
       ],
       "weight": 0.35,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 2,
       "dependencies": [
         "line-guerre",
@@ -966,27 +1173,54 @@
           "weightAfter": 0.35,
           "statusBefore": "active",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "Message du réseau rappelé : 'Fuis. Ou reste.' Soren choisit de rester. Réseau actif mais sans nouvelle instruction.",
+          "weightBefore": 0.35,
+          "weightAfter": 0.35,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch15",
+          "unitNumber": 15,
+          "note": "Nouveau message du réseau : 'Quelqu'un vient. Pas les Biomen. Pas encore.' Le réseau sait que Flagor approche. Information asymétrique maintenue.",
+          "weightBefore": 0.35,
+          "weightAfter": 0.35,
+          "statusBefore": "active",
+          "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "Le réseau envoie 'Maintenant' — un seul mot, au moment exact où Flagor arrive. Le réseau anticipe les événements en temps réel. Information asymétrique renforcée : Soren sait qu'il se passe quelque chose, mais pas quoi.",
+          "weightBefore": 0.35,
+          "weightAfter": 0.35,
+          "statusBefore": "active",
+          "statusAfter": "active"
         }
       ],
       "createdAt": "2026-02-18T21:00:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     },
     {
       "id": "line-vestiges-astre",
       "name": "Les vestiges de l'astre",
       "description": "Des structures anciennes découvertes sur l'astre éteint — ni Zordon, ni Biomen. Un vestige d'une civilisation inconnue. Beauté inattendue dans un théâtre de mort. Mystère et émerveillement au milieu du conflit.",
-      "status": "active",
+      "status": "climax",
       "level": "secondary",
       "narrativeFunction": "relief",
-      "agency": "passive",
+      "agency": "proactive",
       "projection": [
-        "Les vestiges posent une question : pourquoi les deux camps se battent-ils pour cet astre ?",
-        "Un personnage découvre les vestiges et en est transformé",
-        "Les vestiges contiennent quelque chose que les deux camps ignorent"
+        "La nature des vestiges doit être élucidée — intelligence, système automatique, ou conscience ?",
+        "Le lien vestiges/Syra est le pivot — les deux convergent vers Soren",
+        "Les vestiges sont le point de convergence — Flagor sait qu'ils répondent à Soren"
       ],
-      "weight": 0.45,
+      "weight": 0.60,
       "urgency": 0,
-      "lastAdvancedInUnit": 11,
+      "lastAdvancedInUnit": 16,
       "createdInUnit": 9,
       "dependencies": [
         "line-astre-eteint"
@@ -1016,10 +1250,46 @@
           "weightAfter": 0.45,
           "statusBefore": "emerging",
           "statusAfter": "active"
+        },
+        {
+          "unitId": "unit-ch13",
+          "unitNumber": 13,
+          "note": "ESCALADE. Les vestiges parlent ('Tu cherches ton chemin'), montrent des coordonnées, répondent au contact (froid puis chaleur). Bourdonnement croissant. Entité quasi-consciente.",
+          "weightBefore": 0.45,
+          "weightAfter": 0.50,
+          "statusBefore": "active",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch14",
+          "unitNumber": 14,
+          "note": "Mention indirecte : Helena reçoit un signal non identifié en provenance de l'astre — 'ni Zordon, ni Biomen'. Les vestiges émettent sans que Néo-Terra sache ce qu'ils sont.",
+          "weightBefore": 0.50,
+          "weightAfter": 0.50,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch15",
+          "unitNumber": 15,
+          "note": "CONSÉQUENCE. Les vestiges livrent un enregistrement audio de Syra — voix fragmentée, elle dit le nom de Soren. Passage de l'image au son. Les vestiges ne montrent plus seulement — ils parlent. Lien Soren/Syra confirmé par la civilisation ancienne.",
+          "weightBefore": 0.50,
+          "weightAfter": 0.55,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
+        },
+        {
+          "unitId": "unit-ch16",
+          "unitNumber": 16,
+          "note": "ESCALADE MAJEURE. Les vestiges réagissent à deux présences distinctes : chaleur + protection pour Soren, froid + évaluation pour Flagor. Symbole rouge inédit. Projection de deux silhouettes côte à côte. Silence délibéré. Les vestiges orchestrent la convergence — agentivité maximale.",
+          "weightBefore": 0.55,
+          "weightAfter": 0.60,
+          "statusBefore": "climax",
+          "statusAfter": "climax"
         }
       ],
       "createdAt": "2026-02-19T00:30:00.000Z",
-      "updatedAt": "2026-02-19T02:00:00.000Z"
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     }
   ],
   "storyUnits": [
@@ -1443,6 +1713,93 @@
       "postEvaluation": null,
       "createdAt": "2026-02-19T02:00:00.000Z",
       "updatedAt": "2026-02-19T02:00:00.000Z"
+    },
+    {
+      "id": "unit-ch13",
+      "type": "chapter",
+      "number": 13,
+      "title": "L'appel des vestiges",
+      "status": "completed",
+      "content": "Soren marchait dans la poussière. Le terminal éteint pesait dans sa poche. Les mots du réseau tournaient encore : Fuis. Ou reste. Il n'avait pas de réponse.\n\nDevant lui, les arcs brisés des vestiges se découpaient sur le ciel noir. Les symboles sur les murs — lignes, cercles, motifs — semblaient bouger à la lueur des étoiles. Un bourdonnement léger venait des structures. Comme un appel.\n\nIl s'arrêta à l'entrée. Le courant d'air chaud lui toucha le visage. Une respiration. Les vestiges l'avaient reconnu. L'écran avait montré son visage, puis celui de Syra. Pourquoi lui ?\n\nIl posa la main sur le mur. Lisse. Trop lisse pour de la roche. Sous ses doigts, une vibration presque imperceptible.\n\n— Tu cherches ton chemin.\n\nIl se retourna. Personne. La voix venait de partout et de nulle part. Ou peut-être de sa tête.\n\n— Non. Merci.\n\nIl entra.\n\nÀ l'intérieur, l'écran noir s'alluma. Pas d'image cette fois. Seulement des lignes — une séquence, un schéma. Des coordonnées. Un chemin.\n\nSoren regarda. Les symboles se formaient, se déplaçaient. Un message. Ou un piège.\n\nIl pensa aux centaines de morts. À sa fuite. À ce qu'il avait cru être de la justice. Les vestiges ne jugeaient pas. Ils montraient.\n\nIl fit un pas vers l'écran. Le bourdonnement augmenta. Les murs semblaient répondre à sa présence. Il tendit la main vers la surface lumineuse.\n\nLe contact. Froid. Puis une chaleur qui montait le long de son bras. Les symboles se mirent à défiler plus vite. Une adresse. Un lieu.\n\nIl retira sa main. L'écran resta allumé. Le message restait.\n\nIl sortit des vestiges. Le ciel était toujours noir. Les étoiles indifférentes. Il ralluma son terminal. Le message anonyme était toujours là. Fuis. Ou reste.\n\nIl choisit de rester.\n\nFlagor fixait l'écran. Le visage de Soren. Puis celui de Syra. La même image, encore et encore. Ses jointures blanchissaient sur les accoudoirs.\n\n— Inutile.\n\nMalak se tenait à un pas. Silhouette massive. Mandibules serrées. Il ne disait rien.\n\n— On ne bouge pas. Pas encore.\n\n— Maître.\n\nLe mot sonnait creux. Flagor le sentit. Ce n'était plus une soumission. C'était une question.\n\n— Les purges sont terminées. Le signal est localisé. Soren est sur l'astre.\n\nFlagor ne répondit pas. Syra était dans sa tête. Chaque décision passait par elle. Attendre ou agir — elle avait déjà choisi. L'immobilité. Toujours l'immobilité.\n\n— Tu as transmis ?\n\n— Non.\n\nMalak ne bougea pas. Son regard ne fuyait plus. Flagor comprit : la relation avait changé. Ce n'était plus féodal. C'était une attente.\n\n— Les vestiges répondent à lui. Pas à nous.\n\n— Je sais.\n\nFlagor se leva. Il marcha jusqu'à la baie. Au-dehors, l'astre éteint. Les falaises de basalte. Les vestiges invisibles dans l'obscurité.\n\nSyra lui avait montré un chemin. Un nom. Un lien. Elle ne lui avait pas dit quoi en faire.\n\n— On attend.\n\nMalak inclina la tête. Pas un acquiescement. Une prise de position.\n\nFlagor regarda l'écran une dernière fois. Le visage de Syra. Immobile. Serein. Il éteignit l'image. L'obscurité resta.",
+      "summary": "Soren entre dans les vestiges — une voix l'interpelle, un écran montre des coordonnées, un chemin. Le contact provoque froid puis chaleur. Il choisit de rester. Flagor fixe l'image de Syra, sait que les vestiges répondent à Soren et pas à lui. Malak prend position — la féodalité est morte.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-guerre",
+        "line-passe-flagor",
+        "line-feodalite",
+        "line-astre-eteint",
+        "line-biomen",
+        "line-bamboule",
+        "line-message-ils-savent",
+        "line-vestiges-astre"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T03:00:00.000Z",
+      "updatedAt": "2026-02-19T03:00:00.000Z"
+    },
+    {
+      "id": "unit-ch14",
+      "type": "chapter",
+      "number": 14,
+      "title": "Le seuil",
+      "status": "completed",
+      "content": "Les écrans de la salle du Conseil n'affichaient plus rien depuis six heures. Helena Vex se tenait debout face aux dalles noires, les bras le long du corps. La lampe de veille découpait son ombre sur le sol poli. Les projecteurs étaient éteints. Les gradins, vides. Le silence avait une texture — celle du métal qui attend le choc.\n\nUn grésillement. Bref. L'écran central cligna.\n\nUne fréquence. Pas une communication — un écho. Quelque chose, sur l'astre éteint, émettait. La signature n'appartenait à aucun catalogue. Ni Zordon, ni Biomen.\n\nHelena ne bougea pas. Elle lut les données une fois, puis une seconde. Appuya sur le bouton d'enregistrement. Le signal se stabilisa — une ligne droite, continue, presque organique. Puis il s'interrompit.\n\nLe silence revint. Mais il n'était plus le même.\n\nElle resta immobile encore une minute, les yeux sur l'écran redevenu noir. Puis elle se retourna, marcha jusqu'à la console de diffusion, et composa le code de convocation d'urgence.\n\n---\n\nLes pas de Kira résonnaient dans le couloir est du Complexe. Elle marchait sans destination — on ne lui en avait pas assigné. Suspendue. Le mot revenait à chaque porte verrouillée, à chaque regard qui se détournait. Elle n'avait le droit ni de partir ni d'entrer. L'écho de ses semelles sur l'acier poli était le seul bruit qui lui appartenait encore.\n\nDorian l'attendait au bout du couloir.\n\nPas de combinaison de combat. Un vêtement civil, froissé aux coudes. Les cernes avaient creusé son visage plus profond que le deuil ne l'avait annoncé. Il se tenait contre le mur, bras croisés, mais la posture n'avait plus rien de menaçant. Quelque chose s'était érodé.\n\n— Je ne suis pas là pour la commission.\n\nKira s'arrêta à trois mètres. Distance de parade. Celle qu'elle maintenait depuis des semaines.\n\n— Alors pourquoi ?\n\nIl décroisa les bras. Ses mains pendaient, inutiles. Il regarda le sol un instant avant de parler.\n\n— Mon frère avait vingt-trois ans. Huit mois de vol. Le matin du départ, il m'a envoyé un message. Je ne l'ai pas ouvert.\n\nKira attendit. L'accusation. Le levier. L'angle d'attaque. Rien ne vint.\n\n— Pourquoi tu l'as protégé ?\n\nPas Soren. Pas la Bamboule. Le pronom nu — sans mépris, sans majuscule. Kira nota le glissement.\n\n— Parce qu'il voyait ce que personne ne voulait voir.\n\n— Trahir, c'est voir ?\n\n— Regarder, c'est déjà trahir ici.\n\nDorian soutint son regard. Les écrans de surveillance grésillaient au-dessus d'eux, indifférents. Puis il détourna les yeux. Quelque chose dans sa mâchoire se relâcha — un demi-ton, imperceptible pour quiconque n'aurait pas passé des semaines à surveiller chaque crispation de cet homme.\n\n— Ma mère convoque une session. Ce soir. Pas la commission.\n\nLe sol changea sous les pieds de Kira. Pas un mouvement — une gravité.\n\n— Quel sujet ?\n\n— L'astre.\n\nIl s'éloigna sans rien ajouter. Ses pas résonnèrent longtemps dans le couloir vide. Kira resta immobile. L'astre. Là où Soren avait disparu. Là où tout convergeait sans qu'elle sache vers quoi.\n\nElle regarda ses mains. Elles ne tremblaient pas.\n\n---\n\nLa salle se remplit en moins d'une heure. Les conseillers prirent place autour de la table en arc de cercle — sept sièges sur neuf occupés. Les deux absents ne manquaient à personne. Les projecteurs s'allumèrent. Les drapeaux captèrent la lumière artificielle comme des promesses qu'on n'avait pas tenues.\n\nHelena se leva. Le murmure cessa.\n\n— Le Conseil a voté le statu quo il y a soixante-douze heures. Ce vote est caduc.\n\nSilence. Regards croisés au-dessus de la table.\n\n— Un signal a été capté en provenance de l'astre éteint. Fréquence non répertoriée. Signature inconnue. Ce n'est pas une communication Zordon.\n\nElle laissa la phrase s'installer. Compta les secondes dans sa tête.\n\n— Nous avons envoyé un ultimatum. Nous n'avons reçu aucune réponse. Mais quelque chose, sur cet astre, a répondu à quelqu'un d'autre.\n\nDorian, assis à sa droite, fixait ses mains posées sur la table. Les mêmes mains inutiles que dans le couloir.\n\n— Je demande au Conseil l'autorisation d'envoyer une délégation sur l'astre éteint. Pas une frappe. Pas une flotte. Trois personnes. Un vaisseau léger. Reconnaissance.\n\nLe conseiller Varn, le plus ancien après Helena, se pencha en avant.\n\n— Qui ?\n\nHelena parcourut la table du regard. S'arrêta une seconde sur Dorian — son fils, le deuil inscrit dans chaque ligne de son visage. Puis son regard glissa vers la porte de la salle.\n\nKira se tenait dans l'encadrement. Dos droit. Mains à plat contre le chambranle. Personne ne l'avait invitée. Personne ne lui avait interdit de venir.\n\nHelena ne prononça pas son nom.\n\nMais elle ne détourna pas les yeux.",
+      "summary": "Helena reçoit un signal inconnu de l'astre éteint et déclare le statu quo caduc. Dorian confronte Kira dans le couloir — pour la première fois sans mépris, il demande pourquoi elle a protégé Soren et révèle le message non ouvert de son frère. Helena convoque une session d'urgence et propose une délégation de reconnaissance sur l'astre. Son regard se pose sur Kira, debout dans l'encadrement de la porte.",
+      "advancedLines": [
+        "line-oligarchie",
+        "line-biomen",
+        "line-guerre"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T03:30:00.000Z",
+      "updatedAt": "2026-02-19T03:30:00.000Z"
+    },
+    {
+      "id": "unit-ch15",
+      "type": "chapter",
+      "number": 15,
+      "title": "Le signal",
+      "status": "completed",
+      "content": "Les coordonnées brillaient encore sur l'écran quand Soren y retourna.\n\nIl avait dormi — si on pouvait appeler ça dormir — contre la colonne la plus proche de l'entrée, le dos calé sur la pierre trop lisse. Le bourdonnement des vestiges l'avait bercé. Régulier. Presque organique.\n\nIl se leva. Le courant d'air chaud lui caressa la nuque. Les symboles sur les murs avaient changé — ou c'était la lumière. Certains cercles semblaient plus larges, les lignes plus nettes. Comme si quelque chose avait travaillé pendant qu'il fermait les yeux.\n\nL'écran l'attendait.\n\nIl s'approcha. La surface noire s'alluma sans qu'il la touche. Pas de coordonnées cette fois. Pas de visage. Un son.\n\nFaible d'abord — un crépitement, une interférence, le bruit de quelque chose d'ancien qui se réveille. Puis une voix.\n\nCourte. Fragmentée. Comme arrachée au temps.\n\n— ...le lien est... pas une arme... trouve-le... Soren...\n\nIl recula d'un pas. La voix se tut. Le silence revint — mais un silence différent, chargé, comme l'air après la foudre.\n\nSon nom. La voix avait dit son nom.\n\nIl regarda ses mains. Elles ne tremblaient pas. Elles n'avaient plus tremblé depuis le chapitre six. Mais quelque chose en lui — quelque chose de plus profond que les mains — venait de se fissurer.\n\nIl connaissait cette voix. Non — il ne la connaissait pas. Mais les vestiges la connaissaient. Et les vestiges le connaissaient, lui. Le visage sur l'écran, au chapitre précédent : Syra. Les cheveux courts, les cicatrices sur le front. Et maintenant sa voix. Elle avait prononcé son nom comme si elle savait qui il était. Comme si elle l'avait attendu.\n\nLe lien est pas une arme.\n\nIl ne comprenait pas. Pas encore. Mais les vestiges avaient changé de registre — ils ne montraient plus. Ils parlaient. Et ce qu'ils disaient n'était pas pour Flagor, pas pour Malak, pas pour les Zordons ni les Biomen. C'était pour lui.\n\nIl posa la main sur l'écran. La chaleur remonta le long de son bras — familière, cette fois. Comme une reconnaissance. Les symboles sur les murs se mirent à pulser doucement, au rythme de son souffle.\n\nIl retira la main. L'écran s'éteignit. Le bourdonnement continua.\n\n---\n\nAu poste de commandement, les écrans rouges clignotaient sans que personne ne les regarde. Flagor se tenait debout face à la baie, les jointures blanches sur la rampe froide. Le paysage n'avait pas changé — cratères, poussière, obscurité. Mais lui avait changé. Il le sentait dans ses os, dans la fatigue qu'il n'avait jamais admise, dans l'image de Syra qu'il avait éteinte et qui revenait quand même, projetée sur le verre par sa propre mémoire.\n\n— Le signal a été capté par Néo-Terra.\n\nMalak. Sa voix n'était plus un rapport — c'était un fait posé entre eux, comme une pierre sur une table.\n\nFlagor ne se retourna pas.\n\n— Quand ?\n\n— Six heures. Helena a convoqué une session d'urgence. Le Conseil va voter une délégation de reconnaissance.\n\nLe mot tomba dans le silence. Reconnaissance. Ça voulait dire des Biomen sur l'astre. Des yeux étrangers sur les vestiges. Sur Soren. Sur ce que Soren avait trouvé.\n\nSur Syra.\n\nFlagor sentit ses doigts se crisper. La rampe grinça sous la pression. Les vestiges émettaient — il le savait depuis que Malak avait localisé le signal. Mais il avait cru que le signal resterait entre eux. Que l'immobilité suffirait. Que le temps jouerait en sa faveur.\n\nLe temps ne jouait plus.\n\n— Combien avant qu'ils arrivent ?\n\n— Quarante-huit heures. Peut-être moins.\n\nFlagor ferma les yeux. La cellule. Toujours la cellule. Les murs gris, la faim, les poings contre la porte. Syra à côté de lui, les cheveux courts, le regard qui ne cédait pas. La seule personne qui ne l'avait pas trahi. La seule qu'il n'avait pas réussi à protéger.\n\nIl rouvrit les yeux.\n\n— Prépare un véhicule. Léger. Deux places.\n\nMalak ne bougea pas. Une seconde. Deux. Puis :\n\n— Les vestiges ?\n\n— Les vestiges.\n\nFlagor se retourna enfin. Son rostre écarlate captait la lueur rouge des écrans — cicatrices visibles, celles portées par les grands destins. Mais le regard n'était plus celui du commandant. C'était celui de l'homme de la cellule. Celui qui avait frappé la porte jusqu'au sang.\n\n— Ce n'est plus Soren que je vais chercher.\n\nMalak comprit. Il inclina la tête — pas un acquiescement. Une reconnaissance. Puis il sortit.\n\nFlagor resta seul. Le hublot lui renvoya son reflet — un visage qu'il ne reconnaissait plus tout à fait. L'immobilité était finie. Le pouvoir, cette fois, c'était de bouger.\n\n---\n\nSoren sortit des vestiges au moment où le ciel changeait. Pas d'aube sur l'astre éteint — juste une variation dans l'obscurité, un gris plus pâle à l'horizon, le reflet lointain d'un soleil qui n'atteignait plus cette surface.\n\nIl ralluma son terminal. Un message. Le réseau anonyme.\n\nQuelqu'un vient. Pas les Biomen. Pas encore.\n\nIl leva les yeux. La plaine de cratères s'étendait devant lui — vide, silencieuse, morte. Mais au loin, à la limite de sa vision, quelque chose bougeait. Un point de lumière. Faible. Régulier.\n\nUn véhicule.\n\nSoren éteignit le terminal. Il ne bougea pas. Il attendit, debout dans la poussière, les épaules droites. Les vestiges bourdonnaient derrière lui. La voix de Syra résonnait encore dans sa tête — trouve-le — et il ne savait pas si c'était de lui qu'elle parlait, ou de quelqu'un d'autre.\n\nLe point de lumière grossissait.",
+      "summary": "Soren entend la voix de Syra dans les vestiges — un enregistrement ancien, fragmenté, qui dit son nom. Le lien Soren/Syra est établi par la civilisation ancienne. Flagor apprend que Néo-Terra a capté le signal et qu'une délégation arrive en 48h — il brise l'immobilité et décide d'aller aux vestiges. Soren sort et voit un véhicule approcher dans la poussière.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-passe-flagor",
+        "line-bamboule",
+        "line-vestiges-astre",
+        "line-astre-eteint",
+        "line-message-ils-savent"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T04:00:00.000Z",
+      "updatedAt": "2026-02-19T04:00:00.000Z"
+    },
+    {
+      "id": "unit-ch16",
+      "type": "chapter",
+      "number": 16,
+      "title": "Le même sol",
+      "status": "completed",
+      "content": "Les vestiges avaient changé.\n\nSoren le sentit avant de le voir — le bourdonnement, d'habitude régulier, s'était fragmenté. Des saccades. Des silences brefs, comme des hoquets de pierre. Les symboles sur les murs pulsaient en désordre, certains cercles s'étirant, d'autres se contractant. L'air chaud oscillait entre courants, comme si le souffle ancien de la structure cherchait une direction.\n\nL'écran s'alluma. Pas de voix cette fois. Pas de coordonnées. Un symbole qu'il n'avait jamais vu — un cercle traversé d'une ligne, rouge. Les vestiges n'avaient jamais produit de rouge.\n\nSon terminal vibra. Le réseau anonyme. Un seul mot.\n\nMaintenant.\n\nIl ne comprit pas. Pas tout de suite. Puis le bourdonnement monta d'un cran, et il entendit autre chose — au-delà des murs, au-delà de la pierre, un son mécanique. Un véhicule. Proche.\n\nIl se rapprocha de l'entrée. Le courant d'air chaud le repoussa — doucement, mais fermement. Pas un accueil. Un avertissement.\n\nSoren recula. Les vestiges ne voulaient pas qu'il sorte.\n\n---\n\nLe véhicule s'arrêta au pied du premier arc.\n\nFlagor descendit. La poussière retomba autour de ses bottes. Les structures se dressaient devant lui — arcs, colonnes, gravures qu'aucune main Zordon n'avait taillées. Intactes. Impossibles.\n\nMalak resta près du véhicule.\n\n— Quarante-six heures, dit-il.\n\nPas un rapport. Un fait. La délégation d'Helena, le Conseil en mouvement, les Biomen qui arriveraient avec leurs yeux et leurs scanners. Quarante-six heures avant que l'astre cesse d'être leur secret.\n\nFlagor ne répondit pas. Il regardait l'entrée — un rectangle sombre découpé dans une pierre qui n'aurait pas dû exister sur un monde mort.\n\nLe bourdonnement le traversa par les semelles. Remonta le long de ses jambes, se logea dans son sternum. Pas hostile. Pas accueillant. Quelque chose entre les deux.\n\n— Attends ici.\n\nMalak inclina la tête. Pas de question. Juste l'inclinaison — celle qui ne signifiait plus la soumission.\n\nFlagor entra.\n\n---\n\nLe premier couloir était étroit. Les symboles sur les murs s'assombrirent à son passage — puis se rallumèrent derrière lui, comme si la structure enregistrait sa trajectoire. L'air était chaud. Trop chaud pour un astre mort.\n\nIl posa les doigts sur la paroi. Froid. La pierre ne lui donnait rien. Pas de chaleur, pas de reconnaissance. Les vestiges le laissaient passer, mais ne l'invitaient pas.\n\nPuis il s'arrêta.\n\nDes traces au sol. Dans la poussière fine qui couvrait les dalles — des empreintes. Petites. Plus petites qu'un Zordon. Récentes.\n\nIl s'accroupit. Toucha le bord d'une empreinte du bout du doigt. Nette. Quelques heures, pas davantage.\n\n— Il est là.\n\nMais le nom qui monta ne fut pas Soren. Ce fut Syra. La voix que les vestiges avaient gardée. Les cheveux courts, les cicatrices sur le front, le regard qui ne cédait pas. Si les vestiges la connaissaient — si les vestiges avaient conservé sa voix pendant des millénaires — alors ce lieu était le sien avant d'être celui de quiconque.\n\nIl se releva. Continua.\n\n---\n\nSoren entendit les pas.\n\nPas le bourdonnement. Pas le vent. Des pas — lourds, réguliers, délibérés. Quelqu'un qui ne cherchait pas à être discret.\n\nIl se plaqua contre le mur du fond. La pierre était chaude sous ses paumes — plus chaude qu'avant. Comme si les vestiges concentraient leur énergie autour de lui. Le protégeaient. Ou le retenaient.\n\nL'écran s'alluma une dernière fois. Deux formes. Deux silhouettes — l'une petite, anguleuse ; l'autre massive, marquée de cicatrices. Côte à côte. Pas dans le présent. Dans une projection, une possibilité, un avenir que la structure calculait ou espérait. L'image tint trois secondes, puis s'évanouit.\n\nLe bourdonnement tomba à zéro. Silence complet. Soudain. Délibéré.\n\nLes vestiges voulaient qu'ils s'entendent.\n\n---\n\nFlagor atteignit une jonction. Deux couloirs. Les symboles à gauche pulsaient. La droite était éteinte.\n\nIl choisit la gauche.\n\nLe bourdonnement reprit — bas, prudent. Les vestiges le guidaient. Ou le détournaient. Il ne savait pas lequel.\n\nPuis il le sentit. Une présence. Pas hostile. Pas alliée. Quelque chose de vivant dans cette pierre morte, quelqu'un qui était là avant lui, qui y était depuis des jours. Quelqu'un que les vestiges connaissaient mieux qu'ils ne le connaîtraient jamais, lui.\n\nIl ne cria pas. Ne sortit pas d'arme. Il se tint dans le couloir, jointures blanches, rostre écarlate captant la lueur bleue des symboles, et écouta.\n\nDe l'autre côté du mur, Soren écoutait aussi.\n\nLe silence dura. Ni l'un ni l'autre ne bougea. Ni l'un ni l'autre ne parla. Mais les deux savaient : ils se tenaient sur le même sol, respiraient le même air ancien, séparés par un mur qu'une civilisation morte avait bâti des millénaires plus tôt.\n\nLes vestiges observaient. Et attendaient.",
+      "summary": "Les vestiges changent de comportement à l'approche de Flagor — symbole rouge inédit, bourdonnement fragmenté. Flagor et Malak arrivent aux vestiges (46h avant la délégation d'Helena). Flagor entre seul — les vestiges ne l'accueillent pas comme Soren (pierre froide). Il trouve les empreintes de Soren mais pense à Syra. PREMIÈRE PROXIMITÉ : Flagor et Soren se sentent de part et d'autre d'un mur, sans se voir. Les vestiges projettent deux silhouettes côte à côte puis imposent le silence. Fin ouverte.",
+      "advancedLines": [
+        "line-flagor-ascension",
+        "line-bamboule",
+        "line-passe-flagor",
+        "line-vestiges-astre",
+        "line-astre-eteint",
+        "line-guerre",
+        "line-oligarchie",
+        "line-biomen",
+        "line-message-ils-savent"
+      ],
+      "preEvaluation": null,
+      "postEvaluation": null,
+      "createdAt": "2026-02-19T04:30:00.000Z",
+      "updatedAt": "2026-02-19T04:30:00.000Z"
     }
   ],
   "thematicQuestions": [
@@ -1500,6 +1857,10 @@
         {
           "unitNumber": 12,
           "note": "Flagor attend. Helena attend. Le Conseil attend. Soren agit. Le pouvoir est immobile — l'action vient du méprisé."
+        },
+        {
+          "unitNumber": 16,
+          "note": "Flagor entre dans les vestiges — le pouvoir comme pèlerinage. Les vestiges ne le reconnaissent pas (pierre froide). Le pouvoir de Flagor est nul ici : les vestiges répondent à Soren, pas au tyran."
         }
       ]
     },
@@ -1551,6 +1912,10 @@
         {
           "unitNumber": 12,
           "note": "Soren découvre les vestiges seul. Les structures lui répondent — lui montrent son visage. La dignité comme reconnaissance par quelque chose de plus ancien que les systèmes qui le nient."
+        },
+        {
+          "unitNumber": 16,
+          "note": "Les vestiges protègent Soren (chaleur, courant d'air) et évaluent Flagor (froid). Le méprisé est accueilli par la civilisation ancienne ; le tyran est toléré. La dignité validée par une intelligence qui précède tous les systèmes."
         }
       ]
     },
@@ -1607,6 +1972,10 @@
         {
           "unitNumber": 12,
           "note": "La guerre est suspendue mais les vestiges suggèrent un enjeu plus ancien. Les deux camps se battent pour un astre qu'ils ne comprennent pas."
+        },
+        {
+          "unitNumber": 16,
+          "note": "La course aux vestiges : Flagor y arrive en 46h d'avance sur la délégation d'Helena. La guerre se déplace du champ de bataille au champ archéologique. Les vestiges sont le vrai enjeu — qui les contrôlera ?"
         }
       ]
     }
@@ -1707,13 +2076,13 @@
     "showrunner"
   ],
   "promises": [
-    {"id": "promise-syra-identity", "description": "Syra — qui est-elle ? Quel est son rôle ?", "madeInChapter": 3, "reinforcedInChapters": [7, 9, 10, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-passe-flagor"]},
-    {"id": "promise-vestiges-nature", "description": "Les vestiges — que sont-ils ? Pourquoi reconnaissent-ils Soren et Syra ?", "madeInChapter": 12, "reinforcedInChapters": [], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-vestiges-astre"]},
-    {"id": "promise-reseau-anonyme", "description": "Le réseau anonyme de Soren — qui est derrière ?", "madeInChapter": 4, "reinforcedInChapters": [5, 6, 7, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-bamboule", "line-message-ils-savent"]},
+    {"id": "promise-syra-identity", "description": "Syra — qui est-elle ? Quel est son rôle ?", "madeInChapter": 3, "reinforcedInChapters": [7, 9, 10, 12, 13, 15, 16], "paidOffInChapter": null, "status": "partially-paid", "relatedLines": ["line-passe-flagor"], "partialPayment": "Ch.16 : Flagor entre dans les vestiges et cherche Syra, pas Soren. Les vestiges ont conservé sa voix pendant des millénaires — 'ce lieu était le sien'. Reste à élucider : qui est Syra, où est-elle, quel est le lien vestiges/Syra."},
+    {"id": "promise-vestiges-nature", "description": "Les vestiges — que sont-ils ? Pourquoi reconnaissent-ils Soren et Syra ?", "madeInChapter": 12, "reinforcedInChapters": [13, 16], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-vestiges-astre"]},
+    {"id": "promise-reseau-anonyme", "description": "Le réseau anonyme de Soren — qui est derrière ?", "madeInChapter": 4, "reinforcedInChapters": [5, 6, 7, 12, 13, 16], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-bamboule", "line-message-ils-savent"]},
     {"id": "promise-dorian-alerte", "description": "Dorian a ignoré l'alerte — conséquences complètes ?", "madeInChapter": 5, "reinforcedInChapters": [6, 8, 10], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-biomen"]},
-    {"id": "promise-malak-loyalty", "description": "Malak a brisé la loyauté — où va la relation ?", "madeInChapter": 9, "reinforcedInChapters": [10, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-feodalite"]},
-    {"id": "promise-kira-verdict", "description": "Kira suspendue — quel sera son sort ?", "madeInChapter": 8, "reinforcedInChapters": [10, 11, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-biomen"]},
-    {"id": "promise-helena-plan", "description": "Helena attend une transmission — quel est son plan ?", "madeInChapter": 9, "reinforcedInChapters": [11, 12], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-oligarchie"]},
+    {"id": "promise-malak-loyalty", "description": "Malak a brisé la loyauté — où va la relation ?", "madeInChapter": 9, "reinforcedInChapters": [10, 12, 13, 16], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-feodalite"]},
+    {"id": "promise-kira-verdict", "description": "Kira suspendue — quel sera son sort ?", "madeInChapter": 8, "reinforcedInChapters": [10, 11, 12, 14], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-biomen"]},
+    {"id": "promise-helena-plan", "description": "Helena attend une transmission — quel est son plan ?", "madeInChapter": 9, "reinforcedInChapters": [11, 12, 14], "paidOffInChapter": null, "status": "open", "relatedLines": ["line-oligarchie"]},
     {"id": "promise-biomen-facade", "description": "Façade héroïque crédible avant subversion", "madeInChapter": 2, "reinforcedInChapters": [3, 4], "paidOffInChapter": 5, "status": "paid", "relatedLines": ["line-biomen"]}
   ],
   "settings": {
@@ -1722,5 +2091,5 @@
     "resolutionPressureThreshold": 10
   },
   "createdAt": "2026-02-18T18:00:00.000Z",
-  "updatedAt": "2026-02-19T02:30:00.000Z"
+  "updatedAt": "2026-02-19T04:30:00.000Z"
 }

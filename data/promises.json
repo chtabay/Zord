@@ -3,11 +3,11 @@
     "id": "promise-syra-identity",
     "description": "Syra — femme du passé de Flagor crue morte. Qui est-elle ? Quel est son rôle ?",
     "madeInChapter": 3,
-    "reinforcedInChapters": [7, 9, 10, 12],
+    "reinforcedInChapters": [7, 9, 10, 12, 15],
     "paidOffInChapter": null,
-    "status": "open",
+    "status": "partially-paid",
     "relatedLines": ["line-passe-flagor"],
-    "urgency": "haute — ouverte depuis 9 chapitres, renforcée 4 fois"
+    "urgency": "haute — partiellement payée au ch.15 (voix de Syra, lien Soren/Syra). Reste : identité complète, localisation, rôle."
   },
   {
     "id": "promise-vestiges-nature",

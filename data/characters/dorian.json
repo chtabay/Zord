@@ -14,7 +14,7 @@
       "Tu vas regretter."
     ]
   },
-  "currentState": "En deuil — son frère est mort dans le piège de Flagor. Instrumentalise ce deuil comme arme politique contre Kira. A quitté la dernière session de la commission sans un mot. Impuissant face à la procédure d'Helena (sa propre mère).",
+  "currentState": "Le deuil s'érode. A confronté Kira dans le couloir sans combinaison, sans mépris — vêtement civil, mains inutiles. A révélé le message non ouvert de son frère mort. A utilisé un pronom nu pour parler de Soren. Assiste à la session d'Helena, fixe ses mains sur la table. La rage se fissure.",
   "location": "Néo-Terra — entre le Complexe et le Conseil",
   "relationships": {
     "helena": "Sa mère. Helena est au Conseil, Dorian est le leader des Biomen. Elle préside la commission qui le concerne indirectement. Tension familiale + politique.",
@@ -30,7 +30,8 @@
     "Ch.7: Convoque Kira. 'Tu seras entendue en premier.'",
     "Ch.8: À la commission. Accuse. Helena ajourne.",
     "Ch.10: Confronte Kira dans la cellule. 'Tu vas regretter.'",
-    "Ch.11: Quitte la commission sans un mot."
+    "Ch.11: Quitte la commission sans un mot.",
+    "Ch.14: Confronte Kira dans le couloir — sans mépris. Révèle le message non ouvert de son frère. 'Pourquoi tu l'as protégé ?' Annonce la session d'Helena. Mains inutiles sur la table du Conseil."
   ],
   "contradictions": "Dorian accuse Soren de trahison, mais c'est lui qui a ignoré l'alerte qui aurait pu sauver son frère. Il cherche un coupable extérieur pour ne pas affronter sa propre responsabilité."
 }

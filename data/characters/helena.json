@@ -14,7 +14,7 @@
       "On attend encore. Une transmission. Un signe."
     ]
   },
-  "currentState": "A envoyé un ultimatum à Flagor. Le Conseil a voté le statu quo — mais pour Helena, le statu quo est une pause avant la frappe. Attend une transmission. Semble connectée au réseau anonyme. Ne pardonnera pas — elle a perdu un fils.",
+  "currentState": "A reçu un signal non identifié de l'astre éteint — ni Zordon, ni Biomen. A déclaré le statu quo caduc. A convoqué une session d'urgence et proposé une délégation de reconnaissance : trois personnes, un vaisseau léger. Son regard s'est posé sur Kira dans l'encadrement de la porte. N'a pas prononcé son nom. Ne pardonnera toujours pas.",
   "location": "Néo-Terra — salle du Conseil, salle de commission",
   "relationships": {
     "dorian": "Son fils. Leader des Biomen. Elle préside la commission qui l'affecte. Tension mère/fils + politique. Son autre fils (le pilote) est mort.",
@@ -29,7 +29,8 @@
     "Ch.7: Préside la commission. Dorian à sa droite. Ouvre les débats.",
     "Ch.8: Ajourne — 48 heures. Le Conseil paraît divisé pour la première fois.",
     "Ch.11: Message à Flagor : 'Vous avez choisi. Nous aussi.' Le Conseil vote le statu quo.",
-    "Ch.12: Debout face aux écrans. L'astre éteint y apparaît. Elle ne sait pas ce qui s'y passe."
+    "Ch.12: Debout face aux écrans. L'astre éteint y apparaît. Elle ne sait pas ce qui s'y passe.",
+    "Ch.14: Reçoit un signal inconnu de l'astre. Déclare le statu quo caduc. Convoque une session. Propose une délégation de reconnaissance. Son regard se pose sur Kira — sans prononcer son nom."
   ],
   "contradictions": "Helena prétend chercher la vérité, mais elle attend 'une transmission, un signe' — ce qui suggère qu'elle est connectée à un réseau qui opère en dehors de la loi. Elle utilise la procédure comme arme, pas comme justice."
 }

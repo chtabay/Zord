@@ -13,8 +13,8 @@
       "Oui. C'est Soren. J'ai des informations."
     ]
   },
-  "currentState": "En fuite vers l'astre éteint. A découvert les vestiges — l'écran ancien a montré son visage puis celui de Syra. Quelque chose s'est activé. Le réseau anonyme l'a averti : 'Ils savent où tu es. Fuis. Ou reste.' Il ne sait pas quoi faire. Il marche dans la poussière.",
-  "location": "Astre éteint — zone des vestiges (structures anciennes, face nord)",
+  "currentState": "Dans les vestiges. Flagor est entré dans le complexe — Soren l'a senti de l'autre côté d'un mur. Les vestiges le protègent (chaleur, courant d'air qui le retient). L'écran a montré deux silhouettes côte à côte — une projection. Le réseau a envoyé 'Maintenant'. Première proximité avec Flagor sans face-à-face. Immobile. Écoute.",
+  "location": "Astre éteint — vestiges, à l'intérieur des structures",
   "relationships": {
     "kira": "La seule qui l'a défendu. Elle a refusé de le livrer à Dorian. Elle a été suspendue à cause de lui. Il ne le sait peut-être pas encore.",
     "dorian": "Le leader qui le méprise et le cherche. 'La Bamboule qui se prend pour un héros.'",
@@ -30,7 +30,10 @@
     "Ch.6: Accepte une transmission plus risquée. Hésite. Tape 'Oui'.",
     "Ch.7: Envoie les coordonnées du prochain convoi. Point de bascule irréversible.",
     "Ch.11: Disparaît. Direction l'astre éteint via les hangars de secours.",
-    "Ch.12: Arrive sur l'astre. Découvre les vestiges. L'écran montre son visage, puis Syra. Quelque chose s'active."
+    "Ch.12: Arrive sur l'astre. Découvre les vestiges. L'écran montre son visage, puis Syra. Quelque chose s'active.",
+    "Ch.13: Entre dans les vestiges. Voix, écran, coordonnées, chaleur au contact. Choisit de rester malgré l'avertissement.",
+    "Ch.15: Les vestiges livrent un enregistrement audio de Syra — elle dit son nom. Le lien est établi. Un véhicule approche dans la poussière.",
+    "Ch.16: Les vestiges changent — bourdonnement fragmenté, symbole rouge inédit. Le réseau envoie 'Maintenant'. Flagor entre dans les vestiges. Les vestiges protègent Soren (chaleur, courant). Écran montre deux silhouettes côte à côte. Première proximité avec Flagor — séparés par un mur. Silence mutuel."
   ],
   "contradictions": "Soren croit agir pour la justice, mais sa fuite a coûté 2 vaisseaux et des centaines de morts. Il pense être seul, mais un réseau le guide — il ne sait pas pour qui il travaille vraiment. Les vestiges le reconnaissent — pourquoi lui ?"
 }
